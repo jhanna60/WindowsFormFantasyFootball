@@ -23,9 +23,16 @@ namespace WindowsFormFantasyFootball
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            var players = listA.Where(player => player.Team == (string)comboBox1.SelectedItem);
+            if ((string)comboBox1.SelectedItem == "ALL")
+            {
+                dataGridView1.DataSource = listA.ToList();
+            }
+            else
+            {
+                var players = listA.Where(player => player.Team == (string)comboBox1.SelectedItem);
 
-            dataGridView1.DataSource = players.ToList();
+                dataGridView1.DataSource = players.ToList();
+            }
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -55,6 +62,7 @@ namespace WindowsFormFantasyFootball
             var teams = listA.Select(player => player.Team).Distinct();
 
             comboBox1.Items.Clear();
+            comboBox1.Items.Add("ALL");
             comboBox1.Items.AddRange(teams.ToArray());
             comboBox1.SelectedIndex = 0;
 
