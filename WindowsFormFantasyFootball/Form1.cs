@@ -61,6 +61,7 @@ namespace WindowsFormFantasyFootball
 
             var teams = listA.Select(player => player.Team).Distinct();
 
+            // Initializing the Combo box 1
             comboBox1.Items.Clear();
             comboBox1.Items.Add("ALL");
             comboBox1.Items.AddRange(teams.ToArray());
