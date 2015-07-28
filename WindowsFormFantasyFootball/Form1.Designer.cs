@@ -32,14 +32,17 @@
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.TeamComboBox = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.PositionComboBox = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(210, 65);
+            this.label1.Location = new System.Drawing.Point(9, 30);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(0, 13);
             this.label1.TabIndex = 1;
@@ -69,14 +72,41 @@
             this.dataGridView1.Size = new System.Drawing.Size(1053, 296);
             this.dataGridView1.TabIndex = 4;
             // 
-            // comboBox1
+            // TeamComboBox
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(12, 109);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 5;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.TeamComboBox.FormattingEnabled = true;
+            this.TeamComboBox.Location = new System.Drawing.Point(12, 100);
+            this.TeamComboBox.Name = "TeamComboBox";
+            this.TeamComboBox.Size = new System.Drawing.Size(121, 21);
+            this.TeamComboBox.TabIndex = 5;
+            this.TeamComboBox.SelectedIndexChanged += new System.EventHandler(this.TeamComboBox_SelectedIndexChanged);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(12, 81);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(39, 13);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "Teams";
+            // 
+            // PositionComboBox
+            // 
+            this.PositionComboBox.FormattingEnabled = true;
+            this.PositionComboBox.Location = new System.Drawing.Point(165, 100);
+            this.PositionComboBox.Name = "PositionComboBox";
+            this.PositionComboBox.Size = new System.Drawing.Size(121, 21);
+            this.PositionComboBox.TabIndex = 7;
+            this.PositionComboBox.SelectedIndexChanged += new System.EventHandler(this.PositionComboBox_SelectedIndexChanged);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(162, 81);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(49, 13);
+            this.label3.TabIndex = 8;
+            this.label3.Text = "Positions";
             // 
             // Form1
             // 
@@ -84,7 +114,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gainsboro;
             this.ClientSize = new System.Drawing.Size(1077, 513);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.PositionComboBox);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.TeamComboBox);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
@@ -102,7 +135,10 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox TeamComboBox;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ComboBox PositionComboBox;
+        private System.Windows.Forms.Label label3;
     }
 }
 
