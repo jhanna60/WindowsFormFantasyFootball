@@ -58,7 +58,7 @@ namespace WindowsFormFantasyFootball
             comboBox1.Items.AddRange(teams.ToArray());
             comboBox1.SelectedIndex = 0;
 
-            label1.Text = "Footballer Info Loaded Successfully";
+            label1.Text = "Footballer Info Loaded Successfully from website";
         }
     }
 }
