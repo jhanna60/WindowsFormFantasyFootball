@@ -82,11 +82,11 @@ namespace WindowsFormFantasyFootball
 
         private void PositionComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            var players = dataGridView1.DataSource;
+            //var players = dataGridView1.DataSource;
 
-            players = listA.Where(player => player.Team == (string)TeamComboBox.SelectedItem);
+            var players = listA.Where(player => player.Position == (string)PositionComboBox.SelectedItem);
 
-            //dataGridView1.DataSource = players.ToList();
+            dataGridView1.DataSource = players.ToList();
 
         }
     }
