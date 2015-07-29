@@ -21,15 +21,17 @@ namespace WindowsFormFantasyFootball
             InitializeComponent();
         }
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private void TeamComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if ((string)comboBox1.SelectedItem == "ALL")
+            var players = listA.Where(player => player.Team != "");
+
+            if ((string)TeamComboBox.SelectedItem == "ALL")
             {
-                dataGridView1.DataSource = listA.ToList();
+                dataGridView1.DataSource = players.ToList();
             }
             else
             {
-                var players = listA.Where(player => player.Team == (string)comboBox1.SelectedItem);
+                players = listA.Where(player => player.Team == (string)TeamComboBox.SelectedItem);
 
                 dataGridView1.DataSource = players.ToList();
             }
@@ -60,14 +62,32 @@ namespace WindowsFormFantasyFootball
             }
 
             var teams = listA.Select(player => player.Team).Distinct();
+            var positions = listA.Select(player => player.Position).Distinct();
 
-            // Initializing the Combo box 1
-            comboBox1.Items.Clear();
-            comboBox1.Items.Add("ALL");
-            comboBox1.Items.AddRange(teams.ToArray());
-            comboBox1.SelectedIndex = 0;
+            // Initialising the Team Combo Box
+            TeamComboBox.Items.Clear();
+            TeamComboBox.Items.Add("ALL");
+            TeamComboBox.Items.AddRange(teams.ToArray());
+            TeamComboBox.SelectedIndex = 0;
+
+            // Initialising the Positions Combo Box
+            PositionComboBox.Items.Clear();
+            PositionComboBox.Items.Add("ALL");
+            PositionComboBox.Items.AddRange(positions.ToArray());
+            PositionComboBox.SelectedIndex = 0;
+
 
             label1.Text = "Footballer Info Loaded Successfully from website";
+        }
+
+        private void PositionComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //var players = dataGridView1.DataSource;
+
+            var players = listA.Where(player => player.Position == (string)PositionComboBox.SelectedItem);
+
+            dataGridView1.DataSource = players.ToList();
+
         }
     }
 }
