@@ -59,33 +59,12 @@ namespace WindowsFormFantasyFootball
 
         private void TeamComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            //var players = listA.Where(player => player.Team != "");
-
-            //if ((string)TeamComboBox.SelectedItem == "ALL")
-            //{
-            //    dataGridView1.DataSource = players.ToList();
-            //}
-            //else
-            //{
-            //    players = listA.Where(player => player.Team == (string)TeamComboBox.SelectedItem);
-
-            //    dataGridView1.DataSource = players.ToList();
-            //}
-
             DataOutput();
-
         }
 
         private void PositionComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            //var players = dataGridView1.DataSource;
-
-            //var players = listA.Where(player => player.Position == (string)PositionComboBox.SelectedItem);
-
-            //dataGridView1.DataSource = players.ToList();
-
             DataOutput();
-
         }
 
         private void DataOutput()
@@ -114,6 +93,16 @@ namespace WindowsFormFantasyFootball
             }
 
             dataGridView1.DataSource = players.ToList();
+
+            dataGridView1.DataSource = players.ToList();
+
+            //Make columns sortable
+
+            foreach (DataGridViewColumn column in dataGridView1.Columns)
+            {
+                column.SortMode = DataGridViewColumnSortMode.Automatic;
+            }
+                
         }
     }
 }
