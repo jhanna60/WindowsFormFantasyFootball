@@ -28,9 +28,67 @@
 
             if (footballers != null)
             {
+                var footballersDataTable = new FootballersDataSet().Footballers;
+
+                foreach (var footballer in footballers)
+                {
+                    var row = footballersDataTable.NewFootballersRow();
+
+                    row.FirstName = footballer.FirstName;
+                    row.Surname = footballer.Surname;
+                    row.Position = footballer.Position;
+                    row.Team = footballer.Team;
+                    row.Cost = footballer.Cost;
+                    row.PointsLstRnd = footballer.PointsLstRnd;
+                    row.TotalPoints = footballer.TotalPoints;
+                    row.AveragePoints = footballer.AveragePoints;
+                    row.AvgPointsDollar = footballer.AvgPointsDollar;
+                    row.TotPointsDollar = footballer.TotPointsDollar;
+                    row.WeekWeighting = footballer.WeekWeighting;
+                    row.TransfersOut = footballer.TransfersOut;
+                    row.YellowCards = footballer.YellowCards;
+                    row.GoalsConceded = footballer.GoalsConceded;
+                    row.GoalsConcededPts = footballer.GoalsConcededPts;
+                    row.Saves = footballer.Saves;
+                    row.SavesPts = footballer.SavesPts;
+                    row.GoalsScored = footballer.GoalsScored;
+                    row.GoalsScoredPts = footballer.GoalsScoredPts;
+                    row.TransfersOutRnd = footballer.TransfersOutRnd;
+                    row.PriceRise = footballer.PriceRise;
+                    row.PriceFallRnd = footballer.PriceFallRnd;
+                    row.LstSeasonPts = footballer.LstSeasonPts;
+                    row.PriceFall = footballer.PriceFall;
+                    row.ValueForm = footballer.ValueForm;
+                    row.PenaltiesMissed = footballer.PenaltiesMissed;
+                    row.Form = footballer.Form;
+                    row.Bonus = footballer.Bonus;
+                    row.FanRating = footballer.FanRating;
+                    row.CleanSheets = footballer.CleanSheets;
+                    row.CleansheetsPts = footballer.CleansheetsPts;
+                    row.Assists = footballer.Assists;
+                    row.SelectedByPcent = footballer.SelectedByPcent;
+                    row.TransfersIn = footballer.TransfersIn;
+                    row.OwnGoals = footballer.OwnGoals;
+                    row.EAIndex = footballer.EAIndex;
+                    row.PenaltiesSaved = footballer.PenaltiesSaved;
+                    row.DreamTeamCount = footballer.DreamTeamCount;
+                    row.MinutesPlayed = footballer.MinutesPlayed;
+                    row.TransfersInRound = footballer.TransfersInRound;
+                    row.PriceRiseRound = footballer.PriceRiseRound;
+                    row.RedCards = footballer.RedCards;
+                    row.BPS = footballer.BPS;
+                    row.NextFixture1 = footballer.NextFixture1;
+                    row.NextFixture2 = footballer.NextFixture2;
+                    row.NextFixture3 = footballer.NextFixture3;
+                    row.NextFixture4 = footballer.NextFixture4;
+                    row.NextFixture5 = footballer.NextFixture5;
+
+                    footballersDataTable.AddFootballersRow(row);
+                }
+
                 Application.EnableVisualStyles();
                 Application.SetCompatibleTextRenderingDefault(false);
-                Application.Run(new MainForm(footballers));
+                Application.Run(new MainForm(footballersDataTable));
             }
         }
     }
