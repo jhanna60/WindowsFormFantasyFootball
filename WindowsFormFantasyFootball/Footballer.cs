@@ -1,13 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace WindowsFormFantasyFootball
+﻿namespace WindowsFormFantasyFootball
 {
-    class Footballer
+    using System.Collections.Generic;
+    using System.IO;
+
+    public class Footballer
     {
         public string FirstName { set; get; }
         public string Surname { set; get; }
@@ -59,8 +55,6 @@ namespace WindowsFormFantasyFootball
         public string NextFixture4 { set; get; }
         public string NextFixture5 { set; get; }
 
-
-
         public static void LoadFromCSV(StreamReader reader, List<Footballer> listA)
         {
             //Cycle through my CSV file and load values into instances of Footballer Class
@@ -69,12 +63,12 @@ namespace WindowsFormFantasyFootball
             // Read the header thenwe are ready for the actual data
             var line = reader.ReadLine();
 
-            while (!reader.EndOfStream)
+            while (! reader.EndOfStream)
             {
                 line = reader.ReadLine();
                 var values = line.Split(',');
 
-                Footballer data = new Footballer();
+                var data = new Footballer();
 
                 data.FirstName = values[0];
                 data.Surname = values[1];
@@ -127,9 +121,7 @@ namespace WindowsFormFantasyFootball
                 data.NextFixture5 = values[48];
 
                 listA.Add(data);
-
             }
         }
     }
-
-    }
+}
