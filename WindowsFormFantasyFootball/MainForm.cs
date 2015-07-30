@@ -8,7 +8,7 @@
     public partial class MainForm : Form
     {
         private readonly IEnumerable<Footballer> _footballers;
-
+        
         public MainForm(IEnumerable<Footballer> footballers)
         {
             _footballers = footballers;
@@ -30,8 +30,6 @@
             cboPositions.Items.Add("ALL");
             cboPositions.Items.AddRange(positions.ToArray());
             cboPositions.SelectedIndex = 0;
-
-            lblLoadedSuccessMessage.Text = "Footballer Info Loaded Successfully from website";
         }
 
         private void TeamComboBox_SelectedIndexChanged(object sender, EventArgs e)
@@ -66,8 +64,6 @@
                 players = _footballers.Where(player => player.Position == (string) cboPositions.SelectedItem &&
                                                        player.Team == (string) cboTeams.SelectedItem);
             }
-
-            dbgPlayers.DataSource = players.ToList();
 
             dbgPlayers.DataSource = players.ToList();
 
