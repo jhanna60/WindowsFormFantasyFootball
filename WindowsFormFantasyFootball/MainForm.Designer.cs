@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormFantasyFootball
 {
-    partial class Form1
+    partial class MainForm
     {
         /// <summary>
         /// Required designer variable.
@@ -29,23 +29,23 @@
         private void InitializeComponent()
         {
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblLoadedSuccessMessage = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.TeamComboBox = new System.Windows.Forms.ComboBox();
+            this.dbgPlayers = new System.Windows.Forms.DataGridView();
+            this.cboTeams = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.PositionComboBox = new System.Windows.Forms.ComboBox();
+            this.cboPositions = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dbgPlayers)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
+            // lblLoadedSuccessMessage
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(9, 30);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(0, 13);
-            this.label1.TabIndex = 1;
+            this.lblLoadedSuccessMessage.AutoSize = true;
+            this.lblLoadedSuccessMessage.Location = new System.Drawing.Point(9, 30);
+            this.lblLoadedSuccessMessage.Name = "lblLoadedSuccessMessage";
+            this.lblLoadedSuccessMessage.Size = new System.Drawing.Size(0, 13);
+            this.lblLoadedSuccessMessage.TabIndex = 1;
             // 
             // button1
             // 
@@ -57,31 +57,31 @@
             this.button1.Text = "Analyse";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // dataGridView1
+            // dbgPlayers
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.AllowUserToOrderColumns = true;
-            this.dataGridView1.AllowUserToResizeColumns = false;
-            this.dataGridView1.AllowUserToResizeRows = false;
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.dbgPlayers.AllowUserToAddRows = false;
+            this.dbgPlayers.AllowUserToDeleteRows = false;
+            this.dbgPlayers.AllowUserToOrderColumns = true;
+            this.dbgPlayers.AllowUserToResizeColumns = false;
+            this.dbgPlayers.AllowUserToResizeRows = false;
+            this.dbgPlayers.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 176);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(1053, 296);
-            this.dataGridView1.TabIndex = 4;
+            this.dbgPlayers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dbgPlayers.Location = new System.Drawing.Point(12, 176);
+            this.dbgPlayers.Name = "dbgPlayers";
+            this.dbgPlayers.ReadOnly = true;
+            this.dbgPlayers.Size = new System.Drawing.Size(1053, 296);
+            this.dbgPlayers.TabIndex = 4;
             // 
-            // TeamComboBox
+            // cboTeams
             // 
-            this.TeamComboBox.FormattingEnabled = true;
-            this.TeamComboBox.Location = new System.Drawing.Point(12, 100);
-            this.TeamComboBox.Name = "TeamComboBox";
-            this.TeamComboBox.Size = new System.Drawing.Size(121, 21);
-            this.TeamComboBox.TabIndex = 5;
-            this.TeamComboBox.SelectedIndexChanged += new System.EventHandler(this.TeamComboBox_SelectedIndexChanged);
+            this.cboTeams.FormattingEnabled = true;
+            this.cboTeams.Location = new System.Drawing.Point(12, 100);
+            this.cboTeams.Name = "cboTeams";
+            this.cboTeams.Size = new System.Drawing.Size(121, 21);
+            this.cboTeams.TabIndex = 5;
+            this.cboTeams.SelectedIndexChanged += new System.EventHandler(this.TeamComboBox_SelectedIndexChanged);
             // 
             // label2
             // 
@@ -92,14 +92,14 @@
             this.label2.TabIndex = 6;
             this.label2.Text = "Teams";
             // 
-            // PositionComboBox
+            // cboPositions
             // 
-            this.PositionComboBox.FormattingEnabled = true;
-            this.PositionComboBox.Location = new System.Drawing.Point(165, 100);
-            this.PositionComboBox.Name = "PositionComboBox";
-            this.PositionComboBox.Size = new System.Drawing.Size(121, 21);
-            this.PositionComboBox.TabIndex = 7;
-            this.PositionComboBox.SelectedIndexChanged += new System.EventHandler(this.PositionComboBox_SelectedIndexChanged);
+            this.cboPositions.FormattingEnabled = true;
+            this.cboPositions.Location = new System.Drawing.Point(165, 100);
+            this.cboPositions.Name = "cboPositions";
+            this.cboPositions.Size = new System.Drawing.Size(121, 21);
+            this.cboPositions.TabIndex = 7;
+            this.cboPositions.SelectedIndexChanged += new System.EventHandler(this.PositionComboBox_SelectedIndexChanged);
             // 
             // label3
             // 
@@ -110,22 +110,22 @@
             this.label3.TabIndex = 8;
             this.label3.Text = "Positions";
             // 
-            // Form1
+            // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gainsboro;
             this.ClientSize = new System.Drawing.Size(1077, 513);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.PositionComboBox);
+            this.Controls.Add(this.cboPositions);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.TeamComboBox);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.cboTeams);
+            this.Controls.Add(this.dbgPlayers);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.label1);
-            this.Name = "Form1";
-            this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Controls.Add(this.lblLoadedSuccessMessage);
+            this.Name = "MainForm";
+            this.Text = "MainForm";
+            ((System.ComponentModel.ISupportInitialize)(this.dbgPlayers)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -133,12 +133,12 @@
 
         #endregion
         private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblLoadedSuccessMessage;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.ComboBox TeamComboBox;
+        private System.Windows.Forms.DataGridView dbgPlayers;
+        private System.Windows.Forms.ComboBox cboTeams;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox PositionComboBox;
+        private System.Windows.Forms.ComboBox cboPositions;
         private System.Windows.Forms.Label label3;
     }
 }
