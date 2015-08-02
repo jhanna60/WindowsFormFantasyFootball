@@ -295,7 +295,7 @@ namespace WindowsFormFantasyFootball {
             
             private global::System.Data.DataColumn columnAveragePoints;
             
-            private global::System.Data.DataColumn columnAvgPointsDollar;
+            private global::System.Data.DataColumn columnAvgPointsPound;
             
             private global::System.Data.DataColumn columnTotPointsDollar;
             
@@ -476,9 +476,9 @@ namespace WindowsFormFantasyFootball {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn AvgPointsDollarColumn {
+            public global::System.Data.DataColumn AvgPointsPoundColumn {
                 get {
-                    return this.columnAvgPointsDollar;
+                    return this.columnAvgPointsPound;
                 }
             }
             
@@ -844,46 +844,46 @@ namespace WindowsFormFantasyFootball {
                         string Surname, 
                         string Position, 
                         string Team, 
-                        string Cost, 
-                        string PointsLstRnd, 
-                        string TotalPoints, 
-                        string AveragePoints, 
-                        string AvgPointsDollar, 
-                        string TotPointsDollar, 
-                        string WeekWeighting, 
-                        string TransfersOut, 
-                        string YellowCards, 
-                        string GoalsConceded, 
-                        string GoalsConcededPts, 
-                        string Saves, 
-                        string SavesPts, 
-                        string GoalsScored, 
-                        string GoalsScoredPts, 
-                        string ValueSeason, 
-                        string TransfersOutRnd, 
-                        string PriceRise, 
-                        string PriceFallRnd, 
-                        string LstSeasonPts, 
-                        string PriceFall, 
-                        string ValueForm, 
-                        string PenaltiesMissed, 
-                        string Form, 
-                        string Bonus, 
-                        string FanRating, 
-                        string CleanSheets, 
-                        string CleansheetsPts, 
+                        int Cost, 
+                        int PointsLstRnd, 
+                        int TotalPoints, 
+                        double AveragePoints, 
+                        double AvgPointsPound, 
+                        double TotPointsDollar, 
+                        int WeekWeighting, 
+                        int TransfersOut, 
+                        int YellowCards, 
+                        int GoalsConceded, 
+                        int GoalsConcededPts, 
+                        int Saves, 
+                        int SavesPts, 
+                        int GoalsScored, 
+                        int GoalsScoredPts, 
+                        double ValueSeason, 
+                        int TransfersOutRnd, 
+                        int PriceRise, 
+                        int PriceFallRnd, 
+                        int LstSeasonPts, 
+                        int PriceFall, 
+                        double ValueForm, 
+                        int PenaltiesMissed, 
+                        double Form, 
+                        int Bonus, 
+                        int FanRating, 
+                        int CleanSheets, 
+                        int CleansheetsPts, 
                         int Assists, 
-                        string SelectedByPcent, 
-                        string TransfersIn, 
-                        string OwnGoals, 
-                        string EAIndex, 
-                        string PenaltiesSaved, 
-                        string DreamTeamCount, 
-                        string MinutesPlayed, 
-                        string TransfersInRound, 
-                        string PriceRiseRound, 
-                        string RedCards, 
-                        string BPS, 
+                        double SelectedByPcent, 
+                        int TransfersIn, 
+                        int OwnGoals, 
+                        int EAIndex, 
+                        int PenaltiesSaved, 
+                        int DreamTeamCount, 
+                        int MinutesPlayed, 
+                        int TransfersInRound, 
+                        int PriceRiseRound, 
+                        int RedCards, 
+                        int BPS, 
                         string NextFixture1, 
                         string NextFixture2, 
                         string NextFixture3, 
@@ -899,7 +899,7 @@ namespace WindowsFormFantasyFootball {
                         PointsLstRnd,
                         TotalPoints,
                         AveragePoints,
-                        AvgPointsDollar,
+                        AvgPointsPound,
                         TotPointsDollar,
                         WeekWeighting,
                         TransfersOut,
@@ -970,7 +970,7 @@ namespace WindowsFormFantasyFootball {
                 this.columnPointsLstRnd = base.Columns["PointsLstRnd"];
                 this.columnTotalPoints = base.Columns["TotalPoints"];
                 this.columnAveragePoints = base.Columns["AveragePoints"];
-                this.columnAvgPointsDollar = base.Columns["AvgPointsDollar"];
+                this.columnAvgPointsPound = base.Columns["AvgPointsPound"];
                 this.columnTotPointsDollar = base.Columns["TotPointsDollar"];
                 this.columnWeekWeighting = base.Columns["WeekWeighting"];
                 this.columnTransfersOut = base.Columns["TransfersOut"];
@@ -1024,85 +1024,85 @@ namespace WindowsFormFantasyFootball {
                 base.Columns.Add(this.columnPosition);
                 this.columnTeam = new global::System.Data.DataColumn("Team", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnTeam);
-                this.columnCost = new global::System.Data.DataColumn("Cost", typeof(string), null, global::System.Data.MappingType.Element);
+                this.columnCost = new global::System.Data.DataColumn("Cost", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnCost);
-                this.columnPointsLstRnd = new global::System.Data.DataColumn("PointsLstRnd", typeof(string), null, global::System.Data.MappingType.Element);
+                this.columnPointsLstRnd = new global::System.Data.DataColumn("PointsLstRnd", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnPointsLstRnd);
-                this.columnTotalPoints = new global::System.Data.DataColumn("TotalPoints", typeof(string), null, global::System.Data.MappingType.Element);
+                this.columnTotalPoints = new global::System.Data.DataColumn("TotalPoints", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnTotalPoints);
-                this.columnAveragePoints = new global::System.Data.DataColumn("AveragePoints", typeof(string), null, global::System.Data.MappingType.Element);
+                this.columnAveragePoints = new global::System.Data.DataColumn("AveragePoints", typeof(double), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnAveragePoints);
-                this.columnAvgPointsDollar = new global::System.Data.DataColumn("AvgPointsDollar", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnAvgPointsDollar);
-                this.columnTotPointsDollar = new global::System.Data.DataColumn("TotPointsDollar", typeof(string), null, global::System.Data.MappingType.Element);
+                this.columnAvgPointsPound = new global::System.Data.DataColumn("AvgPointsPound", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnAvgPointsPound);
+                this.columnTotPointsDollar = new global::System.Data.DataColumn("TotPointsDollar", typeof(double), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnTotPointsDollar);
-                this.columnWeekWeighting = new global::System.Data.DataColumn("WeekWeighting", typeof(string), null, global::System.Data.MappingType.Element);
+                this.columnWeekWeighting = new global::System.Data.DataColumn("WeekWeighting", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnWeekWeighting);
-                this.columnTransfersOut = new global::System.Data.DataColumn("TransfersOut", typeof(string), null, global::System.Data.MappingType.Element);
+                this.columnTransfersOut = new global::System.Data.DataColumn("TransfersOut", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnTransfersOut);
-                this.columnYellowCards = new global::System.Data.DataColumn("YellowCards", typeof(string), null, global::System.Data.MappingType.Element);
+                this.columnYellowCards = new global::System.Data.DataColumn("YellowCards", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnYellowCards);
-                this.columnGoalsConceded = new global::System.Data.DataColumn("GoalsConceded", typeof(string), null, global::System.Data.MappingType.Element);
+                this.columnGoalsConceded = new global::System.Data.DataColumn("GoalsConceded", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnGoalsConceded);
-                this.columnGoalsConcededPts = new global::System.Data.DataColumn("GoalsConcededPts", typeof(string), null, global::System.Data.MappingType.Element);
+                this.columnGoalsConcededPts = new global::System.Data.DataColumn("GoalsConcededPts", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnGoalsConcededPts);
-                this.columnSaves = new global::System.Data.DataColumn("Saves", typeof(string), null, global::System.Data.MappingType.Element);
+                this.columnSaves = new global::System.Data.DataColumn("Saves", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnSaves);
-                this.columnSavesPts = new global::System.Data.DataColumn("SavesPts", typeof(string), null, global::System.Data.MappingType.Element);
+                this.columnSavesPts = new global::System.Data.DataColumn("SavesPts", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnSavesPts);
-                this.columnGoalsScored = new global::System.Data.DataColumn("GoalsScored", typeof(string), null, global::System.Data.MappingType.Element);
+                this.columnGoalsScored = new global::System.Data.DataColumn("GoalsScored", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnGoalsScored);
-                this.columnGoalsScoredPts = new global::System.Data.DataColumn("GoalsScoredPts", typeof(string), null, global::System.Data.MappingType.Element);
+                this.columnGoalsScoredPts = new global::System.Data.DataColumn("GoalsScoredPts", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnGoalsScoredPts);
-                this.columnValueSeason = new global::System.Data.DataColumn("ValueSeason", typeof(string), null, global::System.Data.MappingType.Element);
+                this.columnValueSeason = new global::System.Data.DataColumn("ValueSeason", typeof(double), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnValueSeason);
-                this.columnTransfersOutRnd = new global::System.Data.DataColumn("TransfersOutRnd", typeof(string), null, global::System.Data.MappingType.Element);
+                this.columnTransfersOutRnd = new global::System.Data.DataColumn("TransfersOutRnd", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnTransfersOutRnd);
-                this.columnPriceRise = new global::System.Data.DataColumn("PriceRise", typeof(string), null, global::System.Data.MappingType.Element);
+                this.columnPriceRise = new global::System.Data.DataColumn("PriceRise", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnPriceRise);
-                this.columnPriceFallRnd = new global::System.Data.DataColumn("PriceFallRnd", typeof(string), null, global::System.Data.MappingType.Element);
+                this.columnPriceFallRnd = new global::System.Data.DataColumn("PriceFallRnd", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnPriceFallRnd);
-                this.columnLstSeasonPts = new global::System.Data.DataColumn("LstSeasonPts", typeof(string), null, global::System.Data.MappingType.Element);
+                this.columnLstSeasonPts = new global::System.Data.DataColumn("LstSeasonPts", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnLstSeasonPts);
-                this.columnPriceFall = new global::System.Data.DataColumn("PriceFall", typeof(string), null, global::System.Data.MappingType.Element);
+                this.columnPriceFall = new global::System.Data.DataColumn("PriceFall", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnPriceFall);
-                this.columnValueForm = new global::System.Data.DataColumn("ValueForm", typeof(string), null, global::System.Data.MappingType.Element);
+                this.columnValueForm = new global::System.Data.DataColumn("ValueForm", typeof(double), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnValueForm);
-                this.columnPenaltiesMissed = new global::System.Data.DataColumn("PenaltiesMissed", typeof(string), null, global::System.Data.MappingType.Element);
+                this.columnPenaltiesMissed = new global::System.Data.DataColumn("PenaltiesMissed", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnPenaltiesMissed);
-                this.columnForm = new global::System.Data.DataColumn("Form", typeof(string), null, global::System.Data.MappingType.Element);
+                this.columnForm = new global::System.Data.DataColumn("Form", typeof(double), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnForm);
-                this.columnBonus = new global::System.Data.DataColumn("Bonus", typeof(string), null, global::System.Data.MappingType.Element);
+                this.columnBonus = new global::System.Data.DataColumn("Bonus", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnBonus);
-                this.columnFanRating = new global::System.Data.DataColumn("FanRating", typeof(string), null, global::System.Data.MappingType.Element);
+                this.columnFanRating = new global::System.Data.DataColumn("FanRating", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnFanRating);
-                this.columnCleanSheets = new global::System.Data.DataColumn("CleanSheets", typeof(string), null, global::System.Data.MappingType.Element);
+                this.columnCleanSheets = new global::System.Data.DataColumn("CleanSheets", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnCleanSheets);
-                this.columnCleansheetsPts = new global::System.Data.DataColumn("CleansheetsPts", typeof(string), null, global::System.Data.MappingType.Element);
+                this.columnCleansheetsPts = new global::System.Data.DataColumn("CleansheetsPts", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnCleansheetsPts);
                 this.columnAssists = new global::System.Data.DataColumn("Assists", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnAssists);
-                this.columnSelectedByPcent = new global::System.Data.DataColumn("SelectedByPcent", typeof(string), null, global::System.Data.MappingType.Element);
+                this.columnSelectedByPcent = new global::System.Data.DataColumn("SelectedByPcent", typeof(double), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnSelectedByPcent);
-                this.columnTransfersIn = new global::System.Data.DataColumn("TransfersIn", typeof(string), null, global::System.Data.MappingType.Element);
+                this.columnTransfersIn = new global::System.Data.DataColumn("TransfersIn", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnTransfersIn);
-                this.columnOwnGoals = new global::System.Data.DataColumn("OwnGoals", typeof(string), null, global::System.Data.MappingType.Element);
+                this.columnOwnGoals = new global::System.Data.DataColumn("OwnGoals", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnOwnGoals);
-                this.columnEAIndex = new global::System.Data.DataColumn("EAIndex", typeof(string), null, global::System.Data.MappingType.Element);
+                this.columnEAIndex = new global::System.Data.DataColumn("EAIndex", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnEAIndex);
-                this.columnPenaltiesSaved = new global::System.Data.DataColumn("PenaltiesSaved", typeof(string), null, global::System.Data.MappingType.Element);
+                this.columnPenaltiesSaved = new global::System.Data.DataColumn("PenaltiesSaved", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnPenaltiesSaved);
-                this.columnDreamTeamCount = new global::System.Data.DataColumn("DreamTeamCount", typeof(string), null, global::System.Data.MappingType.Element);
+                this.columnDreamTeamCount = new global::System.Data.DataColumn("DreamTeamCount", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnDreamTeamCount);
-                this.columnMinutesPlayed = new global::System.Data.DataColumn("MinutesPlayed", typeof(string), null, global::System.Data.MappingType.Element);
+                this.columnMinutesPlayed = new global::System.Data.DataColumn("MinutesPlayed", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnMinutesPlayed);
-                this.columnTransfersInRound = new global::System.Data.DataColumn("TransfersInRound", typeof(string), null, global::System.Data.MappingType.Element);
+                this.columnTransfersInRound = new global::System.Data.DataColumn("TransfersInRound", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnTransfersInRound);
-                this.columnPriceRiseRound = new global::System.Data.DataColumn("PriceRiseRound", typeof(string), null, global::System.Data.MappingType.Element);
+                this.columnPriceRiseRound = new global::System.Data.DataColumn("PriceRiseRound", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnPriceRiseRound);
-                this.columnRedCards = new global::System.Data.DataColumn("RedCards", typeof(string), null, global::System.Data.MappingType.Element);
+                this.columnRedCards = new global::System.Data.DataColumn("RedCards", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnRedCards);
-                this.columnBPS = new global::System.Data.DataColumn("BPS", typeof(string), null, global::System.Data.MappingType.Element);
+                this.columnBPS = new global::System.Data.DataColumn("BPS", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnBPS);
                 this.columnNextFixture1 = new global::System.Data.DataColumn("NextFixture1", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnNextFixture1);
@@ -1114,6 +1114,7 @@ namespace WindowsFormFantasyFootball {
                 base.Columns.Add(this.columnNextFixture4);
                 this.columnNextFixture5 = new global::System.Data.DataColumn("NextFixture5", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnNextFixture5);
+                this.columnFirstName.Caption = "First Name";
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1320,10 +1321,10 @@ namespace WindowsFormFantasyFootball {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string Cost {
+            public int Cost {
                 get {
                     try {
-                        return ((string)(this[this.tableFootballers.CostColumn]));
+                        return ((int)(this[this.tableFootballers.CostColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("The value for column \'Cost\' in table \'Footballers\' is DBNull.", e);
@@ -1336,10 +1337,10 @@ namespace WindowsFormFantasyFootball {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string PointsLstRnd {
+            public int PointsLstRnd {
                 get {
                     try {
-                        return ((string)(this[this.tableFootballers.PointsLstRndColumn]));
+                        return ((int)(this[this.tableFootballers.PointsLstRndColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("The value for column \'PointsLstRnd\' in table \'Footballers\' is DBNull.", e);
@@ -1352,10 +1353,10 @@ namespace WindowsFormFantasyFootball {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string TotalPoints {
+            public int TotalPoints {
                 get {
                     try {
-                        return ((string)(this[this.tableFootballers.TotalPointsColumn]));
+                        return ((int)(this[this.tableFootballers.TotalPointsColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("The value for column \'TotalPoints\' in table \'Footballers\' is DBNull.", e);
@@ -1368,10 +1369,10 @@ namespace WindowsFormFantasyFootball {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string AveragePoints {
+            public double AveragePoints {
                 get {
                     try {
-                        return ((string)(this[this.tableFootballers.AveragePointsColumn]));
+                        return ((double)(this[this.tableFootballers.AveragePointsColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("The value for column \'AveragePoints\' in table \'Footballers\' is DBNull.", e);
@@ -1384,26 +1385,26 @@ namespace WindowsFormFantasyFootball {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string AvgPointsDollar {
+            public double AvgPointsPound {
                 get {
                     try {
-                        return ((string)(this[this.tableFootballers.AvgPointsDollarColumn]));
+                        return ((double)(this[this.tableFootballers.AvgPointsPoundColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'AvgPointsDollar\' in table \'Footballers\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'AvgPointsPound\' in table \'Footballers\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableFootballers.AvgPointsDollarColumn] = value;
+                    this[this.tableFootballers.AvgPointsPoundColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string TotPointsDollar {
+            public double TotPointsDollar {
                 get {
                     try {
-                        return ((string)(this[this.tableFootballers.TotPointsDollarColumn]));
+                        return ((double)(this[this.tableFootballers.TotPointsDollarColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("The value for column \'TotPointsDollar\' in table \'Footballers\' is DBNull.", e);
@@ -1416,10 +1417,10 @@ namespace WindowsFormFantasyFootball {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string WeekWeighting {
+            public int WeekWeighting {
                 get {
                     try {
-                        return ((string)(this[this.tableFootballers.WeekWeightingColumn]));
+                        return ((int)(this[this.tableFootballers.WeekWeightingColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("The value for column \'WeekWeighting\' in table \'Footballers\' is DBNull.", e);
@@ -1432,10 +1433,10 @@ namespace WindowsFormFantasyFootball {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string TransfersOut {
+            public int TransfersOut {
                 get {
                     try {
-                        return ((string)(this[this.tableFootballers.TransfersOutColumn]));
+                        return ((int)(this[this.tableFootballers.TransfersOutColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("The value for column \'TransfersOut\' in table \'Footballers\' is DBNull.", e);
@@ -1448,10 +1449,10 @@ namespace WindowsFormFantasyFootball {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string YellowCards {
+            public int YellowCards {
                 get {
                     try {
-                        return ((string)(this[this.tableFootballers.YellowCardsColumn]));
+                        return ((int)(this[this.tableFootballers.YellowCardsColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("The value for column \'YellowCards\' in table \'Footballers\' is DBNull.", e);
@@ -1464,10 +1465,10 @@ namespace WindowsFormFantasyFootball {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string GoalsConceded {
+            public int GoalsConceded {
                 get {
                     try {
-                        return ((string)(this[this.tableFootballers.GoalsConcededColumn]));
+                        return ((int)(this[this.tableFootballers.GoalsConcededColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("The value for column \'GoalsConceded\' in table \'Footballers\' is DBNull.", e);
@@ -1480,10 +1481,10 @@ namespace WindowsFormFantasyFootball {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string GoalsConcededPts {
+            public int GoalsConcededPts {
                 get {
                     try {
-                        return ((string)(this[this.tableFootballers.GoalsConcededPtsColumn]));
+                        return ((int)(this[this.tableFootballers.GoalsConcededPtsColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("The value for column \'GoalsConcededPts\' in table \'Footballers\' is DBNull.", e);
@@ -1496,10 +1497,10 @@ namespace WindowsFormFantasyFootball {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string Saves {
+            public int Saves {
                 get {
                     try {
-                        return ((string)(this[this.tableFootballers.SavesColumn]));
+                        return ((int)(this[this.tableFootballers.SavesColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("The value for column \'Saves\' in table \'Footballers\' is DBNull.", e);
@@ -1512,10 +1513,10 @@ namespace WindowsFormFantasyFootball {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string SavesPts {
+            public int SavesPts {
                 get {
                     try {
-                        return ((string)(this[this.tableFootballers.SavesPtsColumn]));
+                        return ((int)(this[this.tableFootballers.SavesPtsColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("The value for column \'SavesPts\' in table \'Footballers\' is DBNull.", e);
@@ -1528,10 +1529,10 @@ namespace WindowsFormFantasyFootball {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string GoalsScored {
+            public int GoalsScored {
                 get {
                     try {
-                        return ((string)(this[this.tableFootballers.GoalsScoredColumn]));
+                        return ((int)(this[this.tableFootballers.GoalsScoredColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("The value for column \'GoalsScored\' in table \'Footballers\' is DBNull.", e);
@@ -1544,10 +1545,10 @@ namespace WindowsFormFantasyFootball {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string GoalsScoredPts {
+            public int GoalsScoredPts {
                 get {
                     try {
-                        return ((string)(this[this.tableFootballers.GoalsScoredPtsColumn]));
+                        return ((int)(this[this.tableFootballers.GoalsScoredPtsColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("The value for column \'GoalsScoredPts\' in table \'Footballers\' is DBNull.", e);
@@ -1560,10 +1561,10 @@ namespace WindowsFormFantasyFootball {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string ValueSeason {
+            public double ValueSeason {
                 get {
                     try {
-                        return ((string)(this[this.tableFootballers.ValueSeasonColumn]));
+                        return ((double)(this[this.tableFootballers.ValueSeasonColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("The value for column \'ValueSeason\' in table \'Footballers\' is DBNull.", e);
@@ -1576,10 +1577,10 @@ namespace WindowsFormFantasyFootball {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string TransfersOutRnd {
+            public int TransfersOutRnd {
                 get {
                     try {
-                        return ((string)(this[this.tableFootballers.TransfersOutRndColumn]));
+                        return ((int)(this[this.tableFootballers.TransfersOutRndColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("The value for column \'TransfersOutRnd\' in table \'Footballers\' is DBNull.", e);
@@ -1592,10 +1593,10 @@ namespace WindowsFormFantasyFootball {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string PriceRise {
+            public int PriceRise {
                 get {
                     try {
-                        return ((string)(this[this.tableFootballers.PriceRiseColumn]));
+                        return ((int)(this[this.tableFootballers.PriceRiseColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("The value for column \'PriceRise\' in table \'Footballers\' is DBNull.", e);
@@ -1608,10 +1609,10 @@ namespace WindowsFormFantasyFootball {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string PriceFallRnd {
+            public int PriceFallRnd {
                 get {
                     try {
-                        return ((string)(this[this.tableFootballers.PriceFallRndColumn]));
+                        return ((int)(this[this.tableFootballers.PriceFallRndColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("The value for column \'PriceFallRnd\' in table \'Footballers\' is DBNull.", e);
@@ -1624,10 +1625,10 @@ namespace WindowsFormFantasyFootball {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string LstSeasonPts {
+            public int LstSeasonPts {
                 get {
                     try {
-                        return ((string)(this[this.tableFootballers.LstSeasonPtsColumn]));
+                        return ((int)(this[this.tableFootballers.LstSeasonPtsColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("The value for column \'LstSeasonPts\' in table \'Footballers\' is DBNull.", e);
@@ -1640,10 +1641,10 @@ namespace WindowsFormFantasyFootball {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string PriceFall {
+            public int PriceFall {
                 get {
                     try {
-                        return ((string)(this[this.tableFootballers.PriceFallColumn]));
+                        return ((int)(this[this.tableFootballers.PriceFallColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("The value for column \'PriceFall\' in table \'Footballers\' is DBNull.", e);
@@ -1656,10 +1657,10 @@ namespace WindowsFormFantasyFootball {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string ValueForm {
+            public double ValueForm {
                 get {
                     try {
-                        return ((string)(this[this.tableFootballers.ValueFormColumn]));
+                        return ((double)(this[this.tableFootballers.ValueFormColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("The value for column \'ValueForm\' in table \'Footballers\' is DBNull.", e);
@@ -1672,10 +1673,10 @@ namespace WindowsFormFantasyFootball {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string PenaltiesMissed {
+            public int PenaltiesMissed {
                 get {
                     try {
-                        return ((string)(this[this.tableFootballers.PenaltiesMissedColumn]));
+                        return ((int)(this[this.tableFootballers.PenaltiesMissedColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("The value for column \'PenaltiesMissed\' in table \'Footballers\' is DBNull.", e);
@@ -1688,10 +1689,10 @@ namespace WindowsFormFantasyFootball {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string Form {
+            public double Form {
                 get {
                     try {
-                        return ((string)(this[this.tableFootballers.FormColumn]));
+                        return ((double)(this[this.tableFootballers.FormColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("The value for column \'Form\' in table \'Footballers\' is DBNull.", e);
@@ -1704,10 +1705,10 @@ namespace WindowsFormFantasyFootball {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string Bonus {
+            public int Bonus {
                 get {
                     try {
-                        return ((string)(this[this.tableFootballers.BonusColumn]));
+                        return ((int)(this[this.tableFootballers.BonusColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("The value for column \'Bonus\' in table \'Footballers\' is DBNull.", e);
@@ -1720,10 +1721,10 @@ namespace WindowsFormFantasyFootball {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string FanRating {
+            public int FanRating {
                 get {
                     try {
-                        return ((string)(this[this.tableFootballers.FanRatingColumn]));
+                        return ((int)(this[this.tableFootballers.FanRatingColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("The value for column \'FanRating\' in table \'Footballers\' is DBNull.", e);
@@ -1736,10 +1737,10 @@ namespace WindowsFormFantasyFootball {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string CleanSheets {
+            public int CleanSheets {
                 get {
                     try {
-                        return ((string)(this[this.tableFootballers.CleanSheetsColumn]));
+                        return ((int)(this[this.tableFootballers.CleanSheetsColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("The value for column \'CleanSheets\' in table \'Footballers\' is DBNull.", e);
@@ -1752,10 +1753,10 @@ namespace WindowsFormFantasyFootball {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string CleansheetsPts {
+            public int CleansheetsPts {
                 get {
                     try {
-                        return ((string)(this[this.tableFootballers.CleansheetsPtsColumn]));
+                        return ((int)(this[this.tableFootballers.CleansheetsPtsColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("The value for column \'CleansheetsPts\' in table \'Footballers\' is DBNull.", e);
@@ -1784,10 +1785,10 @@ namespace WindowsFormFantasyFootball {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string SelectedByPcent {
+            public double SelectedByPcent {
                 get {
                     try {
-                        return ((string)(this[this.tableFootballers.SelectedByPcentColumn]));
+                        return ((double)(this[this.tableFootballers.SelectedByPcentColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("The value for column \'SelectedByPcent\' in table \'Footballers\' is DBNull.", e);
@@ -1800,10 +1801,10 @@ namespace WindowsFormFantasyFootball {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string TransfersIn {
+            public int TransfersIn {
                 get {
                     try {
-                        return ((string)(this[this.tableFootballers.TransfersInColumn]));
+                        return ((int)(this[this.tableFootballers.TransfersInColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("The value for column \'TransfersIn\' in table \'Footballers\' is DBNull.", e);
@@ -1816,10 +1817,10 @@ namespace WindowsFormFantasyFootball {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string OwnGoals {
+            public int OwnGoals {
                 get {
                     try {
-                        return ((string)(this[this.tableFootballers.OwnGoalsColumn]));
+                        return ((int)(this[this.tableFootballers.OwnGoalsColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("The value for column \'OwnGoals\' in table \'Footballers\' is DBNull.", e);
@@ -1832,10 +1833,10 @@ namespace WindowsFormFantasyFootball {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string EAIndex {
+            public int EAIndex {
                 get {
                     try {
-                        return ((string)(this[this.tableFootballers.EAIndexColumn]));
+                        return ((int)(this[this.tableFootballers.EAIndexColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("The value for column \'EAIndex\' in table \'Footballers\' is DBNull.", e);
@@ -1848,10 +1849,10 @@ namespace WindowsFormFantasyFootball {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string PenaltiesSaved {
+            public int PenaltiesSaved {
                 get {
                     try {
-                        return ((string)(this[this.tableFootballers.PenaltiesSavedColumn]));
+                        return ((int)(this[this.tableFootballers.PenaltiesSavedColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("The value for column \'PenaltiesSaved\' in table \'Footballers\' is DBNull.", e);
@@ -1864,10 +1865,10 @@ namespace WindowsFormFantasyFootball {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string DreamTeamCount {
+            public int DreamTeamCount {
                 get {
                     try {
-                        return ((string)(this[this.tableFootballers.DreamTeamCountColumn]));
+                        return ((int)(this[this.tableFootballers.DreamTeamCountColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("The value for column \'DreamTeamCount\' in table \'Footballers\' is DBNull.", e);
@@ -1880,10 +1881,10 @@ namespace WindowsFormFantasyFootball {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string MinutesPlayed {
+            public int MinutesPlayed {
                 get {
                     try {
-                        return ((string)(this[this.tableFootballers.MinutesPlayedColumn]));
+                        return ((int)(this[this.tableFootballers.MinutesPlayedColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("The value for column \'MinutesPlayed\' in table \'Footballers\' is DBNull.", e);
@@ -1896,10 +1897,10 @@ namespace WindowsFormFantasyFootball {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string TransfersInRound {
+            public int TransfersInRound {
                 get {
                     try {
-                        return ((string)(this[this.tableFootballers.TransfersInRoundColumn]));
+                        return ((int)(this[this.tableFootballers.TransfersInRoundColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("The value for column \'TransfersInRound\' in table \'Footballers\' is DBNull.", e);
@@ -1912,10 +1913,10 @@ namespace WindowsFormFantasyFootball {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string PriceRiseRound {
+            public int PriceRiseRound {
                 get {
                     try {
-                        return ((string)(this[this.tableFootballers.PriceRiseRoundColumn]));
+                        return ((int)(this[this.tableFootballers.PriceRiseRoundColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("The value for column \'PriceRiseRound\' in table \'Footballers\' is DBNull.", e);
@@ -1928,10 +1929,10 @@ namespace WindowsFormFantasyFootball {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string RedCards {
+            public int RedCards {
                 get {
                     try {
-                        return ((string)(this[this.tableFootballers.RedCardsColumn]));
+                        return ((int)(this[this.tableFootballers.RedCardsColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("The value for column \'RedCards\' in table \'Footballers\' is DBNull.", e);
@@ -1944,10 +1945,10 @@ namespace WindowsFormFantasyFootball {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string BPS {
+            public int BPS {
                 get {
                     try {
-                        return ((string)(this[this.tableFootballers.BPSColumn]));
+                        return ((int)(this[this.tableFootballers.BPSColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("The value for column \'BPS\' in table \'Footballers\' is DBNull.", e);
@@ -2136,14 +2137,14 @@ namespace WindowsFormFantasyFootball {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsAvgPointsDollarNull() {
-                return this.IsNull(this.tableFootballers.AvgPointsDollarColumn);
+            public bool IsAvgPointsPoundNull() {
+                return this.IsNull(this.tableFootballers.AvgPointsPoundColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetAvgPointsDollarNull() {
-                this[this.tableFootballers.AvgPointsDollarColumn] = global::System.Convert.DBNull;
+            public void SetAvgPointsPoundNull() {
+                this[this.tableFootballers.AvgPointsPoundColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]

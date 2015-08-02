@@ -42,7 +42,7 @@
                     row.PointsLstRnd = footballer.PointsLstRnd;
                     row.TotalPoints = footballer.TotalPoints;
                     row.AveragePoints = footballer.AveragePoints;
-                    row.AvgPointsDollar = footballer.AvgPointsDollar;
+                    row.AvgPointsPound = footballer.AvgPointsDollar;
                     row.TotPointsDollar = footballer.TotPointsDollar;
                     row.WeekWeighting = footballer.WeekWeighting;
                     row.TransfersOut = footballer.TransfersOut;
@@ -53,6 +53,7 @@
                     row.SavesPts = footballer.SavesPts;
                     row.GoalsScored = footballer.GoalsScored;
                     row.GoalsScoredPts = footballer.GoalsScoredPts;
+                    row.ValueSeason = footballer.ValueSeason;
                     row.TransfersOutRnd = footballer.TransfersOutRnd;
                     row.PriceRise = footballer.PriceRise;
                     row.PriceFallRnd = footballer.PriceFallRnd;

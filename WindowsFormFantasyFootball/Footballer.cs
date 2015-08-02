@@ -9,46 +9,46 @@
         public string Surname { set; get; }
         public string Position { set; get; }
         public string Team { set; get; }
-        public string Cost { set; get; }
-        public string PointsLstRnd { set; get; }
-        public string TotalPoints { set; get; }
-        public string AveragePoints { set; get; }
-        public string AvgPointsDollar { set; get; }
-        public string TotPointsDollar { set; get; }
-        public string WeekWeighting { set; get; }
-        public string TransfersOut { set; get; }
-        public string YellowCards { set; get; }
-        public string GoalsConceded { set; get; }
-        public string GoalsConcededPts { set; get; }
-        public string Saves { set; get; }
-        public string SavesPts { set; get; }
-        public string GoalsScored { set; get; }
-        public string GoalsScoredPts { set; get; }
-        public string ValueSeason { set; get; }
-        public string TransfersOutRnd { set; get; }
-        public string PriceRise { set; get; }
-        public string PriceFallRnd { set; get; }
-        public string LstSeasonPts { set; get; }
-        public string PriceFall { set; get; }
-        public string ValueForm { set; get; }
-        public string PenaltiesMissed { set; get; }
-        public string Form { set; get; }
-        public string Bonus { set; get; }
-        public string FanRating { set; get; }
-        public string CleanSheets { set; get; }
-        public string CleansheetsPts { set; get; }
-        public int Assists { set; get; }
-        public string SelectedByPcent { set; get; }
-        public string TransfersIn { set; get; }
-        public string OwnGoals { set; get; }
-        public string EAIndex { set; get; }
-        public string PenaltiesSaved { set; get; }
-        public string DreamTeamCount { set; get; }
-        public string MinutesPlayed { set; get; }
-        public string TransfersInRound { set; get; }
-        public string PriceRiseRound { set; get; }
-        public string RedCards { set; get; }
-        public string BPS { set; get; }
+        public int    Cost { set; get; }
+        public int    PointsLstRnd { set; get; }
+        public int    TotalPoints { set; get; }
+        public float  AveragePoints { set; get; }
+        public float  AvgPointsDollar { set; get; }
+        public float  TotPointsDollar { set; get; }
+        public int    WeekWeighting { set; get; }
+        public int    TransfersOut { set; get; }
+        public int    YellowCards { set; get; }
+        public int    GoalsConceded { set; get; }
+        public int    GoalsConcededPts { set; get; }
+        public int    Saves { set; get; }
+        public int    SavesPts { set; get; }
+        public int    GoalsScored { set; get; }
+        public int    GoalsScoredPts { set; get; }
+        public float  ValueSeason { set; get; }
+        public int    TransfersOutRnd { set; get; }
+        public int    PriceRise { set; get; }
+        public int    PriceFallRnd { set; get; }
+        public int    LstSeasonPts { set; get; }
+        public int    PriceFall { set; get; }
+        public float  ValueForm { set; get; }
+        public int    PenaltiesMissed { set; get; }
+        public float  Form { set; get; }
+        public int    Bonus { set; get; }
+        public int    FanRating { set; get; }
+        public int    CleanSheets { set; get; }
+        public int    CleansheetsPts { set; get; }
+        public int    Assists { set; get; }
+        public float  SelectedByPcent { set; get; }
+        public int    TransfersIn { set; get; }
+        public int    OwnGoals { set; get; }
+        public int    EAIndex { set; get; }
+        public int    PenaltiesSaved { set; get; }
+        public int    DreamTeamCount { set; get; }
+        public int    MinutesPlayed { set; get; }
+        public int    TransfersInRound { set; get; }
+        public int    PriceRiseRound { set; get; }
+        public int    RedCards { set; get; }
+        public int    BPS { set; get; }
         public string NextFixture1 { set; get; }
         public string NextFixture2 { set; get; }
         public string NextFixture3 { set; get; }
@@ -74,46 +74,46 @@
                 data.Surname = values[1];
                 data.Position = values[2];
                 data.Team = values[3];
-                data.Cost = values[4];
-                data.PointsLstRnd = values[5];
-                data.TotalPoints = values[6];
-                data.AveragePoints = values[7];
-                data.AvgPointsDollar = values[8];
-                data.TotPointsDollar = values[9];
-                data.WeekWeighting = values[10];
-                data.TransfersOut = values[11];
-                data.YellowCards = values[12];
-                data.GoalsConceded = values[13];
-                data.GoalsConcededPts = values[14];
-                data.Saves = values[15];
-                data.SavesPts = values[16];
-                data.GoalsScored = values[17];
-                data.GoalsScoredPts = values[18];
-                data.ValueSeason = values[19];
-                data.TransfersOutRnd = values[20];
-                data.PriceRise = values[21];
-                data.PriceFallRnd = values[22];
-                data.LstSeasonPts = values[23];
-                data.PriceFall = values[24];
-                data.ValueForm = values[25];
-                data.PenaltiesMissed = values[26];
-                data.Form = values[27];
-                data.Bonus = values[28];
-                data.FanRating = values[29];
-                data.CleanSheets = values[30];
-                data.CleansheetsPts = values[31];
+                data.Cost = int.Parse(values[4]);
+                data.PointsLstRnd = int.Parse(values[5]);
+                data.TotalPoints = int.Parse(values[6]);
+                data.AveragePoints = float.Parse(values[7]);
+                data.AvgPointsDollar = float.Parse(values[8]);
+                data.TotPointsDollar = float.Parse(values[9]);
+                data.WeekWeighting = int.Parse(values[10]);
+                data.TransfersOut = int.Parse(values[11]);
+                data.YellowCards = int.Parse(values[12]);
+                data.GoalsConceded = int.Parse(values[13]);
+                data.GoalsConcededPts = int.Parse(values[14]);
+                data.Saves = int.Parse(values[15]);
+                data.SavesPts = int.Parse(values[16]);
+                data.GoalsScored = int.Parse(values[17]);
+                data.GoalsScoredPts = int.Parse(values[18]);
+                data.ValueSeason = float.Parse(values[19]);
+                data.TransfersOutRnd = int.Parse(values[20]);
+                data.PriceRise = int.Parse(values[21]);
+                data.PriceFallRnd = int.Parse(values[22]);
+                data.LstSeasonPts = int.Parse(values[23]);
+                data.PriceFall = int.Parse(values[24]);
+                data.ValueForm = float.Parse(values[25]);
+                data.PenaltiesMissed = int.Parse(values[26]);
+                data.Form = float.Parse(values[27]);
+                data.Bonus = int.Parse(values[28]);
+                data.FanRating = int.Parse(values[29]);
+                data.CleanSheets = int.Parse(values[30]);
+                data.CleansheetsPts = int.Parse(values[31]);
                 data.Assists = int.Parse(values[32]);
-                data.SelectedByPcent = values[33];
-                data.TransfersIn = values[34];
-                data.OwnGoals = values[35];
-                data.EAIndex = values[36];
-                data.PenaltiesSaved = values[37];
-                data.DreamTeamCount = values[38];
-                data.MinutesPlayed = values[39];
-                data.TransfersInRound = values[40];
-                data.PriceRiseRound = values[41];
-                data.RedCards = values[42];
-                data.BPS = values[43];
+                data.SelectedByPcent = float.Parse(values[33]);
+                data.TransfersIn = int.Parse(values[34]);
+                data.OwnGoals = int.Parse(values[35]);
+                data.EAIndex = int.Parse(values[36]);
+                data.PenaltiesSaved = int.Parse(values[37]);
+                data.DreamTeamCount = int.Parse(values[38]);
+                data.MinutesPlayed = int.Parse(values[39]);
+                data.TransfersInRound = int.Parse(values[40]);
+                data.PriceRiseRound = int.Parse(values[41]);
+                data.RedCards = int.Parse(values[42]);
+                data.BPS = int.Parse(values[43]);
                 data.NextFixture1 = values[44];
                 data.NextFixture2 = values[45];
                 data.NextFixture3 = values[46];

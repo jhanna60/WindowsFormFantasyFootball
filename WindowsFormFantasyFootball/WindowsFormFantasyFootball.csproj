@@ -81,7 +81,6 @@
     <None Include="FootballersDataSet.xsd">
       <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>FootballersDataSet.Designer.cs</LastGenOutput>
     </None>
     <None Include="FootballersDataSet.xss">
       <DependentUpon>FootballersDataSet.xsd</DependentUpon>
