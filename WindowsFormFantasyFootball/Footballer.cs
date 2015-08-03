@@ -2,6 +2,7 @@
 {
     using System.Collections.Generic;
     using System.IO;
+    using System.Globalization;
 
     public class Footballer
     {
@@ -12,9 +13,9 @@
         public int    Cost { set; get; }
         public int    PointsLstRnd { set; get; }
         public int    TotalPoints { set; get; }
-        public float  AveragePoints { set; get; }
-        public float  AvgPointsDollar { set; get; }
-        public float  TotPointsDollar { set; get; }
+        public decimal  AveragePoints { set; get; }
+        public decimal  AvgPointsDollar { set; get; }
+        public decimal  TotPointsDollar { set; get; }
         public int    WeekWeighting { set; get; }
         public int    TransfersOut { set; get; }
         public int    YellowCards { set; get; }
@@ -77,9 +78,9 @@
                 data.Cost = int.Parse(values[4]);
                 data.PointsLstRnd = int.Parse(values[5]);
                 data.TotalPoints = int.Parse(values[6]);
-                data.AveragePoints = float.Parse(values[7]);
-                data.AvgPointsDollar = float.Parse(values[8]);
-                data.TotPointsDollar = float.Parse(values[9]);
+                data.AveragePoints = decimal.Parse(values[7],NumberStyles.Any);
+                data.AvgPointsDollar = (1000000 * decimal.Parse(values[8],NumberStyles.Any));
+                data.TotPointsDollar = (1000000 * decimal.Parse(values[9],NumberStyles.Any));
                 data.WeekWeighting = int.Parse(values[10]);
                 data.TransfersOut = int.Parse(values[11]);
                 data.YellowCards = int.Parse(values[12]);

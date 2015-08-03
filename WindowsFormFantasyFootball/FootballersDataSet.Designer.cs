@@ -297,7 +297,7 @@ namespace WindowsFormFantasyFootball {
             
             private global::System.Data.DataColumn columnAvgPointsPound;
             
-            private global::System.Data.DataColumn columnTotPointsDollar;
+            private global::System.Data.DataColumn columnTotPointsPound;
             
             private global::System.Data.DataColumn columnWeekWeighting;
             
@@ -484,9 +484,9 @@ namespace WindowsFormFantasyFootball {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn TotPointsDollarColumn {
+            public global::System.Data.DataColumn TotPointsPoundColumn {
                 get {
-                    return this.columnTotPointsDollar;
+                    return this.columnTotPointsPound;
                 }
             }
             
@@ -847,9 +847,9 @@ namespace WindowsFormFantasyFootball {
                         int Cost, 
                         int PointsLstRnd, 
                         int TotalPoints, 
-                        double AveragePoints, 
-                        double AvgPointsPound, 
-                        double TotPointsDollar, 
+                        decimal AveragePoints, 
+                        decimal AvgPointsPound, 
+                        decimal TotPointsPound, 
                         int WeekWeighting, 
                         int TransfersOut, 
                         int YellowCards, 
@@ -900,7 +900,7 @@ namespace WindowsFormFantasyFootball {
                         TotalPoints,
                         AveragePoints,
                         AvgPointsPound,
-                        TotPointsDollar,
+                        TotPointsPound,
                         WeekWeighting,
                         TransfersOut,
                         YellowCards,
@@ -971,7 +971,7 @@ namespace WindowsFormFantasyFootball {
                 this.columnTotalPoints = base.Columns["TotalPoints"];
                 this.columnAveragePoints = base.Columns["AveragePoints"];
                 this.columnAvgPointsPound = base.Columns["AvgPointsPound"];
-                this.columnTotPointsDollar = base.Columns["TotPointsDollar"];
+                this.columnTotPointsPound = base.Columns["TotPointsPound"];
                 this.columnWeekWeighting = base.Columns["WeekWeighting"];
                 this.columnTransfersOut = base.Columns["TransfersOut"];
                 this.columnYellowCards = base.Columns["YellowCards"];
@@ -1030,12 +1030,12 @@ namespace WindowsFormFantasyFootball {
                 base.Columns.Add(this.columnPointsLstRnd);
                 this.columnTotalPoints = new global::System.Data.DataColumn("TotalPoints", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnTotalPoints);
-                this.columnAveragePoints = new global::System.Data.DataColumn("AveragePoints", typeof(double), null, global::System.Data.MappingType.Element);
+                this.columnAveragePoints = new global::System.Data.DataColumn("AveragePoints", typeof(decimal), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnAveragePoints);
-                this.columnAvgPointsPound = new global::System.Data.DataColumn("AvgPointsPound", typeof(double), null, global::System.Data.MappingType.Element);
+                this.columnAvgPointsPound = new global::System.Data.DataColumn("AvgPointsPound", typeof(decimal), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnAvgPointsPound);
-                this.columnTotPointsDollar = new global::System.Data.DataColumn("TotPointsDollar", typeof(double), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnTotPointsDollar);
+                this.columnTotPointsPound = new global::System.Data.DataColumn("TotPointsPound", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnTotPointsPound);
                 this.columnWeekWeighting = new global::System.Data.DataColumn("WeekWeighting", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnWeekWeighting);
                 this.columnTransfersOut = new global::System.Data.DataColumn("TransfersOut", typeof(int), null, global::System.Data.MappingType.Element);
@@ -1369,10 +1369,10 @@ namespace WindowsFormFantasyFootball {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public double AveragePoints {
+            public decimal AveragePoints {
                 get {
                     try {
-                        return ((double)(this[this.tableFootballers.AveragePointsColumn]));
+                        return ((decimal)(this[this.tableFootballers.AveragePointsColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("The value for column \'AveragePoints\' in table \'Footballers\' is DBNull.", e);
@@ -1385,10 +1385,10 @@ namespace WindowsFormFantasyFootball {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public double AvgPointsPound {
+            public decimal AvgPointsPound {
                 get {
                     try {
-                        return ((double)(this[this.tableFootballers.AvgPointsPoundColumn]));
+                        return ((decimal)(this[this.tableFootballers.AvgPointsPoundColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("The value for column \'AvgPointsPound\' in table \'Footballers\' is DBNull.", e);
@@ -1401,17 +1401,17 @@ namespace WindowsFormFantasyFootball {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public double TotPointsDollar {
+            public decimal TotPointsPound {
                 get {
                     try {
-                        return ((double)(this[this.tableFootballers.TotPointsDollarColumn]));
+                        return ((decimal)(this[this.tableFootballers.TotPointsPoundColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'TotPointsDollar\' in table \'Footballers\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'TotPointsPound\' in table \'Footballers\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableFootballers.TotPointsDollarColumn] = value;
+                    this[this.tableFootballers.TotPointsPoundColumn] = value;
                 }
             }
             
@@ -2149,14 +2149,14 @@ namespace WindowsFormFantasyFootball {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsTotPointsDollarNull() {
-                return this.IsNull(this.tableFootballers.TotPointsDollarColumn);
+            public bool IsTotPointsPoundNull() {
+                return this.IsNull(this.tableFootballers.TotPointsPoundColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetTotPointsDollarNull() {
-                this[this.tableFootballers.TotPointsDollarColumn] = global::System.Convert.DBNull;
+            public void SetTotPointsPoundNull() {
+                this[this.tableFootballers.TotPointsPoundColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]

@@ -43,7 +43,7 @@
                     row.TotalPoints = footballer.TotalPoints;
                     row.AveragePoints = footballer.AveragePoints;
                     row.AvgPointsPound = footballer.AvgPointsDollar;
-                    row.TotPointsDollar = footballer.TotPointsDollar;
+                    row.TotPointsPound = footballer.TotPointsDollar;
                     row.WeekWeighting = footballer.WeekWeighting;
                     row.TransfersOut = footballer.TransfersOut;
                     row.YellowCards = footballer.YellowCards;

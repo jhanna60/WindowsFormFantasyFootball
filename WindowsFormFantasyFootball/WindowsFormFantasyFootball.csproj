@@ -48,13 +48,13 @@
     <Compile Include="FootballersDataSet.cs">
       <DependentUpon>FootballersDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Data\FootballersRepository.cs" />
+    <Compile Include="Footballer.cs" />
     <Compile Include="FootballersDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>FootballersDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Data\FootballersRepository.cs" />
-    <Compile Include="Footballer.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -81,6 +81,7 @@
     <None Include="FootballersDataSet.xsd">
       <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FootballersDataSet.Designer.cs</LastGenOutput>
     </None>
     <None Include="FootballersDataSet.xss">
       <DependentUpon>FootballersDataSet.xsd</DependentUpon>
