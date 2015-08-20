@@ -53,6 +53,7 @@
             cboPositions.SelectedIndex = 0;
 
             dbgPlayers.DataSource = _footballersDataTable;
+            dbgPlayers.Columns["surname"].Frozen = true;
         }
 
         private void TeamComboBox_SelectedIndexChanged(object sender, EventArgs e)
