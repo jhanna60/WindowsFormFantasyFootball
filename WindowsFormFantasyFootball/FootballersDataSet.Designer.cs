@@ -299,71 +299,59 @@ namespace WindowsFormFantasyFootball {
             
             private global::System.Data.DataColumn columnTotPointsPound;
             
-            private global::System.Data.DataColumn columnWeekWeighting;
+            private global::System.Data.DataColumn columnGoalsScored;
+            
+            private global::System.Data.DataColumn columnAssists;
+            
+            private global::System.Data.DataColumn columnBonus;
+            
+            private global::System.Data.DataColumn columnTransfersIn;
+            
+            private global::System.Data.DataColumn columnTransfersInRound;
             
             private global::System.Data.DataColumn columnTransfersOut;
             
-            private global::System.Data.DataColumn columnYellowCards;
+            private global::System.Data.DataColumn columnTransfersOutRnd;
+            
+            private global::System.Data.DataColumn columnSelectedByPcent;
             
             private global::System.Data.DataColumn columnGoalsConceded;
             
-            private global::System.Data.DataColumn columnGoalsConcededPts;
-            
             private global::System.Data.DataColumn columnSaves;
             
-            private global::System.Data.DataColumn columnSavesPts;
-            
-            private global::System.Data.DataColumn columnGoalsScored;
-            
-            private global::System.Data.DataColumn columnGoalsScoredPts;
-            
-            private global::System.Data.DataColumn columnValueSeason;
-            
-            private global::System.Data.DataColumn columnTransfersOutRnd;
-            
             private global::System.Data.DataColumn columnPriceRise;
+            
+            private global::System.Data.DataColumn columnPriceRiseRound;
+            
+            private global::System.Data.DataColumn columnPriceFall;
             
             private global::System.Data.DataColumn columnPriceFallRnd;
             
             private global::System.Data.DataColumn columnLstSeasonPts;
             
-            private global::System.Data.DataColumn columnPriceFall;
+            private global::System.Data.DataColumn columnForm;
             
             private global::System.Data.DataColumn columnValueForm;
             
+            private global::System.Data.DataColumn columnValueSeason;
+            
             private global::System.Data.DataColumn columnPenaltiesMissed;
             
-            private global::System.Data.DataColumn columnForm;
-            
-            private global::System.Data.DataColumn columnBonus;
-            
-            private global::System.Data.DataColumn columnFanRating;
+            private global::System.Data.DataColumn columnPenaltiesSaved;
             
             private global::System.Data.DataColumn columnCleanSheets;
             
-            private global::System.Data.DataColumn columnCleansheetsPts;
-            
-            private global::System.Data.DataColumn columnAssists;
-            
-            private global::System.Data.DataColumn columnSelectedByPcent;
-            
-            private global::System.Data.DataColumn columnTransfersIn;
-            
             private global::System.Data.DataColumn columnOwnGoals;
-            
-            private global::System.Data.DataColumn columnEAIndex;
-            
-            private global::System.Data.DataColumn columnPenaltiesSaved;
             
             private global::System.Data.DataColumn columnDreamTeamCount;
             
             private global::System.Data.DataColumn columnMinutesPlayed;
             
-            private global::System.Data.DataColumn columnTransfersInRound;
-            
-            private global::System.Data.DataColumn columnPriceRiseRound;
+            private global::System.Data.DataColumn columnYellowCards;
             
             private global::System.Data.DataColumn columnRedCards;
+            
+            private global::System.Data.DataColumn columnEAIndex;
             
             private global::System.Data.DataColumn columnBPS;
             
@@ -492,9 +480,41 @@ namespace WindowsFormFantasyFootball {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn WeekWeightingColumn {
+            public global::System.Data.DataColumn GoalsScoredColumn {
                 get {
-                    return this.columnWeekWeighting;
+                    return this.columnGoalsScored;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn AssistsColumn {
+                get {
+                    return this.columnAssists;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn BonusColumn {
+                get {
+                    return this.columnBonus;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn TransfersInColumn {
+                get {
+                    return this.columnTransfersIn;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn TransfersInRoundColumn {
+                get {
+                    return this.columnTransfersInRound;
                 }
             }
             
@@ -508,9 +528,17 @@ namespace WindowsFormFantasyFootball {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn YellowCardsColumn {
+            public global::System.Data.DataColumn TransfersOutRndColumn {
                 get {
-                    return this.columnYellowCards;
+                    return this.columnTransfersOutRnd;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn SelectedByPcentColumn {
+                get {
+                    return this.columnSelectedByPcent;
                 }
             }
             
@@ -524,14 +552,6 @@ namespace WindowsFormFantasyFootball {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn GoalsConcededPtsColumn {
-                get {
-                    return this.columnGoalsConcededPts;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn SavesColumn {
                 get {
                     return this.columnSaves;
@@ -540,49 +560,25 @@ namespace WindowsFormFantasyFootball {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn SavesPtsColumn {
-                get {
-                    return this.columnSavesPts;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn GoalsScoredColumn {
-                get {
-                    return this.columnGoalsScored;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn GoalsScoredPtsColumn {
-                get {
-                    return this.columnGoalsScoredPts;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn ValueSeasonColumn {
-                get {
-                    return this.columnValueSeason;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn TransfersOutRndColumn {
-                get {
-                    return this.columnTransfersOutRnd;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn PriceRiseColumn {
                 get {
                     return this.columnPriceRise;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn PriceRiseRoundColumn {
+                get {
+                    return this.columnPriceRiseRound;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn PriceFallColumn {
+                get {
+                    return this.columnPriceFall;
                 }
             }
             
@@ -604,9 +600,9 @@ namespace WindowsFormFantasyFootball {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn PriceFallColumn {
+            public global::System.Data.DataColumn FormColumn {
                 get {
-                    return this.columnPriceFall;
+                    return this.columnForm;
                 }
             }
             
@@ -620,6 +616,14 @@ namespace WindowsFormFantasyFootball {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn ValueSeasonColumn {
+                get {
+                    return this.columnValueSeason;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn PenaltiesMissedColumn {
                 get {
                     return this.columnPenaltiesMissed;
@@ -628,25 +632,9 @@ namespace WindowsFormFantasyFootball {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn FormColumn {
+            public global::System.Data.DataColumn PenaltiesSavedColumn {
                 get {
-                    return this.columnForm;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn BonusColumn {
-                get {
-                    return this.columnBonus;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn FanRatingColumn {
-                get {
-                    return this.columnFanRating;
+                    return this.columnPenaltiesSaved;
                 }
             }
             
@@ -660,57 +648,9 @@ namespace WindowsFormFantasyFootball {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn CleansheetsPtsColumn {
-                get {
-                    return this.columnCleansheetsPts;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn AssistsColumn {
-                get {
-                    return this.columnAssists;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn SelectedByPcentColumn {
-                get {
-                    return this.columnSelectedByPcent;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn TransfersInColumn {
-                get {
-                    return this.columnTransfersIn;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn OwnGoalsColumn {
                 get {
                     return this.columnOwnGoals;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn EAIndexColumn {
-                get {
-                    return this.columnEAIndex;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn PenaltiesSavedColumn {
-                get {
-                    return this.columnPenaltiesSaved;
                 }
             }
             
@@ -732,17 +672,9 @@ namespace WindowsFormFantasyFootball {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn TransfersInRoundColumn {
+            public global::System.Data.DataColumn YellowCardsColumn {
                 get {
-                    return this.columnTransfersInRound;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn PriceRiseRoundColumn {
-                get {
-                    return this.columnPriceRiseRound;
+                    return this.columnYellowCards;
                 }
             }
             
@@ -751,6 +683,14 @@ namespace WindowsFormFantasyFootball {
             public global::System.Data.DataColumn RedCardsColumn {
                 get {
                     return this.columnRedCards;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn EAIndexColumn {
+                get {
+                    return this.columnEAIndex;
                 }
             }
             
@@ -850,39 +790,33 @@ namespace WindowsFormFantasyFootball {
                         decimal AveragePoints, 
                         decimal AvgPointsPound, 
                         decimal TotPointsPound, 
-                        int WeekWeighting, 
-                        int TransfersOut, 
-                        int YellowCards, 
-                        int GoalsConceded, 
-                        int GoalsConcededPts, 
-                        int Saves, 
-                        int SavesPts, 
                         int GoalsScored, 
-                        int GoalsScoredPts, 
-                        double ValueSeason, 
+                        int Assists, 
+                        int Bonus, 
+                        int TransfersIn, 
+                        int TransfersInRound, 
+                        int TransfersOut, 
                         int TransfersOutRnd, 
+                        double SelectedByPcent, 
+                        int GoalsConceded, 
+                        int Saves, 
                         int PriceRise, 
+                        int PriceRiseRound, 
+                        int PriceFall, 
                         int PriceFallRnd, 
                         int LstSeasonPts, 
-                        int PriceFall, 
-                        double ValueForm, 
-                        int PenaltiesMissed, 
                         double Form, 
-                        int Bonus, 
-                        int FanRating, 
-                        int CleanSheets, 
-                        int CleansheetsPts, 
-                        int Assists, 
-                        double SelectedByPcent, 
-                        int TransfersIn, 
-                        int OwnGoals, 
-                        int EAIndex, 
+                        double ValueForm, 
+                        double ValueSeason, 
+                        int PenaltiesMissed, 
                         int PenaltiesSaved, 
+                        int CleanSheets, 
+                        int OwnGoals, 
                         int DreamTeamCount, 
                         int MinutesPlayed, 
-                        int TransfersInRound, 
-                        int PriceRiseRound, 
+                        int YellowCards, 
                         int RedCards, 
+                        int EAIndex, 
                         int BPS, 
                         string NextFixture1, 
                         string NextFixture2, 
@@ -901,39 +835,33 @@ namespace WindowsFormFantasyFootball {
                         AveragePoints,
                         AvgPointsPound,
                         TotPointsPound,
-                        WeekWeighting,
-                        TransfersOut,
-                        YellowCards,
-                        GoalsConceded,
-                        GoalsConcededPts,
-                        Saves,
-                        SavesPts,
                         GoalsScored,
-                        GoalsScoredPts,
-                        ValueSeason,
+                        Assists,
+                        Bonus,
+                        TransfersIn,
+                        TransfersInRound,
+                        TransfersOut,
                         TransfersOutRnd,
+                        SelectedByPcent,
+                        GoalsConceded,
+                        Saves,
                         PriceRise,
+                        PriceRiseRound,
+                        PriceFall,
                         PriceFallRnd,
                         LstSeasonPts,
-                        PriceFall,
-                        ValueForm,
-                        PenaltiesMissed,
                         Form,
-                        Bonus,
-                        FanRating,
-                        CleanSheets,
-                        CleansheetsPts,
-                        Assists,
-                        SelectedByPcent,
-                        TransfersIn,
-                        OwnGoals,
-                        EAIndex,
+                        ValueForm,
+                        ValueSeason,
+                        PenaltiesMissed,
                         PenaltiesSaved,
+                        CleanSheets,
+                        OwnGoals,
                         DreamTeamCount,
                         MinutesPlayed,
-                        TransfersInRound,
-                        PriceRiseRound,
+                        YellowCards,
                         RedCards,
+                        EAIndex,
                         BPS,
                         NextFixture1,
                         NextFixture2,
@@ -972,39 +900,33 @@ namespace WindowsFormFantasyFootball {
                 this.columnAveragePoints = base.Columns["AveragePoints"];
                 this.columnAvgPointsPound = base.Columns["AvgPointsPound"];
                 this.columnTotPointsPound = base.Columns["TotPointsPound"];
-                this.columnWeekWeighting = base.Columns["WeekWeighting"];
-                this.columnTransfersOut = base.Columns["TransfersOut"];
-                this.columnYellowCards = base.Columns["YellowCards"];
-                this.columnGoalsConceded = base.Columns["GoalsConceded"];
-                this.columnGoalsConcededPts = base.Columns["GoalsConcededPts"];
-                this.columnSaves = base.Columns["Saves"];
-                this.columnSavesPts = base.Columns["SavesPts"];
                 this.columnGoalsScored = base.Columns["GoalsScored"];
-                this.columnGoalsScoredPts = base.Columns["GoalsScoredPts"];
-                this.columnValueSeason = base.Columns["ValueSeason"];
+                this.columnAssists = base.Columns["Assists"];
+                this.columnBonus = base.Columns["Bonus"];
+                this.columnTransfersIn = base.Columns["TransfersIn"];
+                this.columnTransfersInRound = base.Columns["TransfersInRound"];
+                this.columnTransfersOut = base.Columns["TransfersOut"];
                 this.columnTransfersOutRnd = base.Columns["TransfersOutRnd"];
+                this.columnSelectedByPcent = base.Columns["SelectedByPcent"];
+                this.columnGoalsConceded = base.Columns["GoalsConceded"];
+                this.columnSaves = base.Columns["Saves"];
                 this.columnPriceRise = base.Columns["PriceRise"];
+                this.columnPriceRiseRound = base.Columns["PriceRiseRound"];
+                this.columnPriceFall = base.Columns["PriceFall"];
                 this.columnPriceFallRnd = base.Columns["PriceFallRnd"];
                 this.columnLstSeasonPts = base.Columns["LstSeasonPts"];
-                this.columnPriceFall = base.Columns["PriceFall"];
-                this.columnValueForm = base.Columns["ValueForm"];
-                this.columnPenaltiesMissed = base.Columns["PenaltiesMissed"];
                 this.columnForm = base.Columns["Form"];
-                this.columnBonus = base.Columns["Bonus"];
-                this.columnFanRating = base.Columns["FanRating"];
-                this.columnCleanSheets = base.Columns["CleanSheets"];
-                this.columnCleansheetsPts = base.Columns["CleansheetsPts"];
-                this.columnAssists = base.Columns["Assists"];
-                this.columnSelectedByPcent = base.Columns["SelectedByPcent"];
-                this.columnTransfersIn = base.Columns["TransfersIn"];
-                this.columnOwnGoals = base.Columns["OwnGoals"];
-                this.columnEAIndex = base.Columns["EAIndex"];
+                this.columnValueForm = base.Columns["ValueForm"];
+                this.columnValueSeason = base.Columns["ValueSeason"];
+                this.columnPenaltiesMissed = base.Columns["PenaltiesMissed"];
                 this.columnPenaltiesSaved = base.Columns["PenaltiesSaved"];
+                this.columnCleanSheets = base.Columns["CleanSheets"];
+                this.columnOwnGoals = base.Columns["OwnGoals"];
                 this.columnDreamTeamCount = base.Columns["DreamTeamCount"];
                 this.columnMinutesPlayed = base.Columns["MinutesPlayed"];
-                this.columnTransfersInRound = base.Columns["TransfersInRound"];
-                this.columnPriceRiseRound = base.Columns["PriceRiseRound"];
+                this.columnYellowCards = base.Columns["YellowCards"];
                 this.columnRedCards = base.Columns["RedCards"];
+                this.columnEAIndex = base.Columns["EAIndex"];
                 this.columnBPS = base.Columns["BPS"];
                 this.columnNextFixture1 = base.Columns["NextFixture1"];
                 this.columnNextFixture2 = base.Columns["NextFixture2"];
@@ -1036,72 +958,60 @@ namespace WindowsFormFantasyFootball {
                 base.Columns.Add(this.columnAvgPointsPound);
                 this.columnTotPointsPound = new global::System.Data.DataColumn("TotPointsPound", typeof(decimal), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnTotPointsPound);
-                this.columnWeekWeighting = new global::System.Data.DataColumn("WeekWeighting", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnWeekWeighting);
-                this.columnTransfersOut = new global::System.Data.DataColumn("TransfersOut", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnTransfersOut);
-                this.columnYellowCards = new global::System.Data.DataColumn("YellowCards", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnYellowCards);
-                this.columnGoalsConceded = new global::System.Data.DataColumn("GoalsConceded", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnGoalsConceded);
-                this.columnGoalsConcededPts = new global::System.Data.DataColumn("GoalsConcededPts", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnGoalsConcededPts);
-                this.columnSaves = new global::System.Data.DataColumn("Saves", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnSaves);
-                this.columnSavesPts = new global::System.Data.DataColumn("SavesPts", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnSavesPts);
                 this.columnGoalsScored = new global::System.Data.DataColumn("GoalsScored", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnGoalsScored);
-                this.columnGoalsScoredPts = new global::System.Data.DataColumn("GoalsScoredPts", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnGoalsScoredPts);
-                this.columnValueSeason = new global::System.Data.DataColumn("ValueSeason", typeof(double), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnValueSeason);
+                this.columnAssists = new global::System.Data.DataColumn("Assists", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnAssists);
+                this.columnBonus = new global::System.Data.DataColumn("Bonus", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnBonus);
+                this.columnTransfersIn = new global::System.Data.DataColumn("TransfersIn", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnTransfersIn);
+                this.columnTransfersInRound = new global::System.Data.DataColumn("TransfersInRound", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnTransfersInRound);
+                this.columnTransfersOut = new global::System.Data.DataColumn("TransfersOut", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnTransfersOut);
                 this.columnTransfersOutRnd = new global::System.Data.DataColumn("TransfersOutRnd", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnTransfersOutRnd);
+                this.columnSelectedByPcent = new global::System.Data.DataColumn("SelectedByPcent", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnSelectedByPcent);
+                this.columnGoalsConceded = new global::System.Data.DataColumn("GoalsConceded", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnGoalsConceded);
+                this.columnSaves = new global::System.Data.DataColumn("Saves", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnSaves);
                 this.columnPriceRise = new global::System.Data.DataColumn("PriceRise", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnPriceRise);
+                this.columnPriceRiseRound = new global::System.Data.DataColumn("PriceRiseRound", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPriceRiseRound);
+                this.columnPriceFall = new global::System.Data.DataColumn("PriceFall", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPriceFall);
                 this.columnPriceFallRnd = new global::System.Data.DataColumn("PriceFallRnd", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnPriceFallRnd);
                 this.columnLstSeasonPts = new global::System.Data.DataColumn("LstSeasonPts", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnLstSeasonPts);
-                this.columnPriceFall = new global::System.Data.DataColumn("PriceFall", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnPriceFall);
-                this.columnValueForm = new global::System.Data.DataColumn("ValueForm", typeof(double), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnValueForm);
-                this.columnPenaltiesMissed = new global::System.Data.DataColumn("PenaltiesMissed", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnPenaltiesMissed);
                 this.columnForm = new global::System.Data.DataColumn("Form", typeof(double), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnForm);
-                this.columnBonus = new global::System.Data.DataColumn("Bonus", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnBonus);
-                this.columnFanRating = new global::System.Data.DataColumn("FanRating", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnFanRating);
-                this.columnCleanSheets = new global::System.Data.DataColumn("CleanSheets", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnCleanSheets);
-                this.columnCleansheetsPts = new global::System.Data.DataColumn("CleansheetsPts", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnCleansheetsPts);
-                this.columnAssists = new global::System.Data.DataColumn("Assists", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnAssists);
-                this.columnSelectedByPcent = new global::System.Data.DataColumn("SelectedByPcent", typeof(double), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnSelectedByPcent);
-                this.columnTransfersIn = new global::System.Data.DataColumn("TransfersIn", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnTransfersIn);
-                this.columnOwnGoals = new global::System.Data.DataColumn("OwnGoals", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnOwnGoals);
-                this.columnEAIndex = new global::System.Data.DataColumn("EAIndex", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnEAIndex);
+                this.columnValueForm = new global::System.Data.DataColumn("ValueForm", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnValueForm);
+                this.columnValueSeason = new global::System.Data.DataColumn("ValueSeason", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnValueSeason);
+                this.columnPenaltiesMissed = new global::System.Data.DataColumn("PenaltiesMissed", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPenaltiesMissed);
                 this.columnPenaltiesSaved = new global::System.Data.DataColumn("PenaltiesSaved", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnPenaltiesSaved);
+                this.columnCleanSheets = new global::System.Data.DataColumn("CleanSheets", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCleanSheets);
+                this.columnOwnGoals = new global::System.Data.DataColumn("OwnGoals", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnOwnGoals);
                 this.columnDreamTeamCount = new global::System.Data.DataColumn("DreamTeamCount", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnDreamTeamCount);
                 this.columnMinutesPlayed = new global::System.Data.DataColumn("MinutesPlayed", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnMinutesPlayed);
-                this.columnTransfersInRound = new global::System.Data.DataColumn("TransfersInRound", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnTransfersInRound);
-                this.columnPriceRiseRound = new global::System.Data.DataColumn("PriceRiseRound", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnPriceRiseRound);
+                this.columnYellowCards = new global::System.Data.DataColumn("YellowCards", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnYellowCards);
                 this.columnRedCards = new global::System.Data.DataColumn("RedCards", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnRedCards);
+                this.columnEAIndex = new global::System.Data.DataColumn("EAIndex", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnEAIndex);
                 this.columnBPS = new global::System.Data.DataColumn("BPS", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnBPS);
                 this.columnNextFixture1 = new global::System.Data.DataColumn("NextFixture1", typeof(string), null, global::System.Data.MappingType.Element);
@@ -1417,17 +1327,81 @@ namespace WindowsFormFantasyFootball {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public int WeekWeighting {
+            public int GoalsScored {
                 get {
                     try {
-                        return ((int)(this[this.tableFootballers.WeekWeightingColumn]));
+                        return ((int)(this[this.tableFootballers.GoalsScoredColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'WeekWeighting\' in table \'Footballers\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'GoalsScored\' in table \'Footballers\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableFootballers.WeekWeightingColumn] = value;
+                    this[this.tableFootballers.GoalsScoredColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public int Assists {
+                get {
+                    try {
+                        return ((int)(this[this.tableFootballers.AssistsColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Assists\' in table \'Footballers\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableFootballers.AssistsColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public int Bonus {
+                get {
+                    try {
+                        return ((int)(this[this.tableFootballers.BonusColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Bonus\' in table \'Footballers\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableFootballers.BonusColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public int TransfersIn {
+                get {
+                    try {
+                        return ((int)(this[this.tableFootballers.TransfersInColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'TransfersIn\' in table \'Footballers\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableFootballers.TransfersInColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public int TransfersInRound {
+                get {
+                    try {
+                        return ((int)(this[this.tableFootballers.TransfersInRoundColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'TransfersInRound\' in table \'Footballers\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableFootballers.TransfersInRoundColumn] = value;
                 }
             }
             
@@ -1449,17 +1423,33 @@ namespace WindowsFormFantasyFootball {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public int YellowCards {
+            public int TransfersOutRnd {
                 get {
                     try {
-                        return ((int)(this[this.tableFootballers.YellowCardsColumn]));
+                        return ((int)(this[this.tableFootballers.TransfersOutRndColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'YellowCards\' in table \'Footballers\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'TransfersOutRnd\' in table \'Footballers\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableFootballers.YellowCardsColumn] = value;
+                    this[this.tableFootballers.TransfersOutRndColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public double SelectedByPcent {
+                get {
+                    try {
+                        return ((double)(this[this.tableFootballers.SelectedByPcentColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'SelectedByPcent\' in table \'Footballers\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableFootballers.SelectedByPcentColumn] = value;
                 }
             }
             
@@ -1481,22 +1471,6 @@ namespace WindowsFormFantasyFootball {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public int GoalsConcededPts {
-                get {
-                    try {
-                        return ((int)(this[this.tableFootballers.GoalsConcededPtsColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'GoalsConcededPts\' in table \'Footballers\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableFootballers.GoalsConcededPtsColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public int Saves {
                 get {
                     try {
@@ -1513,86 +1487,6 @@ namespace WindowsFormFantasyFootball {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public int SavesPts {
-                get {
-                    try {
-                        return ((int)(this[this.tableFootballers.SavesPtsColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'SavesPts\' in table \'Footballers\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableFootballers.SavesPtsColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public int GoalsScored {
-                get {
-                    try {
-                        return ((int)(this[this.tableFootballers.GoalsScoredColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'GoalsScored\' in table \'Footballers\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableFootballers.GoalsScoredColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public int GoalsScoredPts {
-                get {
-                    try {
-                        return ((int)(this[this.tableFootballers.GoalsScoredPtsColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'GoalsScoredPts\' in table \'Footballers\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableFootballers.GoalsScoredPtsColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public double ValueSeason {
-                get {
-                    try {
-                        return ((double)(this[this.tableFootballers.ValueSeasonColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'ValueSeason\' in table \'Footballers\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableFootballers.ValueSeasonColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public int TransfersOutRnd {
-                get {
-                    try {
-                        return ((int)(this[this.tableFootballers.TransfersOutRndColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'TransfersOutRnd\' in table \'Footballers\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableFootballers.TransfersOutRndColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public int PriceRise {
                 get {
                     try {
@@ -1604,6 +1498,38 @@ namespace WindowsFormFantasyFootball {
                 }
                 set {
                     this[this.tableFootballers.PriceRiseColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public int PriceRiseRound {
+                get {
+                    try {
+                        return ((int)(this[this.tableFootballers.PriceRiseRoundColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'PriceRiseRound\' in table \'Footballers\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableFootballers.PriceRiseRoundColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public int PriceFall {
+                get {
+                    try {
+                        return ((int)(this[this.tableFootballers.PriceFallColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'PriceFall\' in table \'Footballers\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableFootballers.PriceFallColumn] = value;
                 }
             }
             
@@ -1641,17 +1567,17 @@ namespace WindowsFormFantasyFootball {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public int PriceFall {
+            public double Form {
                 get {
                     try {
-                        return ((int)(this[this.tableFootballers.PriceFallColumn]));
+                        return ((double)(this[this.tableFootballers.FormColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'PriceFall\' in table \'Footballers\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'Form\' in table \'Footballers\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableFootballers.PriceFallColumn] = value;
+                    this[this.tableFootballers.FormColumn] = value;
                 }
             }
             
@@ -1673,6 +1599,22 @@ namespace WindowsFormFantasyFootball {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public double ValueSeason {
+                get {
+                    try {
+                        return ((double)(this[this.tableFootballers.ValueSeasonColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'ValueSeason\' in table \'Footballers\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableFootballers.ValueSeasonColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public int PenaltiesMissed {
                 get {
                     try {
@@ -1689,49 +1631,17 @@ namespace WindowsFormFantasyFootball {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public double Form {
+            public int PenaltiesSaved {
                 get {
                     try {
-                        return ((double)(this[this.tableFootballers.FormColumn]));
+                        return ((int)(this[this.tableFootballers.PenaltiesSavedColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Form\' in table \'Footballers\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'PenaltiesSaved\' in table \'Footballers\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableFootballers.FormColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public int Bonus {
-                get {
-                    try {
-                        return ((int)(this[this.tableFootballers.BonusColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Bonus\' in table \'Footballers\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableFootballers.BonusColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public int FanRating {
-                get {
-                    try {
-                        return ((int)(this[this.tableFootballers.FanRatingColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'FanRating\' in table \'Footballers\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableFootballers.FanRatingColumn] = value;
+                    this[this.tableFootballers.PenaltiesSavedColumn] = value;
                 }
             }
             
@@ -1753,70 +1663,6 @@ namespace WindowsFormFantasyFootball {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public int CleansheetsPts {
-                get {
-                    try {
-                        return ((int)(this[this.tableFootballers.CleansheetsPtsColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'CleansheetsPts\' in table \'Footballers\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableFootballers.CleansheetsPtsColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public int Assists {
-                get {
-                    try {
-                        return ((int)(this[this.tableFootballers.AssistsColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Assists\' in table \'Footballers\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableFootballers.AssistsColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public double SelectedByPcent {
-                get {
-                    try {
-                        return ((double)(this[this.tableFootballers.SelectedByPcentColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'SelectedByPcent\' in table \'Footballers\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableFootballers.SelectedByPcentColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public int TransfersIn {
-                get {
-                    try {
-                        return ((int)(this[this.tableFootballers.TransfersInColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'TransfersIn\' in table \'Footballers\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableFootballers.TransfersInColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public int OwnGoals {
                 get {
                     try {
@@ -1828,38 +1674,6 @@ namespace WindowsFormFantasyFootball {
                 }
                 set {
                     this[this.tableFootballers.OwnGoalsColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public int EAIndex {
-                get {
-                    try {
-                        return ((int)(this[this.tableFootballers.EAIndexColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'EAIndex\' in table \'Footballers\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableFootballers.EAIndexColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public int PenaltiesSaved {
-                get {
-                    try {
-                        return ((int)(this[this.tableFootballers.PenaltiesSavedColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'PenaltiesSaved\' in table \'Footballers\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableFootballers.PenaltiesSavedColumn] = value;
                 }
             }
             
@@ -1897,33 +1711,17 @@ namespace WindowsFormFantasyFootball {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public int TransfersInRound {
+            public int YellowCards {
                 get {
                     try {
-                        return ((int)(this[this.tableFootballers.TransfersInRoundColumn]));
+                        return ((int)(this[this.tableFootballers.YellowCardsColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'TransfersInRound\' in table \'Footballers\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'YellowCards\' in table \'Footballers\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableFootballers.TransfersInRoundColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public int PriceRiseRound {
-                get {
-                    try {
-                        return ((int)(this[this.tableFootballers.PriceRiseRoundColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'PriceRiseRound\' in table \'Footballers\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableFootballers.PriceRiseRoundColumn] = value;
+                    this[this.tableFootballers.YellowCardsColumn] = value;
                 }
             }
             
@@ -1940,6 +1738,22 @@ namespace WindowsFormFantasyFootball {
                 }
                 set {
                     this[this.tableFootballers.RedCardsColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public int EAIndex {
+                get {
+                    try {
+                        return ((int)(this[this.tableFootballers.EAIndexColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'EAIndex\' in table \'Footballers\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableFootballers.EAIndexColumn] = value;
                 }
             }
             
@@ -2161,14 +1975,62 @@ namespace WindowsFormFantasyFootball {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsWeekWeightingNull() {
-                return this.IsNull(this.tableFootballers.WeekWeightingColumn);
+            public bool IsGoalsScoredNull() {
+                return this.IsNull(this.tableFootballers.GoalsScoredColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetWeekWeightingNull() {
-                this[this.tableFootballers.WeekWeightingColumn] = global::System.Convert.DBNull;
+            public void SetGoalsScoredNull() {
+                this[this.tableFootballers.GoalsScoredColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsAssistsNull() {
+                return this.IsNull(this.tableFootballers.AssistsColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetAssistsNull() {
+                this[this.tableFootballers.AssistsColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsBonusNull() {
+                return this.IsNull(this.tableFootballers.BonusColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetBonusNull() {
+                this[this.tableFootballers.BonusColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsTransfersInNull() {
+                return this.IsNull(this.tableFootballers.TransfersInColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetTransfersInNull() {
+                this[this.tableFootballers.TransfersInColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsTransfersInRoundNull() {
+                return this.IsNull(this.tableFootballers.TransfersInRoundColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetTransfersInRoundNull() {
+                this[this.tableFootballers.TransfersInRoundColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2185,14 +2047,26 @@ namespace WindowsFormFantasyFootball {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsYellowCardsNull() {
-                return this.IsNull(this.tableFootballers.YellowCardsColumn);
+            public bool IsTransfersOutRndNull() {
+                return this.IsNull(this.tableFootballers.TransfersOutRndColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetYellowCardsNull() {
-                this[this.tableFootballers.YellowCardsColumn] = global::System.Convert.DBNull;
+            public void SetTransfersOutRndNull() {
+                this[this.tableFootballers.TransfersOutRndColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsSelectedByPcentNull() {
+                return this.IsNull(this.tableFootballers.SelectedByPcentColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetSelectedByPcentNull() {
+                this[this.tableFootballers.SelectedByPcentColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2209,18 +2083,6 @@ namespace WindowsFormFantasyFootball {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsGoalsConcededPtsNull() {
-                return this.IsNull(this.tableFootballers.GoalsConcededPtsColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetGoalsConcededPtsNull() {
-                this[this.tableFootballers.GoalsConcededPtsColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsSavesNull() {
                 return this.IsNull(this.tableFootballers.SavesColumn);
             }
@@ -2233,66 +2095,6 @@ namespace WindowsFormFantasyFootball {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsSavesPtsNull() {
-                return this.IsNull(this.tableFootballers.SavesPtsColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetSavesPtsNull() {
-                this[this.tableFootballers.SavesPtsColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsGoalsScoredNull() {
-                return this.IsNull(this.tableFootballers.GoalsScoredColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetGoalsScoredNull() {
-                this[this.tableFootballers.GoalsScoredColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsGoalsScoredPtsNull() {
-                return this.IsNull(this.tableFootballers.GoalsScoredPtsColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetGoalsScoredPtsNull() {
-                this[this.tableFootballers.GoalsScoredPtsColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsValueSeasonNull() {
-                return this.IsNull(this.tableFootballers.ValueSeasonColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetValueSeasonNull() {
-                this[this.tableFootballers.ValueSeasonColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsTransfersOutRndNull() {
-                return this.IsNull(this.tableFootballers.TransfersOutRndColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetTransfersOutRndNull() {
-                this[this.tableFootballers.TransfersOutRndColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsPriceRiseNull() {
                 return this.IsNull(this.tableFootballers.PriceRiseColumn);
             }
@@ -2301,6 +2103,30 @@ namespace WindowsFormFantasyFootball {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetPriceRiseNull() {
                 this[this.tableFootballers.PriceRiseColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsPriceRiseRoundNull() {
+                return this.IsNull(this.tableFootballers.PriceRiseRoundColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetPriceRiseRoundNull() {
+                this[this.tableFootballers.PriceRiseRoundColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsPriceFallNull() {
+                return this.IsNull(this.tableFootballers.PriceFallColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetPriceFallNull() {
+                this[this.tableFootballers.PriceFallColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2329,14 +2155,14 @@ namespace WindowsFormFantasyFootball {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsPriceFallNull() {
-                return this.IsNull(this.tableFootballers.PriceFallColumn);
+            public bool IsFormNull() {
+                return this.IsNull(this.tableFootballers.FormColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetPriceFallNull() {
-                this[this.tableFootballers.PriceFallColumn] = global::System.Convert.DBNull;
+            public void SetFormNull() {
+                this[this.tableFootballers.FormColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2353,6 +2179,18 @@ namespace WindowsFormFantasyFootball {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsValueSeasonNull() {
+                return this.IsNull(this.tableFootballers.ValueSeasonColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetValueSeasonNull() {
+                this[this.tableFootballers.ValueSeasonColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsPenaltiesMissedNull() {
                 return this.IsNull(this.tableFootballers.PenaltiesMissedColumn);
             }
@@ -2365,38 +2203,14 @@ namespace WindowsFormFantasyFootball {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsFormNull() {
-                return this.IsNull(this.tableFootballers.FormColumn);
+            public bool IsPenaltiesSavedNull() {
+                return this.IsNull(this.tableFootballers.PenaltiesSavedColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetFormNull() {
-                this[this.tableFootballers.FormColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsBonusNull() {
-                return this.IsNull(this.tableFootballers.BonusColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetBonusNull() {
-                this[this.tableFootballers.BonusColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsFanRatingNull() {
-                return this.IsNull(this.tableFootballers.FanRatingColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetFanRatingNull() {
-                this[this.tableFootballers.FanRatingColumn] = global::System.Convert.DBNull;
+            public void SetPenaltiesSavedNull() {
+                this[this.tableFootballers.PenaltiesSavedColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2413,54 +2227,6 @@ namespace WindowsFormFantasyFootball {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsCleansheetsPtsNull() {
-                return this.IsNull(this.tableFootballers.CleansheetsPtsColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetCleansheetsPtsNull() {
-                this[this.tableFootballers.CleansheetsPtsColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsAssistsNull() {
-                return this.IsNull(this.tableFootballers.AssistsColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetAssistsNull() {
-                this[this.tableFootballers.AssistsColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsSelectedByPcentNull() {
-                return this.IsNull(this.tableFootballers.SelectedByPcentColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetSelectedByPcentNull() {
-                this[this.tableFootballers.SelectedByPcentColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsTransfersInNull() {
-                return this.IsNull(this.tableFootballers.TransfersInColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetTransfersInNull() {
-                this[this.tableFootballers.TransfersInColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsOwnGoalsNull() {
                 return this.IsNull(this.tableFootballers.OwnGoalsColumn);
             }
@@ -2469,30 +2235,6 @@ namespace WindowsFormFantasyFootball {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetOwnGoalsNull() {
                 this[this.tableFootballers.OwnGoalsColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsEAIndexNull() {
-                return this.IsNull(this.tableFootballers.EAIndexColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetEAIndexNull() {
-                this[this.tableFootballers.EAIndexColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsPenaltiesSavedNull() {
-                return this.IsNull(this.tableFootballers.PenaltiesSavedColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetPenaltiesSavedNull() {
-                this[this.tableFootballers.PenaltiesSavedColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2521,26 +2263,14 @@ namespace WindowsFormFantasyFootball {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsTransfersInRoundNull() {
-                return this.IsNull(this.tableFootballers.TransfersInRoundColumn);
+            public bool IsYellowCardsNull() {
+                return this.IsNull(this.tableFootballers.YellowCardsColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetTransfersInRoundNull() {
-                this[this.tableFootballers.TransfersInRoundColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsPriceRiseRoundNull() {
-                return this.IsNull(this.tableFootballers.PriceRiseRoundColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetPriceRiseRoundNull() {
-                this[this.tableFootballers.PriceRiseRoundColumn] = global::System.Convert.DBNull;
+            public void SetYellowCardsNull() {
+                this[this.tableFootballers.YellowCardsColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2553,6 +2283,18 @@ namespace WindowsFormFantasyFootball {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetRedCardsNull() {
                 this[this.tableFootballers.RedCardsColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsEAIndexNull() {
+                return this.IsNull(this.tableFootballers.EAIndexColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetEAIndexNull() {
+                this[this.tableFootballers.EAIndexColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
