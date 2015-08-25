@@ -61,7 +61,7 @@
             //Cycle through my CSV file and load values into instances of Footballer Class
             // then save it in a List to be interrogated later
 
-            // Read the header thenwe are ready for the actual data
+            // Read the header then we are ready for the actual data
             var line = reader.ReadLine();
 
             while (! reader.EndOfStream)

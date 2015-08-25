@@ -53,7 +53,10 @@
             cboPositions.SelectedIndex = 0;
 
             dbgPlayers.DataSource = _footballersDataTable;
+
+            //Freezing the Surname column so it stays when scrolling the data Horizontally
             dbgPlayers.Columns["surname"].Frozen = true;
+
         }
 
         private void TeamComboBox_SelectedIndexChanged(object sender, EventArgs e)
