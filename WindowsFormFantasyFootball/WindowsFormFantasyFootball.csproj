@@ -45,6 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataGridViewColumnSelector.cs" />
     <Compile Include="FootballersDataSet.cs">
       <DependentUpon>FootballersDataSet.xsd</DependentUpon>
     </Compile>
