@@ -17,6 +17,7 @@
 
             _footballersDataTable = footballersDataTable;
 
+            //Setup a list of Teams,Positions and Price
             var teams = new HashSet<string>();
             var positions = new HashSet<string>();
             var price = new HashSet<int>();
@@ -56,6 +57,9 @@
 
             //Freezing the Surname column so it stays when scrolling the data Horizontally
             dbgPlayers.Columns["surname"].Frozen = true;
+
+            //Using my helper method to set the Datagrid View to Double buffered for performance improvements
+            dbgPlayers.DoubleBuffered(true);
 
         }
 

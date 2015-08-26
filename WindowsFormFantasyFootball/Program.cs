@@ -4,6 +4,7 @@
     using System.Collections.Generic;
     using System.Windows.Forms;
     using Data;
+    using System.Reflection;
 
     internal static class Program
     {
@@ -93,4 +94,15 @@
             }
         }
     }
+
+    //Helper methods
+    public static class ExtensionMethods
+    {
+        public static void DoubleBuffered(this DataGridView dgv, bool setting)
+        { 
+            Type dgvType = dgv.GetType();  
+            PropertyInfo pi = dgvType.GetProperty("DoubleBuffered", BindingFlags.Instance | BindingFlags.NonPublic);  
+            pi.SetValue(dgv, setting, null);  
+        }  
+    } 
 }
