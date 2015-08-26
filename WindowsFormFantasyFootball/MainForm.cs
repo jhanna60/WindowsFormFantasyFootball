@@ -2,6 +2,7 @@
 {
     using System;
     using System.Collections.Generic;
+    using System.ComponentModel;
     using System.Data;
     using System.Linq;
     using System.Windows.Forms;
@@ -61,6 +62,12 @@
             //Using my helper method to set the Datagrid View to Double buffered for performance improvements
             dbgPlayers.DoubleBuffered(true);
 
+            // Put each of the columns into programmatic sort mode so we can implement our own custom sort
+            foreach (DataGridViewColumn column in dbgPlayers.Columns)
+            {
+                column.SortMode = DataGridViewColumnSortMode.Programmatic;
+            }
+
         }
 
         private void TeamComboBox_SelectedIndexChanged(object sender, EventArgs e)
@@ -78,6 +85,7 @@
             DataOutput();
         }
 
+        //Output our data based on the filters
         private void DataOutput()
         {
             var teamFilter = cboTeams.Text == "ALL" ? "%" : cboTeams.Text;
@@ -89,11 +97,47 @@
             _footballersDataTable.DefaultView.RowFilter = filter;
         }
 
+        //Resetting all our filter indexes
         private void btnReset_Click(object sender, EventArgs e)
         {
             cboPositions.SelectedIndex = 0;
             cboTeams.SelectedIndex = 0;
             cboPrice.SelectedIndex = 0;
+        }
+
+        //Custom sort so we can sort Descending first and then Ascending
+        private void dbgPlayers_ColumnHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            DataGridViewColumn newColumn = dbgPlayers.Columns[e.ColumnIndex];
+            DataGridViewColumn oldColumn = dbgPlayers.SortedColumn;
+            ListSortDirection direction;
+
+            // If oldColumn is null, then the DataGridView is not sorted. 
+            if (oldColumn != null)
+            {
+                // Sort the same column again, reversing the SortOrder. 
+                if (oldColumn == newColumn &&
+                    dbgPlayers.SortOrder == SortOrder.Descending)
+                {
+                    direction = ListSortDirection.Ascending;
+                }
+                else
+                {
+                    // Sort a new column and remove the old SortGlyph.
+                    direction = ListSortDirection.Descending;
+                    oldColumn.HeaderCell.SortGlyphDirection = SortOrder.None;
+                }
+            }
+            else
+            {
+                direction = ListSortDirection.Descending;
+            }
+
+            // Sort the selected column.
+            dbgPlayers.Sort(newColumn, direction);
+            newColumn.HeaderCell.SortGlyphDirection =
+                direction == ListSortDirection.Ascending ?
+                SortOrder.Ascending : SortOrder.Descending;
         }
     }
 }
