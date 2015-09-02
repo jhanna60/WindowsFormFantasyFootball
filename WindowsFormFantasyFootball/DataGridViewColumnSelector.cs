@@ -73,7 +73,7 @@ namespace WindowsFormFantasyFootball
                 int PreferredHeight = (mCheckedListBox.Items.Count * 16) + 7;
                 mCheckedListBox.Height = (PreferredHeight < MaxHeight) ? PreferredHeight : MaxHeight;
                 mCheckedListBox.Width = this.Width;
-                mPopup.Show(mDataGridView, e.Location);
+                mPopup.Show(Cursor.Position);
             }
         }
 
