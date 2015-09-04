@@ -106,6 +106,7 @@
             cboPositions.SelectedIndex = 0;
             cboTeams.SelectedIndex = 0;
             cboPrice.SelectedIndex = 0;
+            tbSearch.Text = "";
         }
 
         //Custom sort so we can sort Descending first and then Ascending
@@ -145,6 +146,25 @@
                     direction == ListSortDirection.Ascending ?
                     SortOrder.Ascending : SortOrder.Descending;
             }
+        }
+
+        private void tbSearch_TextChanged(object sender, EventArgs e)
+        {
+            if (tbSearch.Text == "")
+            {
+                DataOutput();
+            }
+            else
+            {
+                (dbgPlayers.DataSource as DataTable).DefaultView.RowFilter = "FirstName LIKE '" + tbSearch.Text + "%' OR Surname LIKE '" + tbSearch.Text + "%'" ;
+                dbgPlayers.Refresh();
+            }
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // Exits the program
+            Close();
         }
     }
 }
