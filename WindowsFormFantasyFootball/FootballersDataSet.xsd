@@ -12,7 +12,7 @@
   <xs:element name="FootballersDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="FootballersDataSet" msprop:Generator_UserDSName="FootballersDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="Footballers" msprop:Generator_TableClassName="FootballersDataTable" msprop:Generator_TableVarName="tableFootballers" msprop:Generator_TablePropName="Footballers" msprop:Generator_RowDeletingName="FootballersRowDeleting" msprop:Generator_RowChangingName="FootballersRowChanging" msprop:Generator_RowEvHandlerName="FootballersRowChangeEventHandler" msprop:Generator_RowDeletedName="FootballersRowDeleted" msprop:Generator_UserTableName="Footballers" msprop:Generator_RowChangedName="FootballersRowChanged" msprop:Generator_RowEvArgName="FootballersRowChangeEvent" msprop:Generator_RowClassName="FootballersRow">
+        <xs:element name="Footballers" msprop:Generator_TableClassName="FootballersDataTable" msprop:Generator_TableVarName="tableFootballers" msprop:Generator_RowChangedName="FootballersRowChanged" msprop:Generator_TablePropName="Footballers" msprop:Generator_RowDeletingName="FootballersRowDeleting" msprop:Generator_RowChangingName="FootballersRowChanging" msprop:Generator_RowEvHandlerName="FootballersRowChangeEventHandler" msprop:Generator_RowDeletedName="FootballersRowDeleted" msprop:Generator_RowClassName="FootballersRow" msprop:Generator_UserTableName="Footballers" msprop:Generator_RowEvArgName="FootballersRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="FirstName" msdata:Caption="First Name" msprop:Generator_ColumnVarNameInTable="columnFirstName" msprop:Generator_ColumnPropNameInRow="FirstName" msprop:Generator_ColumnPropNameInTable="FirstNameColumn" msprop:Generator_UserColumnName="FirstName" type="xs:string" minOccurs="0" />
@@ -58,6 +58,7 @@
               <xs:element name="NextFixture3" msprop:Generator_ColumnVarNameInTable="columnNextFixture3" msprop:Generator_ColumnPropNameInRow="NextFixture3" msprop:Generator_ColumnPropNameInTable="NextFixture3Column" msprop:Generator_UserColumnName="NextFixture3" type="xs:string" minOccurs="0" />
               <xs:element name="NextFixture4" msprop:Generator_ColumnVarNameInTable="columnNextFixture4" msprop:Generator_ColumnPropNameInRow="NextFixture4" msprop:Generator_ColumnPropNameInTable="NextFixture4Column" msprop:Generator_UserColumnName="NextFixture4" type="xs:string" minOccurs="0" />
               <xs:element name="NextFixture5" msprop:Generator_ColumnVarNameInTable="columnNextFixture5" msprop:Generator_ColumnPropNameInRow="NextFixture5" msprop:Generator_ColumnPropNameInTable="NextFixture5Column" msprop:Generator_UserColumnName="NextFixture5" type="xs:string" minOccurs="0" />
+              <xs:element name="MyTeam" msdata:Caption="My Team" msprop:Generator_ColumnVarNameInTable="columnMyTeam" msprop:Generator_ColumnPropNameInRow="MyTeam" msprop:Generator_ColumnPropNameInTable="MyTeamColumn" msprop:Generator_UserColumnName="MyTeam" type="xs:boolean" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>

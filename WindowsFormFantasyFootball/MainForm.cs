@@ -89,6 +89,9 @@
             //Freezing the Surname column so it stays when scrolling the data Horizontally
             dbgPlayers.Columns["surname"].Frozen = true;
 
+            //Setting the All view to checked by default so we display all the data
+            rdoAll.Checked = true;
+
             //Using my helper method to set the Datagrid View to Double buffered for performance improvements
             dbgPlayers.DoubleBuffered(true);
 
@@ -118,9 +121,10 @@
             DataOutput();
         }
 
-        //Output our data based on the filters
+        //Output our data based on the filters and reset other filters
         private void DataOutput()
         {
+
             var teamFilter = cboTeams.Text == "ALL" ? "%" : cboTeams.Text;
             var positionFilter = cboPositions.Text == "ALL" ? "%" : cboPositions.Text;
             var costFilter = int.Parse(cboPrice.Text == "ALL" ? "15000000" : cboPrice.Text);
@@ -137,6 +141,23 @@
             cboTeams.SelectedIndex = 0;
             cboPrice.SelectedIndex = 0;
             tbSearch.Text = "";
+        }
+
+        private void rdoAll_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rdoAll.Checked == true)
+            {
+                DataOutput();
+            }
+        }
+
+        private void rdoTeam_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rdoTeam.Checked == true)
+            {
+                (dbgPlayers.DataSource as DataTable).DefaultView.RowFilter = "MyTeam = true";
+                dbgPlayers.Refresh();
+            }
         }
 
         //Custom sort so we can sort Descending first and then Ascending
