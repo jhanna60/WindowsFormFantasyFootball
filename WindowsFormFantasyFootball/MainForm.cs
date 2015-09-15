@@ -11,6 +11,8 @@
     {
         private readonly FootballersDataSet.FootballersDataTable _footballersDataTable;
 
+        double totGK, totDEF, totMID, totFWD; 
+
         public MainForm(FootballersDataSet.FootballersDataTable footballersDataTable)
         {
             // Initialise the form and set up our stream from constructor
@@ -29,6 +31,34 @@
                 positions.Add(row.Position);
                 price.Add(row.Cost);
             }
+
+            //Work out some high level stats to display
+            foreach (var f in footballersDataTable)
+            {
+                switch (f.Position)
+                {
+                    case "GLK":
+                        totGK += f.TotalPoints;
+                        break;
+                    case "DEF":
+                        totDEF += f.TotalPoints;
+                        break;
+                    case "MID":
+                        totMID += f.TotalPoints;
+                        break;
+                    case "FWD":
+                        totFWD += f.TotalPoints;
+                        break;
+                    default:
+                        break;
+                }
+            }
+
+            //Display the stats
+            lblTotGK.Text = totGK.ToString();
+            lblTotDef.Text = totDEF.ToString();
+            lblTotMids.Text = totMID.ToString();
+            lblTotFwds.Text = totFWD.ToString();
 
             var teamArr = teams.ToArray();
             Array.Sort(teamArr);

@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.lblLoadedSuccessMessage = new System.Windows.Forms.Label();
             this.btnReset = new System.Windows.Forms.Button();
@@ -44,15 +44,24 @@
             this.lblPrice = new System.Windows.Forms.Label();
             this.cboPrice = new System.Windows.Forms.ComboBox();
             this.ttHelper = new System.Windows.Forms.ToolTip(this.components);
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.lblVersion = new System.Windows.Forms.Label();
+            this.pBLogo = new System.Windows.Forms.PictureBox();
             this.tbSearch = new System.Windows.Forms.TextBox();
+            this.lblVersion = new System.Windows.Forms.Label();
             this.mnuStrip = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.lblTotals = new System.Windows.Forms.Label();
+            this.lblGoalie = new System.Windows.Forms.Label();
+            this.lblTotGK = new System.Windows.Forms.Label();
+            this.lblDefender = new System.Windows.Forms.Label();
+            this.lblTotDef = new System.Windows.Forms.Label();
+            this.lblMidfielder = new System.Windows.Forms.Label();
+            this.lblTotMids = new System.Windows.Forms.Label();
+            this.lblForwards = new System.Windows.Forms.Label();
+            this.lblTotFwds = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dbgPlayers)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBLogo)).BeginInit();
             this.mnuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -82,44 +91,43 @@
             this.dbgPlayers.AllowUserToOrderColumns = true;
             this.dbgPlayers.AllowUserToResizeColumns = false;
             this.dbgPlayers.AllowUserToResizeRows = false;
-            dataGridViewCellStyle21.BackColor = System.Drawing.Color.WhiteSmoke;
-            dataGridViewCellStyle21.ForeColor = System.Drawing.Color.Black;
-            this.dbgPlayers.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle21;
+            dataGridViewCellStyle13.BackColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle13.ForeColor = System.Drawing.Color.Black;
+            this.dbgPlayers.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle13;
             this.dbgPlayers.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dbgPlayers.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dbgPlayers.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             this.dbgPlayers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle22.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle22.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle22.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle22.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle22.SelectionBackColor = System.Drawing.Color.DimGray;
-            dataGridViewCellStyle22.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle22.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dbgPlayers.DefaultCellStyle = dataGridViewCellStyle22;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle14.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle14.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.Color.DimGray;
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dbgPlayers.DefaultCellStyle = dataGridViewCellStyle14;
             this.dbgPlayers.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.dbgPlayers.Location = new System.Drawing.Point(12, 159);
             this.dbgPlayers.Name = "dbgPlayers";
             this.dbgPlayers.ReadOnly = true;
-            dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle23.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle23.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle23.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle23.SelectionBackColor = System.Drawing.Color.Gray;
-            dataGridViewCellStyle23.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle23.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dbgPlayers.RowHeadersDefaultCellStyle = dataGridViewCellStyle23;
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle15.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle15.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.Gray;
+            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dbgPlayers.RowHeadersDefaultCellStyle = dataGridViewCellStyle15;
             this.dbgPlayers.RowHeadersVisible = false;
             this.dbgPlayers.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            dataGridViewCellStyle24.BackColor = System.Drawing.Color.Gainsboro;
-            this.dbgPlayers.RowsDefaultCellStyle = dataGridViewCellStyle24;
+            dataGridViewCellStyle16.BackColor = System.Drawing.Color.Gainsboro;
+            this.dbgPlayers.RowsDefaultCellStyle = dataGridViewCellStyle16;
             this.dbgPlayers.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dbgPlayers.ShowCellToolTips = false;
             this.dbgPlayers.Size = new System.Drawing.Size(1111, 368);
             this.dbgPlayers.TabIndex = 4;
-            this.ttHelper.SetToolTip(this.dbgPlayers, "If you right click the column headers you can hide/show Columns");
             this.dbgPlayers.ColumnHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dbgPlayers_ColumnHeaderMouseClick);
             // 
             // cboTeams
@@ -190,18 +198,29 @@
             this.ttHelper.SetToolTip(this.cboPrice, "Displays all footballers up to value selected");
             this.cboPrice.SelectedIndexChanged += new System.EventHandler(this.cboPrice_SelectedIndexChanged);
             // 
-            // pictureBox1
+            // pBLogo
             // 
-            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(993, 30);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(130, 117);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 11;
-            this.pictureBox1.TabStop = false;
-            this.ttHelper.SetToolTip(this.pictureBox1, "F**k off this does nothing");
+            this.pBLogo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pBLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pBLogo.Image = ((System.Drawing.Image)(resources.GetObject("pBLogo.Image")));
+            this.pBLogo.Location = new System.Drawing.Point(993, 30);
+            this.pBLogo.Name = "pBLogo";
+            this.pBLogo.Size = new System.Drawing.Size(130, 117);
+            this.pBLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pBLogo.TabIndex = 11;
+            this.pBLogo.TabStop = false;
+            this.ttHelper.SetToolTip(this.pBLogo, "F**k off this does nothing");
+            // 
+            // tbSearch
+            // 
+            this.tbSearch.BackColor = System.Drawing.Color.Gainsboro;
+            this.tbSearch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbSearch.Location = new System.Drawing.Point(12, 127);
+            this.tbSearch.Name = "tbSearch";
+            this.tbSearch.Size = new System.Drawing.Size(121, 20);
+            this.tbSearch.TabIndex = 13;
+            this.ttHelper.SetToolTip(this.tbSearch, "Allows you to search on Firstname or Surname");
+            this.tbSearch.TextChanged += new System.EventHandler(this.tbSearch_TextChanged);
             // 
             // lblVersion
             // 
@@ -211,16 +230,7 @@
             this.lblVersion.Name = "lblVersion";
             this.lblVersion.Size = new System.Drawing.Size(32, 13);
             this.lblVersion.TabIndex = 12;
-            this.lblVersion.Text = "V 1.4";
-            // 
-            // tbSearch
-            // 
-            this.tbSearch.Location = new System.Drawing.Point(12, 127);
-            this.tbSearch.Name = "tbSearch";
-            this.tbSearch.Size = new System.Drawing.Size(121, 20);
-            this.tbSearch.TabIndex = 13;
-            this.ttHelper.SetToolTip(this.tbSearch, "Allows you to search on Firstname or Surname");
-            this.tbSearch.TextChanged += new System.EventHandler(this.tbSearch_TextChanged);
+            this.lblVersion.Text = "V 1.5";
             // 
             // mnuStrip
             // 
@@ -245,7 +255,7 @@
             // 
             this.exitToolStripMenuItem.BackColor = System.Drawing.Color.LightGray;
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(92, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -255,15 +265,101 @@
             this.aboutToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
             this.aboutToolStripMenuItem.Text = "About";
             // 
+            // lblTotals
+            // 
+            this.lblTotals.AutoSize = true;
+            this.lblTotals.Location = new System.Drawing.Point(12, 533);
+            this.lblTotals.Name = "lblTotals";
+            this.lblTotals.Size = new System.Drawing.Size(36, 13);
+            this.lblTotals.TabIndex = 15;
+            this.lblTotals.Text = "Totals";
+            // 
+            // lblGoalie
+            // 
+            this.lblGoalie.AutoSize = true;
+            this.lblGoalie.Location = new System.Drawing.Point(60, 533);
+            this.lblGoalie.Name = "lblGoalie";
+            this.lblGoalie.Size = new System.Drawing.Size(73, 13);
+            this.lblGoalie.TabIndex = 16;
+            this.lblGoalie.Text = "Goalkeepers :";
+            // 
+            // lblTotGK
+            // 
+            this.lblTotGK.AutoSize = true;
+            this.lblTotGK.Location = new System.Drawing.Point(133, 533);
+            this.lblTotGK.Name = "lblTotGK";
+            this.lblTotGK.Size = new System.Drawing.Size(0, 13);
+            this.lblTotGK.TabIndex = 17;
+            // 
+            // lblDefender
+            // 
+            this.lblDefender.AutoSize = true;
+            this.lblDefender.Location = new System.Drawing.Point(172, 533);
+            this.lblDefender.Name = "lblDefender";
+            this.lblDefender.Size = new System.Drawing.Size(62, 13);
+            this.lblDefender.TabIndex = 18;
+            this.lblDefender.Text = "Defenders :";
+            // 
+            // lblTotDef
+            // 
+            this.lblTotDef.AutoSize = true;
+            this.lblTotDef.Location = new System.Drawing.Point(234, 532);
+            this.lblTotDef.Name = "lblTotDef";
+            this.lblTotDef.Size = new System.Drawing.Size(0, 13);
+            this.lblTotDef.TabIndex = 19;
+            // 
+            // lblMidfielder
+            // 
+            this.lblMidfielder.AutoSize = true;
+            this.lblMidfielder.Location = new System.Drawing.Point(282, 533);
+            this.lblMidfielder.Name = "lblMidfielder";
+            this.lblMidfielder.Size = new System.Drawing.Size(63, 13);
+            this.lblMidfielder.TabIndex = 20;
+            this.lblMidfielder.Text = "Midfielders :";
+            // 
+            // lblTotMids
+            // 
+            this.lblTotMids.AutoSize = true;
+            this.lblTotMids.Location = new System.Drawing.Point(345, 532);
+            this.lblTotMids.Name = "lblTotMids";
+            this.lblTotMids.Size = new System.Drawing.Size(0, 13);
+            this.lblTotMids.TabIndex = 21;
+            // 
+            // lblForwards
+            // 
+            this.lblForwards.AutoSize = true;
+            this.lblForwards.Location = new System.Drawing.Point(393, 533);
+            this.lblForwards.Name = "lblForwards";
+            this.lblForwards.Size = new System.Drawing.Size(56, 13);
+            this.lblForwards.TabIndex = 22;
+            this.lblForwards.Text = "Forwards :";
+            // 
+            // lblTotFwds
+            // 
+            this.lblTotFwds.AutoSize = true;
+            this.lblTotFwds.Location = new System.Drawing.Point(449, 533);
+            this.lblTotFwds.Name = "lblTotFwds";
+            this.lblTotFwds.Size = new System.Drawing.Size(0, 13);
+            this.lblTotFwds.TabIndex = 23;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(1135, 555);
+            this.Controls.Add(this.lblTotFwds);
+            this.Controls.Add(this.lblForwards);
+            this.Controls.Add(this.lblTotMids);
+            this.Controls.Add(this.lblMidfielder);
+            this.Controls.Add(this.lblTotDef);
+            this.Controls.Add(this.lblDefender);
+            this.Controls.Add(this.lblTotGK);
+            this.Controls.Add(this.lblGoalie);
+            this.Controls.Add(this.lblTotals);
             this.Controls.Add(this.tbSearch);
             this.Controls.Add(this.lblVersion);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pBLogo);
             this.Controls.Add(this.lblPrice);
             this.Controls.Add(this.cboPrice);
             this.Controls.Add(this.lblPositions);
@@ -278,7 +374,7 @@
             this.Opacity = 0.98D;
             this.Text = "Fantasy Football Stats";
             ((System.ComponentModel.ISupportInitialize)(this.dbgPlayers)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBLogo)).EndInit();
             this.mnuStrip.ResumeLayout(false);
             this.mnuStrip.PerformLayout();
             this.ResumeLayout(false);
@@ -297,13 +393,22 @@
         private System.Windows.Forms.Label lblPrice;
         private System.Windows.Forms.ComboBox cboPrice;
         private System.Windows.Forms.ToolTip ttHelper;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pBLogo;
         private System.Windows.Forms.Label lblVersion;
         private System.Windows.Forms.TextBox tbSearch;
         private System.Windows.Forms.MenuStrip mnuStrip;
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
+        private System.Windows.Forms.Label lblTotals;
+        private System.Windows.Forms.Label lblGoalie;
+        private System.Windows.Forms.Label lblTotGK;
+        private System.Windows.Forms.Label lblDefender;
+        private System.Windows.Forms.Label lblTotDef;
+        private System.Windows.Forms.Label lblMidfielder;
+        private System.Windows.Forms.Label lblTotMids;
+        private System.Windows.Forms.Label lblForwards;
+        private System.Windows.Forms.Label lblTotFwds;
     }
 }
 
