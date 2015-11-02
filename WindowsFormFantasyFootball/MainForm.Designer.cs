@@ -62,6 +62,8 @@
             this.lblTotFwds = new System.Windows.Forms.Label();
             this.rdoTeam = new System.Windows.Forms.RadioButton();
             this.rdoAll = new System.Windows.Forms.RadioButton();
+            this.lblTotP = new System.Windows.Forms.Label();
+            this.lblTotPlayers = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dbgPlayers)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBLogo)).BeginInit();
             this.mnuStrip.SuspendLayout();
@@ -230,7 +232,7 @@
             this.lblVersion.Name = "lblVersion";
             this.lblVersion.Size = new System.Drawing.Size(32, 13);
             this.lblVersion.TabIndex = 12;
-            this.lblVersion.Text = "V 1.5";
+            this.lblVersion.Text = "V 2.0";
             // 
             // mnuStrip
             // 
@@ -375,12 +377,33 @@
             this.rdoAll.UseVisualStyleBackColor = true;
             this.rdoAll.CheckedChanged += new System.EventHandler(this.rdoAll_CheckedChanged);
             // 
+            // lblTotP
+            // 
+            this.lblTotP.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.lblTotP.AutoSize = true;
+            this.lblTotP.Location = new System.Drawing.Point(499, 533);
+            this.lblTotP.Name = "lblTotP";
+            this.lblTotP.Size = new System.Drawing.Size(74, 13);
+            this.lblTotP.TabIndex = 26;
+            this.lblTotP.Text = "Total Players :";
+            // 
+            // lblTotPlayers
+            // 
+            this.lblTotPlayers.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.lblTotPlayers.AutoSize = true;
+            this.lblTotPlayers.Location = new System.Drawing.Point(573, 533);
+            this.lblTotPlayers.Name = "lblTotPlayers";
+            this.lblTotPlayers.Size = new System.Drawing.Size(0, 13);
+            this.lblTotPlayers.TabIndex = 27;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(1135, 555);
+            this.Controls.Add(this.lblTotPlayers);
+            this.Controls.Add(this.lblTotP);
             this.Controls.Add(this.rdoAll);
             this.Controls.Add(this.rdoTeam);
             this.Controls.Add(this.lblTotFwds);
@@ -446,6 +469,8 @@
         private System.Windows.Forms.Label lblTotFwds;
         private System.Windows.Forms.RadioButton rdoTeam;
         private System.Windows.Forms.RadioButton rdoAll;
+        private System.Windows.Forms.Label lblTotP;
+        private System.Windows.Forms.Label lblTotPlayers;
     }
 }
 

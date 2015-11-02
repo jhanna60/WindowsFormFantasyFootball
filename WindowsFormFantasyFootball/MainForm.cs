@@ -11,7 +11,7 @@
     {
         private readonly FootballersDataSet.FootballersDataTable _footballersDataTable;
 
-        double totGK, totDEF, totMID, totFWD; 
+        double totGK, totDEF, totMID, totFWD, totPlayers;
 
         public MainForm(FootballersDataSet.FootballersDataTable footballersDataTable)
         {
@@ -37,21 +37,23 @@
             {
                 switch (f.Position)
                 {
-                    case "GLK":
+                    case "Goalkeeper":
                         totGK += f.TotalPoints;
                         break;
-                    case "DEF":
+                    case "Defender":
                         totDEF += f.TotalPoints;
                         break;
-                    case "MID":
+                    case "Midfielder":
                         totMID += f.TotalPoints;
                         break;
-                    case "FWD":
+                    case "Forward":
                         totFWD += f.TotalPoints;
                         break;
                     default:
                         break;
                 }
+
+                totPlayers += 1;
             }
 
             //Display the stats
@@ -59,6 +61,7 @@
             lblTotDef.Text = totDEF.ToString();
             lblTotMids.Text = totMID.ToString();
             lblTotFwds.Text = totFWD.ToString();
+            lblTotPlayers.Text = totPlayers.ToString();
 
             var teamArr = teams.ToArray();
             Array.Sort(teamArr);

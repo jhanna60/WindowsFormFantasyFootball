@@ -367,6 +367,8 @@ namespace WindowsFormFantasyFootball {
             
             private global::System.Data.DataColumn columnMyTeam;
             
+            private global::System.Data.DataColumn columnNews;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public FootballersDataTable() {
@@ -754,6 +756,14 @@ namespace WindowsFormFantasyFootball {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn NewsColumn {
+                get {
+                    return this.columnNews;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -833,7 +843,8 @@ namespace WindowsFormFantasyFootball {
                         string NextFixture3, 
                         string NextFixture4, 
                         string NextFixture5, 
-                        bool MyTeam) {
+                        bool MyTeam, 
+                        string News) {
                 FootballersRow rowFootballersRow = ((FootballersRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         FirstName,
@@ -879,7 +890,8 @@ namespace WindowsFormFantasyFootball {
                         NextFixture3,
                         NextFixture4,
                         NextFixture5,
-                        MyTeam};
+                        MyTeam,
+                        News};
                 rowFootballersRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowFootballersRow);
                 return rowFootballersRow;
@@ -946,6 +958,7 @@ namespace WindowsFormFantasyFootball {
                 this.columnNextFixture4 = base.Columns["NextFixture4"];
                 this.columnNextFixture5 = base.Columns["NextFixture5"];
                 this.columnMyTeam = base.Columns["MyTeam"];
+                this.columnNews = base.Columns["News"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1039,6 +1052,8 @@ namespace WindowsFormFantasyFootball {
                 base.Columns.Add(this.columnNextFixture5);
                 this.columnMyTeam = new global::System.Data.DataColumn("MyTeam", typeof(bool), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnMyTeam);
+                this.columnNews = new global::System.Data.DataColumn("News", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnNews);
                 this.columnFirstName.Caption = "First Name";
                 this.columnMyTeam.Caption = "My Team";
             }
@@ -1887,6 +1902,22 @@ namespace WindowsFormFantasyFootball {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string News {
+                get {
+                    try {
+                        return ((string)(this[this.tableFootballers.NewsColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'News\' in table \'Footballers\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableFootballers.NewsColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsFirstNameNull() {
                 return this.IsNull(this.tableFootballers.FirstNameColumn);
             }
@@ -2411,6 +2442,18 @@ namespace WindowsFormFantasyFootball {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetMyTeamNull() {
                 this[this.tableFootballers.MyTeamColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsNewsNull() {
+                return this.IsNull(this.tableFootballers.NewsColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetNewsNull() {
+                this[this.tableFootballers.NewsColumn] = global::System.Convert.DBNull;
             }
         }
         
