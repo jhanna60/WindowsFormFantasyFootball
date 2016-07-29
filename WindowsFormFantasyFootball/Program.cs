@@ -38,8 +38,8 @@
 
                     row.FirstName = footballer.first_name;
                     row.Surname = footballer.second_name;
-                    row.Position = footballer.type_name;
-                    row.Team = footballer.team_name;
+                    row.Position = footballer.element_type.ToString();
+                    row.Team =  footballer.team.ToString();
                     row.Cost = footballer.now_cost;
                     row.PointsLstRnd = footballer.event_points;
                     row.TotalPoints = footballer.total_points;
@@ -81,8 +81,8 @@
                     row.RedCards = footballer.red_cards;
                     row.BPS = footballer.bps;
                     row.News = footballer.news;
-                    row.NextFixture1 = footballer.current_fixture;
-                    row.NextFixture2 = footballer.next_fixture;
+                    //row.NextFixture1 = footballer.current_fixture;
+                    //row.NextFixture2 = footballer.next_fixture;
                     //row.NextFixture3 = footballer.NextFixture3;
                     //row.NextFixture4 = footballer.NextFixture4;
                     //row.NextFixture5 = footballer.NextFixture5;

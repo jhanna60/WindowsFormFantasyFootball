@@ -7,6 +7,7 @@
     using System;
     using System.Diagnostics;
     using System.Threading;
+    using System.Collections;
 
     internal class FootballersRepository
     {
@@ -18,6 +19,8 @@
         WebClient client5 = new WebClient();
 
         List<Footballer> footballers = new List<Footballer>();
+
+        RootObject root = new RootObject();
 
         public IEnumerable<Footballer> GetAll()
         {
@@ -36,29 +39,54 @@
 
             Debug.WriteLine("Starting JSON read : {0} ", DateTime.Now);
 
-            Thread t = new Thread(() => ProcessURLs(1, 100));
-            t.Start();
+            string url = "https://fantasy.premierleague.com/drf/bootstrap-static";
+            Stream stream = client.OpenRead(url);
 
-            Thread t1 = new Thread(() => ProcessURLs2(101, 200));
-            t1.Start();
+            using (StreamReader reader = new StreamReader(stream))
+            {
+                root = (RootObject)JsonConvert.DeserializeObject(reader.ReadLine(), typeof(RootObject));
 
-            Thread t2 = new Thread(() => ProcessURLs3(201, 300));
-            t2.Start();
+                //Footballer data = JsonConvert.DeserializeObject<Footballer>(reader.ReadLine());
 
-            //Thread t3 = new Thread(() => ProcessURLs4(151, 200));
-            //t3.Start();
+                //footballers.Add(data);
 
-            //Thread t4 = new Thread(() => ProcessURLs5(201, 250));
-            //t4.Start();
+                //IList roots = (IList)root;
 
-            ProcessURLs1(301, 450);
+                //foreach (var g in roots)
+                //{
+                    foreach (var s in root.elements)
+                    {
+                    //var converted = (Footballer)root.elements);
+                    footballers.Add(s);
+                    }
+                //}
 
-            
 
 
-            Debug.WriteLine("Stopping JSON read : {0} ", DateTime.Now);
+                //Thread t = new Thread(() => ProcessURLs(1, 100));
+                //t.Start();
 
-            return footballers;
+                //Thread t1 = new Thread(() => ProcessURLs2(101, 200));
+                //t1.Start();
+
+                //Thread t2 = new Thread(() => ProcessURLs3(201, 300));
+                //t2.Start();
+
+                //Thread t3 = new Thread(() => ProcessURLs4(151, 200));
+                //t3.Start();
+
+                //Thread t4 = new Thread(() => ProcessURLs5(201, 250));
+                //t4.Start();
+
+                //ProcessURLs1(301, 450);
+
+
+
+
+                Debug.WriteLine("Stopping JSON read : {0} ", DateTime.Now);
+
+                return footballers;
+            }
         }
 
         void ProcessURLs(int i1, int i2)
