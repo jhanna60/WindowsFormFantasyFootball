@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.lblLoadedSuccessMessage = new System.Windows.Forms.Label();
             this.btnReset = new System.Windows.Forms.Button();
@@ -64,6 +64,7 @@
             this.rdoAll = new System.Windows.Forms.RadioButton();
             this.lblTotP = new System.Windows.Forms.Label();
             this.lblTotPlayers = new System.Windows.Forms.Label();
+            this.rdoDream = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.dbgPlayers)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBLogo)).BeginInit();
             this.mnuStrip.SuspendLayout();
@@ -95,37 +96,37 @@
             this.dbgPlayers.AllowUserToOrderColumns = true;
             this.dbgPlayers.AllowUserToResizeColumns = false;
             this.dbgPlayers.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.WhiteSmoke;
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-            this.dbgPlayers.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
+            this.dbgPlayers.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
             this.dbgPlayers.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dbgPlayers.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dbgPlayers.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             this.dbgPlayers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.DimGray;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dbgPlayers.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.DimGray;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dbgPlayers.DefaultCellStyle = dataGridViewCellStyle6;
             this.dbgPlayers.Location = new System.Drawing.Point(0, 159);
             this.dbgPlayers.Name = "dbgPlayers";
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Gray;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dbgPlayers.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.Gray;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dbgPlayers.RowHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.dbgPlayers.RowHeadersVisible = false;
             this.dbgPlayers.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.Gainsboro;
-            this.dbgPlayers.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.Gainsboro;
+            this.dbgPlayers.RowsDefaultCellStyle = dataGridViewCellStyle8;
             this.dbgPlayers.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dbgPlayers.ShowCellToolTips = false;
             this.dbgPlayers.Size = new System.Drawing.Size(1135, 368);
@@ -358,10 +359,10 @@
             this.rdoTeam.AutoSize = true;
             this.rdoTeam.Location = new System.Drawing.Point(695, 100);
             this.rdoTeam.Name = "rdoTeam";
-            this.rdoTeam.Size = new System.Drawing.Size(78, 17);
+            this.rdoTeam.Size = new System.Drawing.Size(69, 17);
             this.rdoTeam.TabIndex = 24;
             this.rdoTeam.TabStop = true;
-            this.rdoTeam.Text = "Team View";
+            this.rdoTeam.Text = "My Team";
             this.rdoTeam.UseVisualStyleBackColor = true;
             this.rdoTeam.CheckedChanged += new System.EventHandler(this.rdoTeam_CheckedChanged);
             // 
@@ -370,10 +371,10 @@
             this.rdoAll.AutoSize = true;
             this.rdoAll.Location = new System.Drawing.Point(695, 77);
             this.rdoAll.Name = "rdoAll";
-            this.rdoAll.Size = new System.Drawing.Size(62, 17);
+            this.rdoAll.Size = new System.Drawing.Size(73, 17);
             this.rdoAll.TabIndex = 25;
             this.rdoAll.TabStop = true;
-            this.rdoAll.Text = "All View";
+            this.rdoAll.Text = "All Players";
             this.rdoAll.UseVisualStyleBackColor = true;
             this.rdoAll.CheckedChanged += new System.EventHandler(this.rdoAll_CheckedChanged);
             // 
@@ -396,12 +397,25 @@
             this.lblTotPlayers.Size = new System.Drawing.Size(0, 13);
             this.lblTotPlayers.TabIndex = 27;
             // 
+            // rdoDream
+            // 
+            this.rdoDream.AutoSize = true;
+            this.rdoDream.Location = new System.Drawing.Point(695, 123);
+            this.rdoDream.Name = "rdoDream";
+            this.rdoDream.Size = new System.Drawing.Size(86, 17);
+            this.rdoDream.TabIndex = 28;
+            this.rdoDream.TabStop = true;
+            this.rdoDream.Text = "Dream Team";
+            this.rdoDream.UseVisualStyleBackColor = true;
+            this.rdoDream.CheckedChanged += new System.EventHandler(this.rdoDream_CheckedChanged);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(1135, 555);
+            this.Controls.Add(this.rdoDream);
             this.Controls.Add(this.lblTotPlayers);
             this.Controls.Add(this.lblTotP);
             this.Controls.Add(this.rdoAll);
@@ -471,6 +485,7 @@
         private System.Windows.Forms.RadioButton rdoAll;
         private System.Windows.Forms.Label lblTotP;
         private System.Windows.Forms.Label lblTotPlayers;
+        private System.Windows.Forms.RadioButton rdoDream;
     }
 }
 

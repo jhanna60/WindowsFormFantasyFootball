@@ -70,7 +70,7 @@
                     row.CleanSheets = footballer.clean_sheets;
                     //row.CleansheetsPts = footballer.CleansheetsPts;
                     row.Assists = footballer.assists;
-                    row.SelectedByPcent = float.Parse(footballer.selected_by_percent);
+                    row.SelectedByPcent = decimal.Parse(footballer.selected_by_percent);
                     row.TransfersIn = footballer.transfers_in;
                     row.OwnGoals = footballer.own_goals;
                     row.EAIndex = footballer.ea_index;
@@ -82,11 +82,16 @@
                     row.RedCards = footballer.red_cards;
                     row.BPS = footballer.bps;
                     row.News = footballer.news;
+                    row.Influence = decimal.Parse(footballer.influence);
+                    row.Creativity = decimal.Parse(footballer.creativity);
+                    row.Threat = decimal.Parse(footballer.threat);
+                    row.Status = char.Parse(footballer.status);
                     //row.NextFixture1 = footballer.current_fixture;
                     //row.NextFixture2 = footballer.next_fixture;
                     //row.NextFixture3 = footballer.NextFixture3;
                     //row.NextFixture4 = footballer.NextFixture4;
                     //row.NextFixture5 = footballer.NextFixture5;
+                    row.InDreamteam = footballer.in_dreamteam;
 
                     footballersDataTable.AddFootballersRow(row);
                 }

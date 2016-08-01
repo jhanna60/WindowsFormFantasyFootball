@@ -4,6 +4,7 @@
     using System.Collections.Generic;
     using System.ComponentModel;
     using System.Data;
+    using System.Drawing;
     using System.Linq;
     using System.Windows.Forms;
 
@@ -128,6 +129,10 @@
         //Output our data based on the filters and reset other filters
         private void DataOutput()
         {
+            if (!rdoAll.Checked == true)
+            {
+                rdoAll.Checked = true;
+            }
 
             var teamFilter = cboTeams.Text == "ALL" ? "%" : cboTeams.Text;
             var positionFilter = cboPositions.Text == "ALL" ? "%" : cboPositions.Text;
@@ -136,6 +141,20 @@
             var filter = string.Format("Team LIKE '{0}' AND Position LIKE '{1}' AND Cost <= '{2}'", teamFilter, positionFilter, costFilter);
 
             _footballersDataTable.DefaultView.RowFilter = filter;
+
+            foreach (DataGridViewRow row in dbgPlayers.Rows)
+            {
+                string RowType = row.Cells[48].Value.ToString();
+
+                if (RowType == "i")
+                {
+                    row.DefaultCellStyle.BackColor = Color.Red;
+                }
+                else if (RowType == "d")
+                {
+                    row.DefaultCellStyle.BackColor = Color.Yellow;
+                }
+            }
         }
 
         //Resetting all our filter indexes
@@ -145,6 +164,7 @@
             cboTeams.SelectedIndex = 0;
             cboPrice.SelectedIndex = 0;
             tbSearch.Text = "";
+            rdoAll.Checked = true;
         }
 
         private void rdoAll_CheckedChanged(object sender, EventArgs e)
@@ -152,6 +172,15 @@
             if (rdoAll.Checked == true)
             {
                 DataOutput();
+            }
+        }
+
+        private void rdoDream_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rdoDream.Checked == true)
+            {
+                (dbgPlayers.DataSource as DataTable).DefaultView.RowFilter = "InDreamteam = true";
+                dbgPlayers.Refresh();
             }
         }
 
@@ -200,6 +229,20 @@
                 newColumn.HeaderCell.SortGlyphDirection =
                     direction == ListSortDirection.Ascending ?
                     SortOrder.Ascending : SortOrder.Descending;
+
+                foreach (DataGridViewRow row in dbgPlayers.Rows)
+                {
+                    string RowType = row.Cells[48].Value.ToString();
+
+                    if (RowType == "i")
+                    {
+                        row.DefaultCellStyle.BackColor = Color.Red;
+                    }
+                    else if (RowType == "d")
+                    {
+                        row.DefaultCellStyle.BackColor = Color.Yellow;
+                    }
+                }
             }
         }
 
