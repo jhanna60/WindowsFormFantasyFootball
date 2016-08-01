@@ -22,7 +22,7 @@ namespace WindowsFormFantasyFootball.Mapper
                 row.Position = ((Positions)footballer.element_type).ToString();
                 //footballer.element_type.ToString(); 
                 row.Team = ((Teams)footballer.team).ToString();
-                row.Cost = footballer.now_cost;
+                row.Cost = (decimal)footballer.now_cost / 10;
                 row.PointsLstRnd = footballer.event_points;
                 row.TotalPoints = footballer.total_points;
                 row.AveragePoints = decimal.Parse(footballer.points_per_game, NumberStyles.Any);

@@ -24,7 +24,7 @@
             //Setup a list of Teams,Positions and Price
             var teams = new HashSet<string>();
             var positions = new HashSet<string>();
-            var price = new HashSet<int>();
+            var price = new HashSet<decimal>();
 
             foreach (var row in _footballersDataTable.AsEnumerable())
             {
@@ -94,6 +94,14 @@
             //Freezing the Surname column so it stays when scrolling the data Horizontally
             dbgPlayers.Columns["surname"].Frozen = true;
 
+            //Setting the News Column so we can see all the contents
+            dbgPlayers.Columns["news"].Width = 250;
+
+            //Hiding some fields from the end user
+            dbgPlayers.Columns["status"].Visible = false;
+            dbgPlayers.Columns["InDreamteam"].Visible = false;
+            dbgPlayers.Columns["MyTeam"].Visible = false;
+
             //Setting the All view to checked by default so we display all the data
             rdoAll.Checked = true;
 
@@ -108,7 +116,6 @@
 
             //Utilise our column selector class
             DataGridViewColumnSelector cs = new DataGridViewColumnSelector(dbgPlayers);
-
         }
 
         private void TeamComboBox_SelectedIndexChanged(object sender, EventArgs e)
@@ -136,19 +143,24 @@
 
             var teamFilter = cboTeams.Text == "ALL" ? "%" : cboTeams.Text;
             var positionFilter = cboPositions.Text == "ALL" ? "%" : cboPositions.Text;
-            var costFilter = int.Parse(cboPrice.Text == "ALL" ? "15000000" : cboPrice.Text);
+            var costFilter = decimal.Parse(cboPrice.Text == "ALL" ? "15000000" : cboPrice.Text);
 
             var filter = string.Format("Team LIKE '{0}' AND Position LIKE '{1}' AND Cost <= '{2}'", teamFilter, positionFilter, costFilter);
 
             _footballersDataTable.DefaultView.RowFilter = filter;
 
+            UpdateInjuries();
+        }
+
+        private void UpdateInjuries()
+        {
             foreach (DataGridViewRow row in dbgPlayers.Rows)
             {
                 string RowType = row.Cells[48].Value.ToString();
 
-                if (RowType == "i")
+                if (RowType == "i" || RowType == "s")
                 {
-                    row.DefaultCellStyle.BackColor = Color.Red;
+                    row.DefaultCellStyle.BackColor = Color.Tomato;
                 }
                 else if (RowType == "d")
                 {
@@ -181,6 +193,7 @@
             {
                 (dbgPlayers.DataSource as DataTable).DefaultView.RowFilter = "InDreamteam = true";
                 dbgPlayers.Refresh();
+                UpdateInjuries();
             }
         }
 
@@ -190,6 +203,7 @@
             {
                 (dbgPlayers.DataSource as DataTable).DefaultView.RowFilter = "MyTeam = true";
                 dbgPlayers.Refresh();
+                UpdateInjuries();
             }
         }
 
@@ -230,19 +244,7 @@
                     direction == ListSortDirection.Ascending ?
                     SortOrder.Ascending : SortOrder.Descending;
 
-                foreach (DataGridViewRow row in dbgPlayers.Rows)
-                {
-                    string RowType = row.Cells[48].Value.ToString();
-
-                    if (RowType == "i")
-                    {
-                        row.DefaultCellStyle.BackColor = Color.Tomato;
-                    }
-                    else if (RowType == "d")
-                    {
-                        row.DefaultCellStyle.BackColor = Color.Yellow;
-                    }
-                }
+                UpdateInjuries();
             }
         }
 
@@ -256,6 +258,7 @@
             {
                 (dbgPlayers.DataSource as DataTable).DefaultView.RowFilter = "FirstName LIKE '" + tbSearch.Text + "%' OR Surname LIKE '" + tbSearch.Text + "%'" ;
                 dbgPlayers.Refresh();
+                UpdateInjuries();
             }
         }
 

@@ -844,7 +844,7 @@ namespace WindowsFormFantasyFootball {
                         string Surname, 
                         string Position, 
                         string Team, 
-                        int Cost, 
+                        decimal Cost, 
                         int PointsLstRnd, 
                         int TotalPoints, 
                         decimal AveragePoints, 
@@ -1024,7 +1024,7 @@ namespace WindowsFormFantasyFootball {
                 base.Columns.Add(this.columnPosition);
                 this.columnTeam = new global::System.Data.DataColumn("Team", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnTeam);
-                this.columnCost = new global::System.Data.DataColumn("Cost", typeof(int), null, global::System.Data.MappingType.Element);
+                this.columnCost = new global::System.Data.DataColumn("Cost", typeof(decimal), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnCost);
                 this.columnPointsLstRnd = new global::System.Data.DataColumn("PointsLstRnd", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnPointsLstRnd);
@@ -1322,10 +1322,10 @@ namespace WindowsFormFantasyFootball {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public int Cost {
+            public decimal Cost {
                 get {
                     try {
-                        return ((int)(this[this.tableFootballers.CostColumn]));
+                        return ((decimal)(this[this.tableFootballers.CostColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("The value for column \'Cost\' in table \'Footballers\' is DBNull.", e);
