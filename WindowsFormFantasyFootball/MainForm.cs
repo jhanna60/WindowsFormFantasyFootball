@@ -236,7 +236,7 @@
 
                     if (RowType == "i")
                     {
-                        row.DefaultCellStyle.BackColor = Color.Red;
+                        row.DefaultCellStyle.BackColor = Color.Tomato;
                     }
                     else if (RowType == "d")
                     {
