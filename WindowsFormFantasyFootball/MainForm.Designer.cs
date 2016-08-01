@@ -112,7 +112,7 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dbgPlayers.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dbgPlayers.Location = new System.Drawing.Point(12, 159);
+            this.dbgPlayers.Location = new System.Drawing.Point(0, 159);
             this.dbgPlayers.Name = "dbgPlayers";
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
@@ -128,7 +128,7 @@
             this.dbgPlayers.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dbgPlayers.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dbgPlayers.ShowCellToolTips = false;
-            this.dbgPlayers.Size = new System.Drawing.Size(1111, 368);
+            this.dbgPlayers.Size = new System.Drawing.Size(1135, 368);
             this.dbgPlayers.TabIndex = 4;
             this.dbgPlayers.ColumnHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dbgPlayers_ColumnHeaderMouseClick);
             // 

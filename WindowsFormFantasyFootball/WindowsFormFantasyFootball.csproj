@@ -50,6 +50,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataGridViewColumnSelector.cs" />
+    <Compile Include="Enums.cs" />
     <Compile Include="FootballersDataSet.cs">
       <DependentUpon>FootballersDataSet.xsd</DependentUpon>
     </Compile>

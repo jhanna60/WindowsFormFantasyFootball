@@ -38,8 +38,9 @@
 
                     row.FirstName = footballer.first_name;
                     row.Surname = footballer.second_name;
-                    row.Position = footballer.element_type.ToString();
-                    row.Team =  footballer.team.ToString();
+                    row.Position = ((Positions) footballer.element_type).ToString();
+                    //footballer.element_type.ToString(); 
+                    row.Team =  ((Teams) footballer.team).ToString();
                     row.Cost = footballer.now_cost;
                     row.PointsLstRnd = footballer.event_points;
                     row.TotalPoints = footballer.total_points;
@@ -83,59 +84,6 @@
                     row.News = footballer.news;
                     //row.NextFixture1 = footballer.current_fixture;
                     //row.NextFixture2 = footballer.next_fixture;
-                    //row.NextFixture3 = footballer.NextFixture3;
-                    //row.NextFixture4 = footballer.NextFixture4;
-                    //row.NextFixture5 = footballer.NextFixture5;
-
-
-
-
-                    //row.FirstName = footballer.FirstName;
-                    //row.Surname = footballer.Surname;
-                    //row.Position = footballer.Position;
-                    //row.Team = footballer.Team;
-                    //row.Cost = footballer.Cost;
-                    //row.PointsLstRnd = footballer.PointsLstRnd;
-                    //row.TotalPoints = footballer.TotalPoints;
-                    //row.AveragePoints = footballer.AveragePoints;
-                    //row.AvgPointsPound = footballer.AvgPointsDollar;
-                    //row.TotPointsPound = footballer.TotPointsDollar;
-                    ////row.WeekWeighting = footballer.WeekWeighting;
-                    //row.TransfersOut = footballer.TransfersOut;
-                    //row.YellowCards = footballer.YellowCards;
-                    //row.GoalsConceded = footballer.GoalsConceded;
-                    ////row.GoalsConcededPts = footballer.GoalsConcededPts;
-                    //row.Saves = footballer.Saves;
-                    ////row.SavesPts = footballer.SavesPts;
-                    //row.GoalsScored = footballer.GoalsScored;
-                    ////row.GoalsScoredPts = footballer.GoalsScoredPts;
-                    //row.ValueSeason = footballer.ValueSeason;
-                    //row.TransfersOutRnd = footballer.TransfersOutRnd;
-                    //row.PriceRise = footballer.PriceRise;
-                    //row.PriceFallRnd = footballer.PriceFallRnd;
-                    //row.LstSeasonPts = footballer.LstSeasonPts;
-                    //row.PriceFall = footballer.PriceFall;
-                    //row.ValueForm = footballer.ValueForm;
-                    //row.PenaltiesMissed = footballer.PenaltiesMissed;
-                    //row.Form = footballer.Form;
-                    //row.Bonus = footballer.Bonus;
-                    ////row.FanRating = footballer.FanRating;
-                    //row.CleanSheets = footballer.CleanSheets;
-                    ////row.CleansheetsPts = footballer.CleansheetsPts;
-                    //row.Assists = footballer.Assists;
-                    //row.SelectedByPcent = footballer.SelectedByPcent;
-                    //row.TransfersIn = footballer.TransfersIn;
-                    //row.OwnGoals = footballer.OwnGoals;
-                    //row.EAIndex = footballer.EAIndex;
-                    //row.PenaltiesSaved = footballer.PenaltiesSaved;
-                    //row.DreamTeamCount = footballer.DreamTeamCount;
-                    //row.MinutesPlayed = footballer.MinutesPlayed;
-                    //row.TransfersInRound = footballer.TransfersInRound;
-                    //row.PriceRiseRound = footballer.PriceRiseRound;
-                    //row.RedCards = footballer.RedCards;
-                    //row.BPS = footballer.BPS;
-                    //row.NextFixture1 = footballer.NextFixture1;
-                    //row.NextFixture2 = footballer.NextFixture2;
                     //row.NextFixture3 = footballer.NextFixture3;
                     //row.NextFixture4 = footballer.NextFixture4;
                     //row.NextFixture5 = footballer.NextFixture5;

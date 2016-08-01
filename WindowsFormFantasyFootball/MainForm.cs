@@ -75,6 +75,7 @@
             cboTeams.Items.AddRange(teamArr.ToArray());
 
             // Initialising the Positions Combo Box
+            //Position enumPositions = (Position) Enum.Parse (typeof(Position), positions);
             cboPositions.Items.Add("ALL");
             cboPositions.Items.AddRange(positions.ToArray());
 
