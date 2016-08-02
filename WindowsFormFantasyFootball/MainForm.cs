@@ -158,7 +158,7 @@
             {
                 string RowType = row.Cells[48].Value.ToString();
 
-                if (RowType == "i" || RowType == "s")
+                if (RowType == "i" || RowType == "s" || RowType == "u")
                 {
                     row.DefaultCellStyle.BackColor = Color.Tomato;
                 }
