@@ -116,6 +116,9 @@
 
             //Utilise our column selector class
             DataGridViewColumnSelector cs = new DataGridViewColumnSelector(dbgPlayers);
+
+            rdoTeam.Enabled = false;
+
         }
 
         private void TeamComboBox_SelectedIndexChanged(object sender, EventArgs e)
@@ -195,6 +198,11 @@
                 dbgPlayers.Refresh();
                 UpdateInjuries();
             }
+        }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+            UpdateInjuries();
         }
 
         private void rdoTeam_CheckedChanged(object sender, EventArgs e)

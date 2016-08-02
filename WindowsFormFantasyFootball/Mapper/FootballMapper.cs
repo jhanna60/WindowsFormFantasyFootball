@@ -26,6 +26,8 @@ namespace WindowsFormFantasyFootball.Mapper
                 row.PointsLstRnd = footballer.event_points;
                 row.TotalPoints = footballer.total_points;
                 row.AveragePoints = decimal.Parse(footballer.points_per_game, NumberStyles.Any);
+                row.AvgPointsPound = (row.AveragePoints / row.Cost) * (footballer.minutes / 1000);
+                row.TotPointsPound = (row.TotalPoints / row.Cost) * (footballer.minutes / 1000);
                 //row.AvgPointsPound = footballer.AvgPointsDollar;
                 //row.TotPointsPound = footballer.TotPointsDollar;
                 //row.WeekWeighting = footballer.WeekWeighting;
