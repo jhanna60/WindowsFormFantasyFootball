@@ -17,11 +17,12 @@
         [STAThread]
         private static void Main()
         {
+            List <Event> events = null;
             IEnumerable<Footballer> footballers = null;
             try
             {
                 var repo = new FootballersRepository();
-                footballers = repo.GetAll();
+                footballers = repo.GetAll(out events);
             }
             catch (Exception e)
             {
@@ -37,7 +38,7 @@
 
                 Application.EnableVisualStyles();
                 Application.SetCompatibleTextRenderingDefault(false);
-                Application.Run(new MainForm(footballersDataTable));
+                Application.Run(new MainForm(footballersDataTable,events));
             }
         }
     }

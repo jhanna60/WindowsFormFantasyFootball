@@ -13,9 +13,8 @@
 
         RootObject root = new RootObject();
 
-        public IEnumerable<Footballer> GetAll()
+        public IEnumerable<Footballer> GetAll(out List<Event> events)
         {
-
             var proxy = client.Proxy;
             client.UseDefaultCredentials = true;
             client.Proxy.Credentials = CredentialCache.DefaultCredentials;
@@ -35,7 +34,7 @@
                 {
                 footballers.Add(s);
                 }
-
+                events = root.events;
                 return footballers;
             }
         }

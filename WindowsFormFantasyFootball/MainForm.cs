@@ -14,7 +14,7 @@
 
         double totGK, totDEF, totMID, totFWD, totPlayers;
 
-        public MainForm(FootballersDataSet.FootballersDataTable footballersDataTable)
+        public MainForm(FootballersDataSet.FootballersDataTable footballersDataTable, List<Event> events)
         {
             // Initialise the form and set up our stream from constructor
             InitializeComponent();
@@ -119,6 +119,23 @@
 
             rdoTeam.Enabled = false;
 
+            // Find out what event we are at
+            int index = 0;
+            while (true)
+            {
+                if (!events[index].finished)
+                {
+                    break;
+                }
+                index++;
+            }
+
+            // Index is always 1 ahead so we need to add one to it.
+            index++;
+
+            lblCurrentRound.Text = index.ToString();
+            lblDeadline.Text = events[index - 1].deadline_time_formatted;
+
         }
 
         private void TeamComboBox_SelectedIndexChanged(object sender, EventArgs e)
@@ -204,6 +221,7 @@
         {
             UpdateInjuries();
         }
+
 
         private void rdoTeam_CheckedChanged(object sender, EventArgs e)
         {
