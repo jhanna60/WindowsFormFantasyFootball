@@ -22,7 +22,7 @@
             ServicePointManager.DefaultConnectionLimit = 300;
 
             // I need to Deserialise the JSON API object into RootObject, then I need to pick
-            // out the Footballers and return them
+            // out the Footballers and return them, also I can return the Events list
 
             Stream stream = client.OpenRead("https://fantasy.premierleague.com/drf/bootstrap-static");
 
