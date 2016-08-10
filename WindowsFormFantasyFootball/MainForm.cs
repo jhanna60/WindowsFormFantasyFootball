@@ -176,9 +176,9 @@
         {
             foreach (DataGridViewRow row in dbgPlayers.Rows)
             {
-                string RowType = row.Cells[48].Value.ToString();
+                string RowType = row.Cells[43].Value.ToString();
 
-                if (RowType == "i" || RowType == "s" || RowType == "u")
+                if (RowType == "i" || RowType == "s" || RowType == "u" || RowType == "n")
                 {
                     row.DefaultCellStyle.BackColor = Color.Tomato;
                 }

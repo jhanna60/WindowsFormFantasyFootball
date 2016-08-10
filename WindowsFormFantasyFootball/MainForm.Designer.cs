@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.btnReset = new System.Windows.Forms.Button();
             this.dbgPlayers = new System.Windows.Forms.DataGridView();
@@ -93,37 +93,37 @@
             this.dbgPlayers.AllowUserToOrderColumns = true;
             this.dbgPlayers.AllowUserToResizeColumns = false;
             this.dbgPlayers.AllowUserToResizeRows = false;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.WhiteSmoke;
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.Black;
-            this.dbgPlayers.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            this.dbgPlayers.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dbgPlayers.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dbgPlayers.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dbgPlayers.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             this.dbgPlayers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.DimGray;
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dbgPlayers.DefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.DimGray;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dbgPlayers.DefaultCellStyle = dataGridViewCellStyle2;
             this.dbgPlayers.Location = new System.Drawing.Point(0, 159);
             this.dbgPlayers.Name = "dbgPlayers";
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.Gray;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dbgPlayers.RowHeadersDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Gray;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dbgPlayers.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dbgPlayers.RowHeadersVisible = false;
             this.dbgPlayers.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.Gainsboro;
-            this.dbgPlayers.RowsDefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.Gainsboro;
+            this.dbgPlayers.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dbgPlayers.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dbgPlayers.ShowCellToolTips = false;
             this.dbgPlayers.Size = new System.Drawing.Size(1135, 368);
@@ -215,7 +215,7 @@
             // 
             this.tbSearch.BackColor = System.Drawing.Color.Gainsboro;
             this.tbSearch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tbSearch.Location = new System.Drawing.Point(12, 129);
+            this.tbSearch.Location = new System.Drawing.Point(12, 127);
             this.tbSearch.Name = "tbSearch";
             this.tbSearch.Size = new System.Drawing.Size(121, 20);
             this.tbSearch.TabIndex = 13;
@@ -230,7 +230,7 @@
             this.lblVersion.Name = "lblVersion";
             this.lblVersion.Size = new System.Drawing.Size(32, 13);
             this.lblVersion.TabIndex = 12;
-            this.lblVersion.Text = "V 2.0";
+            this.lblVersion.Text = "V 2.1";
             // 
             // mnuStrip
             // 
@@ -269,17 +269,17 @@
             // 
             this.lblTotals.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lblTotals.AutoSize = true;
-            this.lblTotals.Location = new System.Drawing.Point(12, 533);
+            this.lblTotals.Location = new System.Drawing.Point(0, 533);
             this.lblTotals.Name = "lblTotals";
-            this.lblTotals.Size = new System.Drawing.Size(36, 13);
+            this.lblTotals.Size = new System.Drawing.Size(136, 13);
             this.lblTotals.TabIndex = 15;
-            this.lblTotals.Text = "Totals";
+            this.lblTotals.Text = "Total Distribution of Points -";
             // 
             // lblGoalie
             // 
             this.lblGoalie.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lblGoalie.AutoSize = true;
-            this.lblGoalie.Location = new System.Drawing.Point(60, 533);
+            this.lblGoalie.Location = new System.Drawing.Point(142, 533);
             this.lblGoalie.Name = "lblGoalie";
             this.lblGoalie.Size = new System.Drawing.Size(73, 13);
             this.lblGoalie.TabIndex = 16;
@@ -289,7 +289,7 @@
             // 
             this.lblTotGK.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lblTotGK.AutoSize = true;
-            this.lblTotGK.Location = new System.Drawing.Point(133, 533);
+            this.lblTotGK.Location = new System.Drawing.Point(215, 533);
             this.lblTotGK.Name = "lblTotGK";
             this.lblTotGK.Size = new System.Drawing.Size(0, 13);
             this.lblTotGK.TabIndex = 17;
@@ -298,7 +298,7 @@
             // 
             this.lblDefender.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lblDefender.AutoSize = true;
-            this.lblDefender.Location = new System.Drawing.Point(172, 533);
+            this.lblDefender.Location = new System.Drawing.Point(253, 533);
             this.lblDefender.Name = "lblDefender";
             this.lblDefender.Size = new System.Drawing.Size(62, 13);
             this.lblDefender.TabIndex = 18;
@@ -308,7 +308,7 @@
             // 
             this.lblTotDef.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lblTotDef.AutoSize = true;
-            this.lblTotDef.Location = new System.Drawing.Point(234, 532);
+            this.lblTotDef.Location = new System.Drawing.Point(315, 533);
             this.lblTotDef.Name = "lblTotDef";
             this.lblTotDef.Size = new System.Drawing.Size(0, 13);
             this.lblTotDef.TabIndex = 19;
@@ -317,7 +317,7 @@
             // 
             this.lblMidfielder.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lblMidfielder.AutoSize = true;
-            this.lblMidfielder.Location = new System.Drawing.Point(282, 533);
+            this.lblMidfielder.Location = new System.Drawing.Point(355, 533);
             this.lblMidfielder.Name = "lblMidfielder";
             this.lblMidfielder.Size = new System.Drawing.Size(63, 13);
             this.lblMidfielder.TabIndex = 20;
@@ -327,7 +327,7 @@
             // 
             this.lblTotMids.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lblTotMids.AutoSize = true;
-            this.lblTotMids.Location = new System.Drawing.Point(345, 532);
+            this.lblTotMids.Location = new System.Drawing.Point(418, 533);
             this.lblTotMids.Name = "lblTotMids";
             this.lblTotMids.Size = new System.Drawing.Size(0, 13);
             this.lblTotMids.TabIndex = 21;
@@ -336,7 +336,7 @@
             // 
             this.lblForwards.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lblForwards.AutoSize = true;
-            this.lblForwards.Location = new System.Drawing.Point(393, 533);
+            this.lblForwards.Location = new System.Drawing.Point(457, 533);
             this.lblForwards.Name = "lblForwards";
             this.lblForwards.Size = new System.Drawing.Size(56, 13);
             this.lblForwards.TabIndex = 22;
@@ -346,7 +346,7 @@
             // 
             this.lblTotFwds.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lblTotFwds.AutoSize = true;
-            this.lblTotFwds.Location = new System.Drawing.Point(449, 533);
+            this.lblTotFwds.Location = new System.Drawing.Point(513, 533);
             this.lblTotFwds.Name = "lblTotFwds";
             this.lblTotFwds.Size = new System.Drawing.Size(0, 13);
             this.lblTotFwds.TabIndex = 23;
@@ -354,7 +354,7 @@
             // rdoTeam
             // 
             this.rdoTeam.AutoSize = true;
-            this.rdoTeam.Location = new System.Drawing.Point(297, 132);
+            this.rdoTeam.Location = new System.Drawing.Point(276, 130);
             this.rdoTeam.Name = "rdoTeam";
             this.rdoTeam.Size = new System.Drawing.Size(69, 17);
             this.rdoTeam.TabIndex = 24;
@@ -366,7 +366,7 @@
             // rdoAll
             // 
             this.rdoAll.AutoSize = true;
-            this.rdoAll.Location = new System.Drawing.Point(202, 132);
+            this.rdoAll.Location = new System.Drawing.Point(197, 130);
             this.rdoAll.Name = "rdoAll";
             this.rdoAll.Size = new System.Drawing.Size(73, 17);
             this.rdoAll.TabIndex = 25;
@@ -377,9 +377,9 @@
             // 
             // lblTotP
             // 
-            this.lblTotP.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.lblTotP.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.lblTotP.AutoSize = true;
-            this.lblTotP.Location = new System.Drawing.Point(499, 533);
+            this.lblTotP.Location = new System.Drawing.Point(953, 533);
             this.lblTotP.Name = "lblTotP";
             this.lblTotP.Size = new System.Drawing.Size(74, 13);
             this.lblTotP.TabIndex = 26;
@@ -387,9 +387,9 @@
             // 
             // lblTotPlayers
             // 
-            this.lblTotPlayers.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.lblTotPlayers.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.lblTotPlayers.AutoSize = true;
-            this.lblTotPlayers.Location = new System.Drawing.Point(573, 533);
+            this.lblTotPlayers.Location = new System.Drawing.Point(1027, 533);
             this.lblTotPlayers.Name = "lblTotPlayers";
             this.lblTotPlayers.Size = new System.Drawing.Size(0, 13);
             this.lblTotPlayers.TabIndex = 27;
@@ -397,7 +397,7 @@
             // rdoDream
             // 
             this.rdoDream.AutoSize = true;
-            this.rdoDream.Location = new System.Drawing.Point(382, 132);
+            this.rdoDream.Location = new System.Drawing.Point(351, 130);
             this.rdoDream.Name = "rdoDream";
             this.rdoDream.Size = new System.Drawing.Size(86, 17);
             this.rdoDream.TabIndex = 28;
@@ -408,8 +408,9 @@
             // 
             // lblRoundDesc
             // 
+            this.lblRoundDesc.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblRoundDesc.AutoSize = true;
-            this.lblRoundDesc.Location = new System.Drawing.Point(739, 43);
+            this.lblRoundDesc.Location = new System.Drawing.Point(739, 60);
             this.lblRoundDesc.Name = "lblRoundDesc";
             this.lblRoundDesc.Size = new System.Drawing.Size(82, 13);
             this.lblRoundDesc.TabIndex = 29;
@@ -417,17 +418,19 @@
             // 
             // lblCurrentRound
             // 
+            this.lblCurrentRound.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblCurrentRound.AutoSize = true;
             this.lblCurrentRound.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCurrentRound.Location = new System.Drawing.Point(827, 23);
+            this.lblCurrentRound.Location = new System.Drawing.Point(827, 43);
             this.lblCurrentRound.Name = "lblCurrentRound";
             this.lblCurrentRound.Size = new System.Drawing.Size(0, 73);
             this.lblCurrentRound.TabIndex = 30;
             // 
             // lblDeadlineDesc
             // 
+            this.lblDeadlineDesc.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblDeadlineDesc.AutoSize = true;
-            this.lblDeadlineDesc.Location = new System.Drawing.Point(743, 110);
+            this.lblDeadlineDesc.Location = new System.Drawing.Point(743, 134);
             this.lblDeadlineDesc.Name = "lblDeadlineDesc";
             this.lblDeadlineDesc.Size = new System.Drawing.Size(78, 13);
             this.lblDeadlineDesc.TabIndex = 31;
@@ -435,8 +438,9 @@
             // 
             // lblDeadline
             // 
+            this.lblDeadline.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblDeadline.AutoSize = true;
-            this.lblDeadline.Location = new System.Drawing.Point(837, 110);
+            this.lblDeadline.Location = new System.Drawing.Point(827, 134);
             this.lblDeadline.Name = "lblDeadline";
             this.lblDeadline.Size = new System.Drawing.Size(0, 13);
             this.lblDeadline.TabIndex = 32;

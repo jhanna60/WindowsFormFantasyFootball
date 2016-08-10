@@ -359,16 +359,6 @@ namespace WindowsFormFantasyFootball {
             
             private global::System.Data.DataColumn columnThreat;
             
-            private global::System.Data.DataColumn columnNextFixture1;
-            
-            private global::System.Data.DataColumn columnNextFixture2;
-            
-            private global::System.Data.DataColumn columnNextFixture3;
-            
-            private global::System.Data.DataColumn columnNextFixture4;
-            
-            private global::System.Data.DataColumn columnNextFixture5;
-            
             private global::System.Data.DataColumn columnMyTeam;
             
             private global::System.Data.DataColumn columnNews;
@@ -732,46 +722,6 @@ namespace WindowsFormFantasyFootball {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn NextFixture1Column {
-                get {
-                    return this.columnNextFixture1;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn NextFixture2Column {
-                get {
-                    return this.columnNextFixture2;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn NextFixture3Column {
-                get {
-                    return this.columnNextFixture3;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn NextFixture4Column {
-                get {
-                    return this.columnNextFixture4;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn NextFixture5Column {
-                get {
-                    return this.columnNextFixture5;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn MyTeamColumn {
                 get {
                     return this.columnMyTeam;
@@ -880,11 +830,6 @@ namespace WindowsFormFantasyFootball {
                         decimal Influence, 
                         decimal Creativity, 
                         decimal Threat, 
-                        string NextFixture1, 
-                        string NextFixture2, 
-                        string NextFixture3, 
-                        string NextFixture4, 
-                        string NextFixture5, 
                         bool MyTeam, 
                         string News, 
                         bool InDreamteam, 
@@ -931,11 +876,6 @@ namespace WindowsFormFantasyFootball {
                         Influence,
                         Creativity,
                         Threat,
-                        NextFixture1,
-                        NextFixture2,
-                        NextFixture3,
-                        NextFixture4,
-                        NextFixture5,
                         MyTeam,
                         News,
                         InDreamteam,
@@ -1002,11 +942,6 @@ namespace WindowsFormFantasyFootball {
                 this.columnInfluence = base.Columns["Influence"];
                 this.columnCreativity = base.Columns["Creativity"];
                 this.columnThreat = base.Columns["Threat"];
-                this.columnNextFixture1 = base.Columns["NextFixture1"];
-                this.columnNextFixture2 = base.Columns["NextFixture2"];
-                this.columnNextFixture3 = base.Columns["NextFixture3"];
-                this.columnNextFixture4 = base.Columns["NextFixture4"];
-                this.columnNextFixture5 = base.Columns["NextFixture5"];
                 this.columnMyTeam = base.Columns["MyTeam"];
                 this.columnNews = base.Columns["News"];
                 this.columnInDreamteam = base.Columns["InDreamteam"];
@@ -1096,16 +1031,6 @@ namespace WindowsFormFantasyFootball {
                 base.Columns.Add(this.columnCreativity);
                 this.columnThreat = new global::System.Data.DataColumn("Threat", typeof(decimal), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnThreat);
-                this.columnNextFixture1 = new global::System.Data.DataColumn("NextFixture1", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnNextFixture1);
-                this.columnNextFixture2 = new global::System.Data.DataColumn("NextFixture2", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnNextFixture2);
-                this.columnNextFixture3 = new global::System.Data.DataColumn("NextFixture3", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnNextFixture3);
-                this.columnNextFixture4 = new global::System.Data.DataColumn("NextFixture4", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnNextFixture4);
-                this.columnNextFixture5 = new global::System.Data.DataColumn("NextFixture5", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnNextFixture5);
                 this.columnMyTeam = new global::System.Data.DataColumn("MyTeam", typeof(bool), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnMyTeam);
                 this.columnNews = new global::System.Data.DataColumn("News", typeof(string), null, global::System.Data.MappingType.Element);
@@ -1898,86 +1823,6 @@ namespace WindowsFormFantasyFootball {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string NextFixture1 {
-                get {
-                    try {
-                        return ((string)(this[this.tableFootballers.NextFixture1Column]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'NextFixture1\' in table \'Footballers\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableFootballers.NextFixture1Column] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string NextFixture2 {
-                get {
-                    try {
-                        return ((string)(this[this.tableFootballers.NextFixture2Column]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'NextFixture2\' in table \'Footballers\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableFootballers.NextFixture2Column] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string NextFixture3 {
-                get {
-                    try {
-                        return ((string)(this[this.tableFootballers.NextFixture3Column]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'NextFixture3\' in table \'Footballers\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableFootballers.NextFixture3Column] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string NextFixture4 {
-                get {
-                    try {
-                        return ((string)(this[this.tableFootballers.NextFixture4Column]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'NextFixture4\' in table \'Footballers\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableFootballers.NextFixture4Column] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string NextFixture5 {
-                get {
-                    try {
-                        return ((string)(this[this.tableFootballers.NextFixture5Column]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'NextFixture5\' in table \'Footballers\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableFootballers.NextFixture5Column] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool MyTeam {
                 get {
                     try {
@@ -2518,66 +2363,6 @@ namespace WindowsFormFantasyFootball {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetThreatNull() {
                 this[this.tableFootballers.ThreatColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsNextFixture1Null() {
-                return this.IsNull(this.tableFootballers.NextFixture1Column);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetNextFixture1Null() {
-                this[this.tableFootballers.NextFixture1Column] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsNextFixture2Null() {
-                return this.IsNull(this.tableFootballers.NextFixture2Column);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetNextFixture2Null() {
-                this[this.tableFootballers.NextFixture2Column] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsNextFixture3Null() {
-                return this.IsNull(this.tableFootballers.NextFixture3Column);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetNextFixture3Null() {
-                this[this.tableFootballers.NextFixture3Column] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsNextFixture4Null() {
-                return this.IsNull(this.tableFootballers.NextFixture4Column);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetNextFixture4Null() {
-                this[this.tableFootballers.NextFixture4Column] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsNextFixture5Null() {
-                return this.IsNull(this.tableFootballers.NextFixture5Column);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetNextFixture5Null() {
-                this[this.tableFootballers.NextFixture5Column] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
