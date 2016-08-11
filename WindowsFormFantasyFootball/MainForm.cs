@@ -76,7 +76,6 @@
             cboTeams.Items.AddRange(teamArr.ToArray());
 
             // Initialising the Positions Combo Box
-            //Position enumPositions = (Position) Enum.Parse (typeof(Position), positions);
             cboPositions.Items.Add("ALL");
             cboPositions.Items.AddRange(positions.ToArray());
 
@@ -130,11 +129,8 @@
                 index++;
             }
 
-            // Index is always 1 ahead so we need to add one to it.
-            index++;
-
-            lblCurrentRound.Text = index.ToString();
-            lblDeadline.Text = events[index - 1].deadline_time_formatted;
+            lblCurrentRound.Text = events[index].id.ToString();
+            lblDeadline.Text = events[index].deadline_time_formatted;
 
         }
 
