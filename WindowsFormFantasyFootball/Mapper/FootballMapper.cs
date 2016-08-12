@@ -64,6 +64,8 @@ namespace WindowsFormFantasyFootball.Mapper
                 row.Threat = decimal.Parse(footballer.threat);
                 row.Status = char.Parse(footballer.status);
                 row.InDreamteam = footballer.in_dreamteam;
+                row.Photo = System.IO.Path.GetFileNameWithoutExtension(footballer.photo);
+                row.ID = footballer.id;
 
                 footballersDataTable.AddFootballersRow(row);
             }

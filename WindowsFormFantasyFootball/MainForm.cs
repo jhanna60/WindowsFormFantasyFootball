@@ -100,6 +100,7 @@
             dbgPlayers.Columns["status"].Visible = false;
             dbgPlayers.Columns["InDreamteam"].Visible = false;
             dbgPlayers.Columns["MyTeam"].Visible = false;
+            dbgPlayers.Columns["Photo"].Visible = false;
 
             //Setting the All view to checked by default so we display all the data
             rdoAll.Checked = true;
@@ -218,6 +219,14 @@
             UpdateInjuries();
         }
 
+        private void dbgPlayers_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            string photo = dbgPlayers.Rows[e.RowIndex].Cells[44].Value.ToString();
+            int id = Convert.ToInt32(dbgPlayers.Rows[e.RowIndex].Cells[45].Value);
+
+            FootballerStats frm = new FootballerStats(photo,id);
+            frm.Show();
+        }
 
         private void rdoTeam_CheckedChanged(object sender, EventArgs e)
         {

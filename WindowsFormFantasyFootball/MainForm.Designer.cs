@@ -128,6 +128,7 @@
             this.dbgPlayers.ShowCellToolTips = false;
             this.dbgPlayers.Size = new System.Drawing.Size(1135, 368);
             this.dbgPlayers.TabIndex = 4;
+            this.dbgPlayers.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dbgPlayers_CellDoubleClick);
             this.dbgPlayers.ColumnHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dbgPlayers_ColumnHeaderMouseClick);
             // 
             // cboTeams
