@@ -835,8 +835,8 @@ namespace WindowsFormFantasyFootball {
                         int PriceFall, 
                         int PriceFallRnd, 
                         double Form, 
-                        double ValueForm, 
-                        double ValueSeason, 
+                        decimal ValueForm, 
+                        decimal ValueSeason, 
                         int PenaltiesMissed, 
                         int PenaltiesSaved, 
                         int CleanSheets, 
@@ -1027,9 +1027,9 @@ namespace WindowsFormFantasyFootball {
                 base.Columns.Add(this.columnPriceFallRnd);
                 this.columnForm = new global::System.Data.DataColumn("Form", typeof(double), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnForm);
-                this.columnValueForm = new global::System.Data.DataColumn("ValueForm", typeof(double), null, global::System.Data.MappingType.Element);
+                this.columnValueForm = new global::System.Data.DataColumn("ValueForm", typeof(decimal), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnValueForm);
-                this.columnValueSeason = new global::System.Data.DataColumn("ValueSeason", typeof(double), null, global::System.Data.MappingType.Element);
+                this.columnValueSeason = new global::System.Data.DataColumn("ValueSeason", typeof(decimal), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnValueSeason);
                 this.columnPenaltiesMissed = new global::System.Data.DataColumn("PenaltiesMissed", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnPenaltiesMissed);
@@ -1613,10 +1613,10 @@ namespace WindowsFormFantasyFootball {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public double ValueForm {
+            public decimal ValueForm {
                 get {
                     try {
-                        return ((double)(this[this.tableFootballers.ValueFormColumn]));
+                        return ((decimal)(this[this.tableFootballers.ValueFormColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("The value for column \'ValueForm\' in table \'Footballers\' is DBNull.", e);
@@ -1629,10 +1629,10 @@ namespace WindowsFormFantasyFootball {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public double ValueSeason {
+            public decimal ValueSeason {
                 get {
                     try {
-                        return ((double)(this[this.tableFootballers.ValueSeasonColumn]));
+                        return ((decimal)(this[this.tableFootballers.ValueSeasonColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("The value for column \'ValueSeason\' in table \'Footballers\' is DBNull.", e);

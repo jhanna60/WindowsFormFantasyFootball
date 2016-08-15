@@ -120,6 +120,9 @@
   <metadata name="ttHelper.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <metadata name="ttHelper.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="pBLogo.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -436,7 +439,7 @@
   <data name="pbSearch.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACIAAAAiCAYAAAA6RwvCAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wQAADsEBuJFr7QAAABp0RVh0U29mdHdhcmUAUGFpbnQuTkVUIHYzLjUuMTAw9HKhAAAGaklEQVRYR6WX
+        wAAADsABataJCQAAABp0RVh0U29mdHdhcmUAUGFpbnQuTkVUIHYzLjUuMTAw9HKhAAAGaklEQVRYR6WX
         W2xUVRSGZ+bMfdpipy2lXG0LAmKnRJBWbr2hiBITosYH9cEHjMZbYvpANEbxxQCJJqISxRiJAR40iBIB
         jYIICcEYE4LEqCReQOMFoxSQWsH4/bt7H8+ZmU6gruSf2evft3+vvfY+50SCtmRJtxADUUuV5WTyLW+Z
         UFvLXFp/Y7YiCTxXqX+QsDCcbNKkCcmamuopsVhsNu5C0EF52tixDfW9vYsr9rec2qRASJwqJCILJMRx

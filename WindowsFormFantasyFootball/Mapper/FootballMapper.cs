@@ -36,12 +36,12 @@ namespace WindowsFormFantasyFootball.Mapper
                 row.Saves = footballer.saves;
                 //row.SavesPts = footballer.SavesPts;
                 row.GoalsScored = footballer.goals_scored;
-                row.ValueSeason = float.Parse(footballer.value_season);
+                row.ValueSeason = decimal.Parse(footballer.value_season);
                 row.TransfersOutRnd = footballer.transfers_out_event;
                 row.PriceRise = footballer.cost_change_start;
                 row.PriceFallRnd = footballer.cost_change_event_fall;
                 row.PriceFall = footballer.cost_change_start_fall;
-                row.ValueForm = float.Parse(footballer.value_form);
+                row.ValueForm = decimal.Parse(footballer.value_form);
                 row.PenaltiesMissed = footballer.penalties_missed;
                 row.Form = float.Parse(footballer.form);
                 row.Bonus = footballer.bonus;
