@@ -79,31 +79,6 @@ namespace WindowsFormFantasyFootball
                             break;
                     }
                 }
-                //lblFixture0.Text = root.fixtures[0].event_name + Environment.NewLine + root.fixtures[0].opponent_name;
-                //switch (root.fixtures[0].difficulty)
-                //{
-                //    case 1:
-                //        lblFixture0.BackColor = Color.Green;
-                //            break;
-                //    case 2:
-                //        lblFixture0.BackColor = Color.DarkSeaGreen;
-                //        break;
-                //    case 3:
-                //        lblFixture0.BackColor = Color.LightYellow;
-                //        break;
-                //    case 4:
-                //        lblFixture0.BackColor = Color.Orange;
-                //        break;
-                //    case 5:
-                //        lblFixture0.BackColor = Color.DarkRed;
-                //        break;
-                //    default:
-                //        break;
-                //}
-                //lblFixture1.Text = root.fixtures[1].event_name + Environment.NewLine + root.fixtures[1].opponent_name;
-                //lblFixture2.Text = root.fixtures[2].event_name + Environment.NewLine + root.fixtures[2].opponent_name;
-                //lblFixture3.Text = root.fixtures[3].event_name + Environment.NewLine + root.fixtures[3].opponent_name;
-                //lblFixture4.Text = root.fixtures[4].event_name + Environment.NewLine + root.fixtures[4].opponent_name;
             }
         }
     }
