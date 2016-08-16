@@ -101,6 +101,7 @@
             dbgPlayers.Columns["InDreamteam"].Visible = false;
             dbgPlayers.Columns["MyTeam"].Visible = false;
             dbgPlayers.Columns["Photo"].Visible = false;
+            dbgPlayers.Columns["ID"].Visible = false;
 
             //Setting the All view to checked by default so we display all the data
             rdoAll.Checked = true;

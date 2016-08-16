@@ -56,7 +56,8 @@ namespace WindowsFormFantasyFootball
 
                 for (int i = 0; i < 5; i++)
                 {
-                    labels[i].Text = root.fixtures[i].event_name + Environment.NewLine + root.fixtures[i].opponent_name;
+                    string fixture = root.fixtures[i].is_home ? " (H)" : " (A)";
+                    labels[i].Text = root.fixtures[i].event_name + Environment.NewLine + Environment.NewLine + root.fixtures[i].opponent_name + fixture;
 
                     switch (root.fixtures[i].difficulty)
                     {
@@ -67,18 +68,35 @@ namespace WindowsFormFantasyFootball
                             labels[i].BackColor = Color.DarkSeaGreen;
                             break;
                         case 3:
-                            labels[i].BackColor = Color.LightYellow;
+                            labels[i].BackColor = Color.LightGoldenrodYellow;
                             break;
                         case 4:
                             labels[i].BackColor = Color.Orange;
                             break;
                         case 5:
-                            labels[i].BackColor = Color.DarkRed;
+                            labels[i].BackColor = Color.Firebrick;
                             break;
                         default:
                             break;
                     }
                 }
+
+                var history = new HashSet<string>();
+
+                foreach (var year in root.history_past)
+                {
+                    history.Add(year.season_name);
+                }
+
+                var histArr = history.ToArray();
+                Array.Sort(histArr);
+                Array.Reverse(histArr);
+
+                cboHistory.Items.AddRange(histArr);
+                if (cboHistory.Items.Count > 0) {
+                    cboHistory.SelectedIndex = 0;
+                }
+                
             }
         }
     }
