@@ -222,10 +222,13 @@
 
         private void dbgPlayers_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            string photo = dbgPlayers.Rows[e.RowIndex].Cells[44].Value.ToString();
-            int id = Convert.ToInt32(dbgPlayers.Rows[e.RowIndex].Cells[45].Value);
+            Footballer fb = new Footballer();
+            fb.photo = dbgPlayers.Rows[e.RowIndex].Cells[44].Value.ToString();
+            fb.id = Convert.ToInt32(dbgPlayers.Rows[e.RowIndex].Cells[45].Value);
+            fb.first_name = dbgPlayers.Rows[e.RowIndex].Cells[0].Value.ToString();
+            fb.second_name = dbgPlayers.Rows[e.RowIndex].Cells[1].Value.ToString();
 
-            FootballerStats frm = new FootballerStats(photo,id);
+            FootballerStats frm = new FootballerStats(fb);
             frm.Show();
         }
 

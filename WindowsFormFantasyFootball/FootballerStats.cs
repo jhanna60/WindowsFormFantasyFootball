@@ -19,12 +19,12 @@ namespace WindowsFormFantasyFootball
 
         FootballerHistory root = new FootballerHistory();
 
-        public FootballerStats(string photo, int ID)
+        public FootballerStats(Footballer fb)
         {
             InitializeComponent();
 
 
-            string photourl = "https://platform-static-files.s3.amazonaws.com/premierleague/photos/players/110x140/p" + photo + ".png" ;
+            string photourl = "https://platform-static-files.s3.amazonaws.com/premierleague/photos/players/110x140/p" + fb.photo + ".png" ;
 
             try
             {
@@ -43,7 +43,7 @@ namespace WindowsFormFantasyFootball
             // I need to Deserialise the JSON API object into RootObject, then I need to pick
             // out the Footballers and return them, also I can return the Events list
 
-            Stream stream = client.OpenRead("https://fantasy.premierleague.com/drf/element-summary/"+ID);
+            Stream stream = client.OpenRead("https://fantasy.premierleague.com/drf/element-summary/"+fb.id);
 
             using (StreamReader reader = new StreamReader(stream))
             {
@@ -57,7 +57,8 @@ namespace WindowsFormFantasyFootball
                 for (int i = 0; i < 5; i++)
                 {
                     string fixture = root.fixtures[i].is_home ? " (H)" : " (A)";
-                    labels[i].Text = root.fixtures[i].event_name + Environment.NewLine + Environment.NewLine + root.fixtures[i].opponent_name + fixture;
+                    labels[i].Text = root.fixtures[i].event_name + Environment.NewLine + Environment.NewLine + root.fixtures[i].opponent_name 
+                        + fixture + Environment.NewLine + Environment.NewLine + root.fixtures[i].kickoff_time_formatted ;
 
                     switch (root.fixtures[i].difficulty)
                     {
@@ -98,6 +99,27 @@ namespace WindowsFormFantasyFootball
                 }
                 
             }
+
+            lblFirstName.Text = fb.first_name;
+            lblSurname.Text = fb.second_name;
+        }
+
+        private void cboHistory_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            lblTotalPoints.Text = root.history_past[(cboHistory.Items.Count -1) - cboHistory.SelectedIndex].total_points.ToString();
+            lblGoals.Text = root.history_past[(cboHistory.Items.Count - 1) - cboHistory.SelectedIndex].goals_scored.ToString();
+            lblAssists.Text = root.history_past[(cboHistory.Items.Count - 1) - cboHistory.SelectedIndex].assists.ToString();
+            lblStartCost.Text = ((decimal)root.history_past[(cboHistory.Items.Count - 1) - cboHistory.SelectedIndex].start_cost / 10).ToString();
+            lblEndCost.Text = (((decimal)root.history_past[(cboHistory.Items.Count - 1) - cboHistory.SelectedIndex].end_cost) / 10).ToString();
+            lblMinutes.Text = root.history_past[(cboHistory.Items.Count - 1) - cboHistory.SelectedIndex].minutes.ToString();
+            lblCleanSheets.Text = root.history_past[(cboHistory.Items.Count - 1) - cboHistory.SelectedIndex].clean_sheets.ToString();
+            lblGoalsConceded.Text = root.history_past[(cboHistory.Items.Count - 1) - cboHistory.SelectedIndex].goals_conceded.ToString();
+            lblOwnGoals.Text = root.history_past[(cboHistory.Items.Count - 1) - cboHistory.SelectedIndex].own_goals.ToString();
+            lblPenSaved.Text = root.history_past[(cboHistory.Items.Count - 1) - cboHistory.SelectedIndex].penalties_saved.ToString();
+            lblPenMissed.Text = root.history_past[(cboHistory.Items.Count - 1) - cboHistory.SelectedIndex].penalties_missed.ToString();
+            lblYellowCards.Text = root.history_past[(cboHistory.Items.Count - 1) - cboHistory.SelectedIndex].yellow_cards.ToString();
+            lblRedCards.Text = root.history_past[(cboHistory.Items.Count - 1) - cboHistory.SelectedIndex].red_cards.ToString();
+            lblSaves.Text = root.history_past[(cboHistory.Items.Count - 1) - cboHistory.SelectedIndex].saves.ToString();
         }
     }
 }
