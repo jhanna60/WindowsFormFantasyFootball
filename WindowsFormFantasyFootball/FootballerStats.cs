@@ -102,6 +102,9 @@ namespace WindowsFormFantasyFootball
 
             lblFirstName.Text = fb.first_name;
             lblSurname.Text = fb.second_name;
+            lblPosition.Text = fb.web_name;
+            lblTeam.Text = fb.squad_number;
+            lblCost.Text = fb.selected_by_percent;
         }
 
         private void cboHistory_SelectedIndexChanged(object sender, EventArgs e)

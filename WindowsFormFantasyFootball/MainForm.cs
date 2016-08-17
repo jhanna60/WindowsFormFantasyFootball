@@ -227,6 +227,9 @@
             fb.id = Convert.ToInt32(dbgPlayers.Rows[e.RowIndex].Cells[45].Value);
             fb.first_name = dbgPlayers.Rows[e.RowIndex].Cells[0].Value.ToString();
             fb.second_name = dbgPlayers.Rows[e.RowIndex].Cells[1].Value.ToString();
+            fb.web_name = dbgPlayers.Rows[e.RowIndex].Cells[2].Value.ToString();
+            fb.squad_number = dbgPlayers.Rows[e.RowIndex].Cells[3].Value.ToString();
+            fb.selected_by_percent = dbgPlayers.Rows[e.RowIndex].Cells[4].Value.ToString();
 
             FootballerStats frm = new FootballerStats(fb);
             frm.Show();

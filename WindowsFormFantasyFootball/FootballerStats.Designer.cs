@@ -69,6 +69,10 @@
             this.label14 = new System.Windows.Forms.Label();
             this.lblFirstName = new System.Windows.Forms.Label();
             this.lblSurname = new System.Windows.Forms.Label();
+            this.lblTeam = new System.Windows.Forms.Label();
+            this.lblPosition = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.lblCost = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pbPlayer)).BeginInit();
             this.SuspendLayout();
             // 
@@ -172,126 +176,112 @@
             this.lblTotalPoints.AutoSize = true;
             this.lblTotalPoints.Location = new System.Drawing.Point(142, 414);
             this.lblTotalPoints.Name = "lblTotalPoints";
-            this.lblTotalPoints.Size = new System.Drawing.Size(35, 13);
+            this.lblTotalPoints.Size = new System.Drawing.Size(0, 13);
             this.lblTotalPoints.TabIndex = 10;
-            this.lblTotalPoints.Text = "label1";
             // 
             // lblGoals
             // 
             this.lblGoals.AutoSize = true;
             this.lblGoals.Location = new System.Drawing.Point(183, 414);
             this.lblGoals.Name = "lblGoals";
-            this.lblGoals.Size = new System.Drawing.Size(35, 13);
+            this.lblGoals.Size = new System.Drawing.Size(0, 13);
             this.lblGoals.TabIndex = 11;
-            this.lblGoals.Text = "label1";
             // 
             // lblAssists
             // 
             this.lblAssists.AutoSize = true;
             this.lblAssists.Location = new System.Drawing.Point(224, 414);
             this.lblAssists.Name = "lblAssists";
-            this.lblAssists.Size = new System.Drawing.Size(35, 13);
+            this.lblAssists.Size = new System.Drawing.Size(0, 13);
             this.lblAssists.TabIndex = 12;
-            this.lblAssists.Text = "label1";
             // 
             // lblMinutes
             // 
             this.lblMinutes.AutoSize = true;
             this.lblMinutes.Location = new System.Drawing.Point(265, 414);
             this.lblMinutes.Name = "lblMinutes";
-            this.lblMinutes.Size = new System.Drawing.Size(35, 13);
+            this.lblMinutes.Size = new System.Drawing.Size(0, 13);
             this.lblMinutes.TabIndex = 13;
-            this.lblMinutes.Text = "label1";
             // 
             // lblCleanSheets
             // 
             this.lblCleanSheets.AutoSize = true;
             this.lblCleanSheets.Location = new System.Drawing.Point(306, 414);
             this.lblCleanSheets.Name = "lblCleanSheets";
-            this.lblCleanSheets.Size = new System.Drawing.Size(35, 13);
+            this.lblCleanSheets.Size = new System.Drawing.Size(0, 13);
             this.lblCleanSheets.TabIndex = 14;
-            this.lblCleanSheets.Text = "label1";
             // 
             // lblGoalsConceded
             // 
             this.lblGoalsConceded.AutoSize = true;
             this.lblGoalsConceded.Location = new System.Drawing.Point(347, 414);
             this.lblGoalsConceded.Name = "lblGoalsConceded";
-            this.lblGoalsConceded.Size = new System.Drawing.Size(35, 13);
+            this.lblGoalsConceded.Size = new System.Drawing.Size(0, 13);
             this.lblGoalsConceded.TabIndex = 15;
-            this.lblGoalsConceded.Text = "label1";
             // 
             // lblOwnGoals
             // 
             this.lblOwnGoals.AutoSize = true;
             this.lblOwnGoals.Location = new System.Drawing.Point(388, 414);
             this.lblOwnGoals.Name = "lblOwnGoals";
-            this.lblOwnGoals.Size = new System.Drawing.Size(35, 13);
+            this.lblOwnGoals.Size = new System.Drawing.Size(0, 13);
             this.lblOwnGoals.TabIndex = 16;
-            this.lblOwnGoals.Text = "label1";
             // 
             // lblYellowCards
             // 
             this.lblYellowCards.AutoSize = true;
             this.lblYellowCards.Location = new System.Drawing.Point(429, 414);
             this.lblYellowCards.Name = "lblYellowCards";
-            this.lblYellowCards.Size = new System.Drawing.Size(35, 13);
+            this.lblYellowCards.Size = new System.Drawing.Size(0, 13);
             this.lblYellowCards.TabIndex = 17;
-            this.lblYellowCards.Text = "label1";
             // 
             // lblRedCards
             // 
             this.lblRedCards.AutoSize = true;
             this.lblRedCards.Location = new System.Drawing.Point(470, 414);
             this.lblRedCards.Name = "lblRedCards";
-            this.lblRedCards.Size = new System.Drawing.Size(35, 13);
+            this.lblRedCards.Size = new System.Drawing.Size(0, 13);
             this.lblRedCards.TabIndex = 18;
-            this.lblRedCards.Text = "label1";
             // 
             // lblSaves
             // 
             this.lblSaves.AutoSize = true;
             this.lblSaves.Location = new System.Drawing.Point(511, 414);
             this.lblSaves.Name = "lblSaves";
-            this.lblSaves.Size = new System.Drawing.Size(35, 13);
+            this.lblSaves.Size = new System.Drawing.Size(0, 13);
             this.lblSaves.TabIndex = 19;
-            this.lblSaves.Text = "label1";
             // 
             // lblPenSaved
             // 
             this.lblPenSaved.AutoSize = true;
             this.lblPenSaved.Location = new System.Drawing.Point(552, 414);
             this.lblPenSaved.Name = "lblPenSaved";
-            this.lblPenSaved.Size = new System.Drawing.Size(35, 13);
+            this.lblPenSaved.Size = new System.Drawing.Size(0, 13);
             this.lblPenSaved.TabIndex = 20;
-            this.lblPenSaved.Text = "label1";
             // 
             // lblPenMissed
             // 
             this.lblPenMissed.AutoSize = true;
             this.lblPenMissed.Location = new System.Drawing.Point(593, 414);
             this.lblPenMissed.Name = "lblPenMissed";
-            this.lblPenMissed.Size = new System.Drawing.Size(35, 13);
+            this.lblPenMissed.Size = new System.Drawing.Size(0, 13);
             this.lblPenMissed.TabIndex = 21;
-            this.lblPenMissed.Text = "label1";
             // 
             // lblStartCost
             // 
             this.lblStartCost.AutoSize = true;
             this.lblStartCost.Location = new System.Drawing.Point(634, 414);
             this.lblStartCost.Name = "lblStartCost";
-            this.lblStartCost.Size = new System.Drawing.Size(35, 13);
+            this.lblStartCost.Size = new System.Drawing.Size(0, 13);
             this.lblStartCost.TabIndex = 22;
-            this.lblStartCost.Text = "label1";
             // 
             // lblEndCost
             // 
             this.lblEndCost.AutoSize = true;
             this.lblEndCost.Location = new System.Drawing.Point(675, 414);
             this.lblEndCost.Name = "lblEndCost";
-            this.lblEndCost.Size = new System.Drawing.Size(35, 13);
+            this.lblEndCost.Size = new System.Drawing.Size(0, 13);
             this.lblEndCost.TabIndex = 23;
-            this.lblEndCost.Text = "label1";
             // 
             // label1
             // 
@@ -436,28 +426,73 @@
             // lblFirstName
             // 
             this.lblFirstName.AutoSize = true;
-            this.lblFirstName.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFirstName.Location = new System.Drawing.Point(331, 23);
+            this.lblFirstName.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFirstName.Location = new System.Drawing.Point(301, 23);
             this.lblFirstName.Name = "lblFirstName";
-            this.lblFirstName.Size = new System.Drawing.Size(92, 29);
+            this.lblFirstName.Size = new System.Drawing.Size(118, 37);
             this.lblFirstName.TabIndex = 38;
             this.lblFirstName.Text = "label15";
             // 
             // lblSurname
             // 
             this.lblSurname.AutoSize = true;
-            this.lblSurname.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSurname.Location = new System.Drawing.Point(331, 52);
+            this.lblSurname.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSurname.Location = new System.Drawing.Point(301, 60);
             this.lblSurname.Name = "lblSurname";
-            this.lblSurname.Size = new System.Drawing.Size(92, 29);
+            this.lblSurname.Size = new System.Drawing.Size(118, 37);
             this.lblSurname.TabIndex = 39;
             this.lblSurname.Text = "label16";
+            // 
+            // lblTeam
+            // 
+            this.lblTeam.AutoSize = true;
+            this.lblTeam.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTeam.Location = new System.Drawing.Point(306, 155);
+            this.lblTeam.Name = "lblTeam";
+            this.lblTeam.Size = new System.Drawing.Size(52, 16);
+            this.lblTeam.TabIndex = 40;
+            this.lblTeam.Text = "label15";
+            // 
+            // lblPosition
+            // 
+            this.lblPosition.AutoSize = true;
+            this.lblPosition.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPosition.Location = new System.Drawing.Point(306, 129);
+            this.lblPosition.Name = "lblPosition";
+            this.lblPosition.Size = new System.Drawing.Size(52, 16);
+            this.lblPosition.TabIndex = 41;
+            this.lblPosition.Text = "label15";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(576, 151);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(50, 20);
+            this.label15.TabIndex = 42;
+            this.label15.Text = "Cost :";
+            // 
+            // lblCost
+            // 
+            this.lblCost.AutoSize = true;
+            this.lblCost.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCost.Location = new System.Drawing.Point(632, 140);
+            this.lblCost.Name = "lblCost";
+            this.lblCost.Size = new System.Drawing.Size(101, 31);
+            this.lblCost.TabIndex = 43;
+            this.lblCost.Text = "label15";
             // 
             // FootballerStats
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(748, 461);
+            this.Controls.Add(this.lblCost);
+            this.Controls.Add(this.label15);
+            this.Controls.Add(this.lblPosition);
+            this.Controls.Add(this.lblTeam);
             this.Controls.Add(this.lblSurname);
             this.Controls.Add(this.lblFirstName);
             this.Controls.Add(this.label14);
@@ -548,5 +583,9 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label lblFirstName;
         private System.Windows.Forms.Label lblSurname;
+        private System.Windows.Forms.Label lblTeam;
+        private System.Windows.Forms.Label lblPosition;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label lblCost;
     }
 }
