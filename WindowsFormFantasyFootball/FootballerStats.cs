@@ -81,7 +81,8 @@ namespace WindowsFormFantasyFootball
                             break;
                     }
                 }
-
+                
+                // Working out our History drop down list and setting it
                 var history = new HashSet<string>();
 
                 foreach (var year in root.history_past)
@@ -97,7 +98,26 @@ namespace WindowsFormFantasyFootball
                 if (cboHistory.Items.Count > 0) {
                     cboHistory.SelectedIndex = 0;
                 }
-                
+
+                //Working out our current game week hist and setting it
+                var gwHistory = new HashSet<string>();
+
+                foreach (var week in root.history)
+                {
+                    gwHistory.Add(week.round.ToString());
+                }
+
+                var gwHistArr = gwHistory.ToArray();
+                Array.Sort(gwHistArr);
+                Array.Reverse(gwHistArr);
+
+                cboGameHist.Items.AddRange(gwHistArr);
+                if (cboGameHist.Items.Count > 0)
+                {
+                    cboGameHist.SelectedIndex = 0;
+                }
+
+
             }
 
             lblFirstName.Text = fb.first_name;
@@ -123,6 +143,41 @@ namespace WindowsFormFantasyFootball
             lblYellowCards.Text = root.history_past[(cboHistory.Items.Count - 1) - cboHistory.SelectedIndex].yellow_cards.ToString();
             lblRedCards.Text = root.history_past[(cboHistory.Items.Count - 1) - cboHistory.SelectedIndex].red_cards.ToString();
             lblSaves.Text = root.history_past[(cboHistory.Items.Count - 1) - cboHistory.SelectedIndex].saves.ToString();
+        }
+
+        private void cboGameHist_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            lblGPoints.Text = root.history[(cboGameHist.Items.Count - 1) - cboGameHist.SelectedIndex].total_points.ToString();
+            lblGGoals.Text = root.history[(cboGameHist.Items.Count - 1) - cboGameHist.SelectedIndex].goals_scored.ToString();
+            lblGAssists.Text = root.history[(cboGameHist.Items.Count - 1) - cboGameHist.SelectedIndex].assists.ToString();
+            lblGMinutes.Text = root.history[(cboGameHist.Items.Count - 1) - cboGameHist.SelectedIndex].minutes.ToString();
+            lblGBonusPoints.Text = root.history[(cboGameHist.Items.Count - 1) - cboGameHist.SelectedIndex].bonus.ToString();
+            lblGGoalsConceded.Text = root.history[(cboGameHist.Items.Count - 1) - cboGameHist.SelectedIndex].goals_conceded.ToString();
+            lblGOwnGoals.Text = root.history[(cboGameHist.Items.Count - 1) - cboGameHist.SelectedIndex].own_goals.ToString();
+            lblGYellowCard.Text = root.history[(cboGameHist.Items.Count - 1) - cboGameHist.SelectedIndex].yellow_cards.ToString();
+            lblGRedCard.Text = root.history[(cboGameHist.Items.Count - 1) - cboGameHist.SelectedIndex].red_cards.ToString();
+            lblGSaves.Text = root.history[(cboGameHist.Items.Count - 1) - cboGameHist.SelectedIndex].saves.ToString();
+            lblGPenSaved.Text = root.history[(cboGameHist.Items.Count - 1) - cboGameHist.SelectedIndex].penalties_saved.ToString();
+            lblGPenMissed.Text = root.history[(cboGameHist.Items.Count - 1) - cboGameHist.SelectedIndex].penalties_missed.ToString();
+            lblGOPC.Text = root.history[(cboGameHist.Items.Count - 1) - cboGameHist.SelectedIndex].open_play_crosses.ToString();
+            lblGBCC.Text = root.history[(cboGameHist.Items.Count - 1) - cboGameHist.SelectedIndex].big_chances_created.ToString();
+            lblGCBI.Text = root.history[(cboGameHist.Items.Count - 1) - cboGameHist.SelectedIndex].clearances_blocks_interceptions.ToString();
+            lblGRecoveries.Text = root.history[(cboGameHist.Items.Count - 1) - cboGameHist.SelectedIndex].recoveries.ToString();
+            lblGKeyPasses.Text = root.history[(cboGameHist.Items.Count - 1) - cboGameHist.SelectedIndex].key_passes.ToString();
+            lblGTackles.Text = root.history[(cboGameHist.Items.Count - 1) - cboGameHist.SelectedIndex].tackles.ToString();
+            lblGWG.Text = root.history[(cboGameHist.Items.Count - 1) - cboGameHist.SelectedIndex].winning_goals.ToString();
+            lblGAP.Text = root.history[(cboGameHist.Items.Count - 1) - cboGameHist.SelectedIndex].attempted_passes.ToString();
+            lblGCP.Text = root.history[(cboGameHist.Items.Count - 1) - cboGameHist.SelectedIndex].completed_passes.ToString();
+            lblGPC.Text = root.history[(cboGameHist.Items.Count - 1) - cboGameHist.SelectedIndex].penalties_conceded.ToString();
+            lblGBCM.Text = root.history[(cboGameHist.Items.Count - 1) - cboGameHist.SelectedIndex].big_chances_missed.ToString();
+            lblGELG.Text = root.history[(cboGameHist.Items.Count - 1) - cboGameHist.SelectedIndex].errors_leading_to_goal.ToString();
+            lblGELGA.Text = root.history[(cboGameHist.Items.Count - 1) - cboGameHist.SelectedIndex].errors_leading_to_goal_attempt.ToString();
+            lblGTackled.Text = root.history[(cboGameHist.Items.Count - 1) - cboGameHist.SelectedIndex].tackled.ToString();
+            lblGOffside.Text = root.history[(cboGameHist.Items.Count - 1) - cboGameHist.SelectedIndex].offside.ToString();
+            lblGTM.Text = root.history[(cboGameHist.Items.Count - 1) - cboGameHist.SelectedIndex].target_missed.ToString();
+            lblGFouls.Text = root.history[(cboGameHist.Items.Count - 1) - cboGameHist.SelectedIndex].fouls.ToString();
+            lblGDribbles.Text = root.history[(cboGameHist.Items.Count - 1) - cboGameHist.SelectedIndex].dribbles.ToString();
+            lblGCost.Text = (((decimal)root.history[(cboGameHist.Items.Count - 1) - cboGameHist.SelectedIndex].value / 10).ToString());
         }
     }
 }

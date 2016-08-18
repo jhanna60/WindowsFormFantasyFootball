@@ -232,7 +232,7 @@
             this.lblVersion.Name = "lblVersion";
             this.lblVersion.Size = new System.Drawing.Size(32, 13);
             this.lblVersion.TabIndex = 12;
-            this.lblVersion.Text = "V 2.4";
+            this.lblVersion.Text = "V 2.5";
             // 
             // mnuStrip
             // 
