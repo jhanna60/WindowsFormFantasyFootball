@@ -43,7 +43,7 @@ namespace WindowsFormFantasyFootball.Mapper
                 row.PriceFall = footballer.cost_change_start_fall;
                 row.ValueForm = decimal.Parse(footballer.value_form);
                 row.PenaltiesMissed = footballer.penalties_missed;
-                row.Form = float.Parse(footballer.form);
+                row.Form = decimal.Parse(footballer.form);
                 row.Bonus = footballer.bonus;
                 row.CleanSheets = footballer.clean_sheets;
                 row.Assists = footballer.assists;

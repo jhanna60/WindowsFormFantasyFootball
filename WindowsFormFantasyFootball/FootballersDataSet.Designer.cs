@@ -834,7 +834,7 @@ namespace WindowsFormFantasyFootball {
                         int PriceRiseRound, 
                         int PriceFall, 
                         int PriceFallRnd, 
-                        double Form, 
+                        decimal Form, 
                         decimal ValueForm, 
                         decimal ValueSeason, 
                         int PenaltiesMissed, 
@@ -1025,7 +1025,7 @@ namespace WindowsFormFantasyFootball {
                 base.Columns.Add(this.columnPriceFall);
                 this.columnPriceFallRnd = new global::System.Data.DataColumn("PriceFallRnd", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnPriceFallRnd);
-                this.columnForm = new global::System.Data.DataColumn("Form", typeof(double), null, global::System.Data.MappingType.Element);
+                this.columnForm = new global::System.Data.DataColumn("Form", typeof(decimal), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnForm);
                 this.columnValueForm = new global::System.Data.DataColumn("ValueForm", typeof(decimal), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnValueForm);
@@ -1597,10 +1597,10 @@ namespace WindowsFormFantasyFootball {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public double Form {
+            public decimal Form {
                 get {
                     try {
-                        return ((double)(this[this.tableFootballers.FormColumn]));
+                        return ((decimal)(this[this.tableFootballers.FormColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("The value for column \'Form\' in table \'Footballers\' is DBNull.", e);

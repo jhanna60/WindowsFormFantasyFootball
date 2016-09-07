@@ -1,11 +1,14 @@
 ﻿namespace WindowsFormFantasyFootball
 {
+    using Newtonsoft.Json;
     using System;
     using System.Collections.Generic;
     using System.ComponentModel;
     using System.Data;
     using System.Drawing;
+    using System.IO;
     using System.Linq;
+    using System.Net;
     using System.Windows.Forms;
 
     public partial class MainForm : Form
@@ -13,6 +16,10 @@
         private readonly FootballersDataSet.FootballersDataTable _footballersDataTable;
 
         double totGK, totDEF, totMID, totFWD, totPlayers;
+
+        MyTeam root = new MyTeam();
+
+        WebClient client = new WebClient();
 
         public MainForm(FootballersDataSet.FootballersDataTable footballersDataTable, List<Event> events)
         {
@@ -26,29 +33,71 @@
             var positions = new HashSet<string>();
             var price = new HashSet<decimal>();
 
+            // Find out what event we are at
+            int index = 0;
+            while (true)
+            {
+                if (!events[index].finished)
+                {
+                    break;
+                }
+                index++;
+            }
+
+            // create a list of all our footballer ID's
+            List<int> footballers = new List<int>();
+
+            // If we have a team then we need to load it into our program
+            if (Properties.Settings.Default.TeamNumber != -1)
+            {
+                var proxy = client.Proxy;
+                client.UseDefaultCredentials = true;
+                client.Proxy.Credentials = CredentialCache.DefaultCredentials;
+
+                Stream stream = client.OpenRead("https://fantasy.premierleague.com/drf/entry/" + Properties.Settings.Default.TeamNumber + "/event/" + (index) +"/picks");
+
+                using (StreamReader reader = new StreamReader(stream))
+                {
+                    root = (MyTeam)JsonConvert.DeserializeObject(reader.ReadLine(), typeof(MyTeam));
+                }
+
+                if (root != null)
+                {
+                    foreach (var f in root.picks)
+                    {
+                        footballers.Add(f.element);
+                    }
+                }
+            }
+            else
+            {
+                rdoTeam.Enabled = false;
+            }
+
             foreach (var row in _footballersDataTable.AsEnumerable())
             {
                 teams.Add(row.Team);
                 positions.Add(row.Position);
                 price.Add(row.Cost);
-            }
 
-            //Work out some high level stats to display
-            foreach (var f in footballersDataTable)
-            {
-                switch (f.Position)
+                if (footballers.Contains(row.ID))
+                {
+                    row.MyTeam = true;
+                }
+
+                switch (row.Position)
                 {
                     case "Goalkeeper":
-                        totGK += f.TotalPoints;
+                        totGK += row.TotalPoints;
                         break;
                     case "Defender":
-                        totDEF += f.TotalPoints;
+                        totDEF += row.TotalPoints;
                         break;
                     case "Midfielder":
-                        totMID += f.TotalPoints;
+                        totMID += row.TotalPoints;
                         break;
                     case "Forward":
-                        totFWD += f.TotalPoints;
+                        totFWD += row.TotalPoints;
                         break;
                     default:
                         break;
@@ -118,21 +167,18 @@
             //Utilise our column selector class
             DataGridViewColumnSelector cs = new DataGridViewColumnSelector(dbgPlayers);
 
-            rdoTeam.Enabled = false;
 
-            // Find out what event we are at
-            int index = 0;
-            while (true)
-            {
-                if (!events[index].finished)
-                {
-                    break;
-                }
-                index++;
-            }
+            // Temp disable while we load team
+            //rdoTeam.Enabled = false;
+
+
 
             lblCurrentRound.Text = events[index].id.ToString();
             lblDeadline.Text = events[index].deadline_time_formatted;
+
+            // Use the system setting if it exists to go get our Team number so we can load our team in
+
+            var team = Properties.Settings.Default.TeamNumber;
 
         }
 
