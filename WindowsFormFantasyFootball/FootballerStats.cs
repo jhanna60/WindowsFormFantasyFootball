@@ -100,18 +100,18 @@ namespace WindowsFormFantasyFootball
                 }
 
                 //Working out our current game week hist and setting it
-                var gwHistory = new HashSet<string>();
+                var gwHistory = new HashSet<int>();
 
                 foreach (var week in root.history)
                 {
-                    gwHistory.Add(week.round.ToString());
+                    gwHistory.Add(week.round);
                 }
 
                 var gwHistArr = gwHistory.ToArray();
                 Array.Sort(gwHistArr);
                 Array.Reverse(gwHistArr);
 
-                cboGameHist.Items.AddRange(gwHistArr);
+                cboGameHist.Items.AddRange(gwHistArr.Cast<object>().ToArray());
                 if (cboGameHist.Items.Count > 0)
                 {
                     cboGameHist.SelectedIndex = 0;

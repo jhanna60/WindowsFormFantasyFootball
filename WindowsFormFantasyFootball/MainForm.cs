@@ -168,11 +168,6 @@
             DataGridViewColumnSelector cs = new DataGridViewColumnSelector(dbgPlayers);
 
 
-            // Temp disable while we load team
-            //rdoTeam.Enabled = false;
-
-
-
             lblCurrentRound.Text = events[index].id.ToString();
             lblDeadline.Text = events[index].deadline_time_formatted;
 

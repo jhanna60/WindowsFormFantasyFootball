@@ -25,7 +25,7 @@ namespace WindowsFormFantasyFootball.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("-1")]
+        [global::System.Configuration.DefaultSettingValueAttribute("2000891")]
         public int TeamNumber {
             get {
                 return ((int)(this["TeamNumber"]));
