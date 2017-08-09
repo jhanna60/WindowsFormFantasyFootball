@@ -19,6 +19,8 @@
             client.UseDefaultCredentials = true;
             client.Proxy.Credentials = CredentialCache.DefaultCredentials;
 
+            ServicePointManager.Expect100Continue = true;
+            ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
             ServicePointManager.DefaultConnectionLimit = 300;
 
             // I need to Deserialise the JSON API object into RootObject, then I need to pick
